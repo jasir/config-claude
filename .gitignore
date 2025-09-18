@@ -1,0 +1,11 @@
+ide
+local/node_modules
+local/node_modules
+shell-snapshots
+statsig
+todos
+.credentials.json
+projects
+settings.json.backup*
+changes.log
+command-log.txt
