@@ -14,16 +14,7 @@
           }
         ]
       },
-      {
-        "matcher": "Read",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/home/jarda/3rd/claude-code-tools/hooks/file_size_conditional_hook.py"
-          }
-        ]
-      },
-      {
+        {
         "matcher": "Task",
         "hooks": [
           {
