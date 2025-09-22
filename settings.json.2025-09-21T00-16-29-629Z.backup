@@ -14,7 +14,7 @@
           }
         ]
       },
-      {
+        {
         "matcher": "Task",
         "hooks": [
           {
@@ -88,8 +88,9 @@
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": ["Bash"],
+    "allow": [
+      "Bash"
+    ],
     "deny": []
   }
 }
-

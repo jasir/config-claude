@@ -22,6 +22,16 @@
             "command": "/home/jarda/3rd/claude-code-tools/hooks/pretask_subtask_flag.py"
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "entctl mapdump --hook --no-header --no-ejs -- --path brain/hooks/test-hook/source",
+            "timeout": 10000
+          }
+        ]
       }
     ],
     "PostToolUse": [
@@ -88,8 +98,9 @@
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": ["Bash"],
+    "allow": [
+      "Bash"
+    ],
     "deny": []
   }
 }
-
