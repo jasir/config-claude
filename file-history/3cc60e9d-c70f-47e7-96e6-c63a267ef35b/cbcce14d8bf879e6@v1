@@ -1,0 +1,71 @@
+target: /c/work/projects/altisima-central-vault
+repos:
+  - path: .
+    branch: main
+    origin: git@github.com:jasir/ent-jarda-environment-root.git
+    name: ent-jarda-environment-root
+  - path: altisima
+    branch: develop
+    origin: git@github.com:altisima/central-vault.git
+    name: central-vault
+  - path: ent__
+    branch: develop
+    origin: git@github.com:jasir/__ent.git
+    name: ent
+  - path: .obsidian
+    branch: develop
+    origin: git@github.com:jasir/obsidian-config.git
+    name: obsidian-config
+  - path: __ppi__
+    branch: develop
+    origin: git@github.com:post-push-it/vault.git
+    name: ppi-vault
+  - path: __home
+    branch: develop
+    origin: git@github.com:jasir/__home_vault.git
+    name: home-vault
+  - path: _tools/vault-server
+    branch: develop
+    origin: git@github.com:jasir/vault-server.git
+    name: vault-server
+  - path: dorsys
+    branch: develop
+    origin: git@github.com:jasir/dorsys.git
+    name: dorsys
+  - path: epks
+    branch: develop
+    origin: git@github.com:altisima/epks-module.git
+  - path: separato/sepadm
+    branch: develop
+    origin: git@github.com:altisima/sepadm.git
+  - path: separato/sepsys
+    branch: develop
+    origin: git@github.com:altisima/sepsys.git
+  - path: separato/sepapp
+    branch: develop
+    origin: git@github.com:altisima/sepapp.git
+  - path: altisima-module
+    branch: develop
+    origin: git@github.com:altisima/altisima-module.git
+  - path: other
+    branch: main
+    origin: git@github.com:altisima/other.git
+  - path: static
+    branch: develop
+    origin: git@github.com:jasir/ent-static.git
+  - path: jarda
+    branch: develop
+    origin: git@github.com:jasir/ent-jarda.git
+  - path: marks
+    branch: develop
+    origin: git@github.com:jasir/ent-marks.git
+  - path: public
+    branch: develop
+    origin: git@github.com:altisima/public.git
+  - path: portal
+    branch: develop
+    origin: git@github.com:altisima/portal.git
+  - path: __home/projects/home-top-vault
+    branch: master
+    origin: git@github.com:jasir/home-top-vault.git
+
