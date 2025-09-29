@@ -1,0 +1,336 @@
+# Documentation Standards
+
+Template a standardy pro psaní a údržbu dokumentace **git-composer**.
+
+## Struktura dokumentace
+
+```
+doc/
+├── index.md              # Hlavní rozcestník
+├── installation.md       # Instalační průvodce
+├── usage.md             # Kompletní reference příkazů
+├── quick-start.md       # 5minutový rychlý začátek
+├── troubleshooting.md   # Řešení běžných problémů
+├── developer.md         # Pro vývojáře a přispěvatele
+└── documentation.md     # Tento soubor - standardy
+```
+
+## Pravidla pro dokumentaci
+
+### 1. Formátování
+
+**Markdown standard:**
+- Používejte GitHub-flavored Markdown
+- Nadpisy: `#` pro h1, `##` pro h2, atd.
+- Code blocks vždy s language specifikací
+
+**Code blocks:**
+```markdown
+\`\`\`bash
+git-compose build
+\`\`\`
+
+\`\`\`typescript
+export function example() { }
+\`\`\`
+
+\`\`\`yaml
+target: /path
+\`\`\`
+```
+
+**Odkazy:**
+```markdown
+# Relativní odkazy (preferované)
+[Usage Guide](usage.md)
+[Installation](installation.md#requirements)
+
+# Absolutní pouze pro externí
+[GitHub](https://github.com/jasir/git-composer)
+```
+
+### 2. Struktura dokumentu
+
+**Každý dokument by měl mít:**
+
+1. **Nadpis (h1)** - Název stránky
+2. **Úvodní popis** - 1-2 věty co dokument obsahuje
+3. **Obsah** - Sekce a podsekce
+4. **Odkazy na související dokumenty** - Na konci nebo v relevantních sekcích
+
+**Příklad:**
+```markdown
+# Název
+
+Stručný popis obsahu tohoto dokumentu.
+
+## Sekce 1
+
+Obsah...
+
+## Sekce 2
+
+Obsah...
+
+## Související dokumentace
+
+- [Dokument 1](doc1.md)
+- [Dokument 2](doc2.md)
+```
+
+### 3. Příklady kódu
+
+**Všechny příklady musí být:**
+- Otestované a funkční
+- S komentáři kde je to vhodné
+- S očekávaným výstupem kde je to relevantní
+
+**Formát:**
+```markdown
+### Příklad: Popis příkladu
+
+\`\`\`bash
+# Komentář vysvětlující co děláme
+git-compose build --verbose
+
+# Očekávaný výstup:
+# ✓ Successfully cloned repository
+\`\`\`
+```
+
+### 4. Emoji a symboly
+
+**Používejte konzistentně:**
+- ✅ Správně, doporučeno
+- ❌ Špatně, nedoporučeno
+- ⚠️ Varování
+- 💡 Tip
+- 📝 Poznámka
+- 🎯 Důležité
+
+**V obsahu dokumentů:**
+- 🚀 Rychlý start, performance
+- 📚 Dokumentace, reference
+- 🔧 Nástroje, konfigurace
+- 🎨 UI, vzhled
+- 🐛 Bug, problém
+- ✓ Úspěch
+- ✗ Chyba
+
+### 5. Varování a poznámky
+
+**Formát bloků:**
+```markdown
+**DŮLEŽITÉ:** Text důležité informace
+
+**Poznámka:** Doplňující informace
+
+**Tip:** Užitečný tip
+
+**Varování:** Varování před možným problémem
+```
+
+## Template pro nový dokument
+
+```markdown
+# Název dokumentu
+
+Stručný popis (1-2 věty) co tento dokument obsahuje a pro koho je určen.
+
+## Hlavní sekce
+
+### Podsekce
+
+Obsah s příklady...
+
+\`\`\`bash
+# Příklad kódu
+git-compose command
+\`\`\`
+
+**Výstup:**
+\`\`\`
+Očekávaný výstup
+\`\`\`
+
+## Tipy a best practices
+
+💡 **Tip:** Užitečný tip
+
+⚠️ **Varování:** Něco důležitého
+
+## Související dokumentace
+
+- [Dokument 1](link.md) - Krátký popis
+- [Dokument 2](link.md) - Krátký popis
+```
+
+## Aktualizace dokumentace
+
+### Kdy aktualizovat
+
+**Po každé změně:**
+- Nový příkaz → Aktualizovat `usage.md`, `quick-start.md`, `index.md`
+- Nová možnost → Aktualizovat `usage.md`
+- Nový feature → Aktualizovat `usage.md`, případně `quick-start.md`
+- Bug fix → Možná aktualizovat `troubleshooting.md`
+- Breaking change → Aktualizovat všechny relevantní dokumenty + migration guide
+
+### Checklist pro aktualizaci
+
+- [ ] Aktualizován hlavní dokument (`usage.md`)
+- [ ] Aktualizován `index.md` pokud je to nová funkce
+- [ ] Přidány příklady do `quick-start.md`
+- [ ] Přidány troubleshooting tipy pokud je to relevantní
+- [ ] Aktualizován `developer.md` pokud se týká vývoje
+- [ ] Všechny odkazy fungují
+- [ ] Všechny příklady otestovány
+- [ ] CHANGELOG.md aktualizován
+
+## Psaní efektivní dokumentace
+
+### Jazyk a styl
+
+**Jasnost:**
+- Používejte jednoduché věty
+- Vysvětlete technické termíny
+- Příklady jsou lepší než dlouhé popisy
+
+**Konzistence:**
+- Stejné termíny pro stejné věci
+- Konzistentní formátování
+- Jednotný tón
+
+**Stručnost:**
+- Přímo k věci
+- Bez zbytečných slov
+- Praktické příklady
+
+### Struktura příkladu
+
+**✅ Dobrý příklad:**
+```markdown
+### Shallow clone pro rychlejší setup
+
+\`\`\`bash
+git-compose build --shallow
+\`\`\`
+
+Tato možnost klonuje repozitáře s `--depth 1`, což výrazně zrychlí proces a ušetří místo.
+```
+
+**❌ Špatný příklad:**
+```markdown
+### Shallow
+
+Můžete použít shallow clone pokud chcete.
+
+\`\`\`bash
+git-compose build --shallow
+\`\`\`
+```
+
+### Cross-reference
+
+**Vždy propojte související dokumenty:**
+```markdown
+Pro více informací o konfiguraci viz [Usage Guide](usage.md#configuration).
+
+**Viz také:**
+- [Installation](installation.md)
+- [Troubleshooting](troubleshooting.md)
+```
+
+## Kontrola kvality
+
+### Před commit dokumentace
+
+1. **Čitelnost** - Přečtěte si celý dokument
+2. **Příklady** - Otestujte všechny příklady kódu
+3. **Odkazy** - Zkontrolujte všechny odkazy
+4. **Formátování** - Zkontrolujte Markdown syntax
+5. **Spelling** - Zkontrolujte pravopis
+
+### Review checklist
+
+- [ ] Dokument je jasný a srozumitelný
+- [ ] Všechny příklady fungují
+- [ ] Odkazy jsou platné
+- [ ] Formátování je konzistentní
+- [ ] Terminologie je konzistentní s ostatními dokumenty
+- [ ] Dokument je kompletní
+- [ ] Cross-reference odkazy jsou přidány
+
+## Nástroje
+
+### Markdown lint
+
+```bash
+# Kontrola Markdown syntaxe
+npx markdownlint-cli doc/**/*.md
+```
+
+### Link checking
+
+```bash
+# Kontrola mrtvých odkazů
+npx markdown-link-check doc/**/*.md
+```
+
+### Preview
+
+Použijte GitHub Markdown preview nebo:
+```bash
+# Náhled Markdown
+npx grip doc/index.md
+```
+
+## Příklady dobré dokumentace
+
+**Inspirace z podobných projektů:**
+- [Git Documentation](https://git-scm.com/doc)
+- [Docker Documentation](https://docs.docker.com/)
+- [Commander.js](https://github.com/tj/commander.js/)
+
+## Údržba
+
+### Pravidelné úkoly
+
+**Každý měsíc:**
+- Zkontrolovat všechny odkazy
+- Aktualizovat příklady pokud se změnilo API
+- Přidat nové troubleshooting tipy na základě issues
+
+**Každý release:**
+- Aktualizovat číslo verze
+- Aktualizovat CHANGELOG.md
+- Zkontrolovat, že dokumentace odpovídá novému kódu
+
+## Konvence pojmenování
+
+**Soubory:**
+- Lowercase with dashes: `quick-start.md`
+- Popisné názvy: `installation.md`, ne `install.md`
+
+**Nadpisy:**
+- Sentence case: `# Installation guide`
+- Ne all caps: ~~`# INSTALLATION GUIDE`~~
+
+**Odkazy:**
+- Popisné texty: `[Installation Guide](installation.md)`
+- Ne generické: ~~`[Click here](installation.md)`~~
+
+## Závěr
+
+Dobrá dokumentace je klíčová pro úspěch projektu. Vždy pište dokumentaci s ohledem na uživatele - jak začátečníky, tak pokročilé.
+
+**Pamatujte:**
+- Dokumentace je stejně důležitá jako kód
+- Příklady jsou lepší než dlouhé popisy
+- Aktuální dokumentace je lepší než perfektní dokumentace
+- Testujte všechny příklady
+
+## Související dokumentace
+
+- [Developer Guide](developer.md) - Pro přispěvatele
+- [Usage](usage.md) - Reference všech příkazů

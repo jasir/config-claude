@@ -1,0 +1,215 @@
+# Quick Start
+
+**5minutový rychlý začátek s git-composer**
+
+## 1. Instalace
+
+**Prerekvizity:** [bun](https://bun.sh/) runtime - [Instalace](https://bun.sh/docs/installation)
+
+```bash
+# Clone repozitáře
+git clone git@github.com:jasir/git-composer.git
+cd git-composer
+
+# Instalace dependencies
+bun install
+
+# Ověření
+./git-compose --help
+```
+
+Pro globální instalaci:
+```bash
+sudo ln -s $(pwd)/git-compose /usr/local/bin/git-compose
+```
+
+## 2. Vytvoření prvního projektu
+
+### Vytvořte konfigurační soubor
+
+```bash
+cat > .git-compose.yaml << 'EOF'
+target: ./my-workspace
+
+repos:
+  - path: .
+    branch: main
+    origin: https://github.com/PIC16B/git-practice.git
+  - path: frontend
+    branch: develop
+    origin: https://github.com/facebook/react.git
+  - path: backend
+    branch: main
+    origin: https://github.com/expressjs/express.git
+EOF
+```
+
+### Build workspace
+
+```bash
+git-compose build
+```
+
+✅ **Hotovo!** Všechny repozitáře jsou naklonovány a checkout na správné větve.
+
+## 3. Základní operace
+
+### Zobrazení statusu
+
+```bash
+git-compose status
+```
+
+Uvidíte tabulku s informacemi o všech repozitářích.
+
+### Spuštění příkazu ve všech repozitářích
+
+```bash
+# Zobrazit status všech repozitářů
+git-compose exec "git status"
+
+# Instalace npm dependencies
+git-compose exec "npm install"
+```
+
+### Synchronizace všeho najednou
+
+```bash
+# Pull, commit (pokud potřeba) a push
+git-compose sync
+```
+
+## 4. Pokročilé use cases
+
+### Přidání existujícího repozitáře
+
+```bash
+# Přidání aktuálního adresáře do konfigurace
+git-compose add .
+
+# Přidání specifického repozitáře
+git-compose add ./my-project
+```
+
+### Discover všech repozitářů v adresáři
+
+```bash
+git-compose discover /path/to/projects
+```
+
+### Extrakce modulu z monorepa
+
+```bash
+# S GitHub remote a push
+git-compose extract ./monorepo ./monorepo/packages/auth \
+  --init-remote user/auth-module --push
+```
+
+### Interaktivní commit
+
+```bash
+git-compose commit
+```
+
+## 5. Běžné workflows
+
+### Denní práce
+
+```bash
+# Ráno: Stáhněte nejnovější změny
+git-compose pull
+
+# Během dne: Pracujte normálně v jednotlivých repozitářích
+cd my-workspace/frontend
+# ... vaše práce ...
+
+# Večer: Commitněte a pushněte vše
+git-compose sync
+```
+
+### Setup nového workspace
+
+```bash
+# 1. Vytvořte config soubor .git-compose.yaml
+# 2. Build
+git-compose build
+
+# 3. Ověření
+git-compose status
+```
+
+### Cross-platform práce
+
+```bash
+# Pokud pracujete na Windows a Linux/macOS
+git-compose build --convert-paths
+```
+
+## 6. Tipy pro začátečníky
+
+### Použijte aliasy
+
+Přidejte do `~/.bashrc` nebo `~/.zshrc`:
+
+```bash
+alias gc='git-compose'
+alias gcb='git-compose build'
+alias gcs='git-compose status'
+alias gcx='git-compose exec'
+alias gcS='git-compose sync'
+```
+
+Pak můžete používat:
+```bash
+gc status
+gcb
+gcx "git status"
+gcS
+```
+
+### Začněte s shallow clone
+
+Pro rychlejší setup použijte:
+```bash
+git-compose build --shallow
+```
+
+### Verbose mode pro debugging
+
+Pokud něco nefunguje:
+```bash
+git-compose build --verbose
+```
+
+## Co dál?
+
+- **Detailní dokumentace:** [Usage Guide](usage.md)
+- **Řešení problémů:** [Troubleshooting](troubleshooting.md)
+- **Pro vývojáře:** [Developer Guide](developer.md)
+
+## Rychlá reference
+
+| Příkaz | Co dělá |
+|--------|---------|
+| `git-compose build` | Clone/checkout repozitářů |
+| `git-compose status` | Zobrazit konfiguraci |
+| `git-compose exec "<cmd>"` | Spustit příkaz všude |
+| `git-compose add <path>` | Přidat repozitář do config |
+| `git-compose pull` | Pull všech repozitářů |
+| `git-compose push` | Push všech repozitářů |
+| `git-compose commit` | Interaktivní commit |
+| `git-compose sync` | Pull + commit + push |
+| `git-compose discover` | Najít všechny Git repozitáře |
+| `git-compose extract` | Extrahovat subdir do nového repo |
+
+## Potřebujete pomoc?
+
+```bash
+# Obecná nápověda
+git-compose --help
+
+# Nápověda pro konkrétní příkaz
+git-compose <command> --help
+```
+
+**Issues:** https://github.com/jasir/git-composer/issues

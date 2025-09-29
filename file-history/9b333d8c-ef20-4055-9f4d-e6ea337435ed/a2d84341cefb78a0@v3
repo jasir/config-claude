@@ -1,0 +1,486 @@
+# Usage
+
+Kompletní reference všech příkazů a možností **git-composer**.
+
+## Základní syntaxe
+
+```bash
+git-compose [global-options] <command> [command-options] [arguments]
+```
+
+## Globální možnosti
+
+Tyto možnosti lze použít s jakýmkoliv příkazem:
+
+- `--config <path>` - Cesta ke konfiguračnímu souboru (výchozí: `.git-compose.yaml`)
+- `--verbose` - Podrobný výstup pro debugging
+- `--convert-paths` - Automatická konverze formátu cest (Windows/Unix)
+- `--target <path>` - Přepsání target adresáře z konfiguračního souboru
+
+## Příkazy
+
+### `build`
+
+Clone nebo checkout repozitářů podle konfigurace.
+
+**Syntaxe:**
+```bash
+git-compose build [options]
+```
+
+**Možnosti:**
+- `--rebuild` - Smazání existujících .git adresářů před buildem
+- `--shallow` - Clone repozitářů s `--depth 1` (rychlejší, menší velikost)
+- `--convert-paths` - Automatická konverze formátů cest
+- `--target <path>` - Přepsání target adresáře
+
+**Příklady:**
+
+```bash
+# Základní build
+git-compose build
+
+# Rebuild všech repozitářů (smazat a znovu naklonovat)
+git-compose build --rebuild
+
+# Shallow clone pro rychlejší setup
+git-compose build --shallow
+
+# Build s vlastním target adresářem
+git-compose build --target /path/to/workspace
+
+# Build s konverzí cest (cross-platform)
+git-compose build --convert-paths
+```
+
+### `status`
+
+Zobrazení tabulky s informacemi o repozitářích z konfiguračního souboru.
+
+**Syntaxe:**
+```bash
+git-compose status
+```
+
+**Výstup:**
+- Cesty k repozitářům
+- Větve (branches)
+- Remote origins
+
+**Příklad:**
+```bash
+git-compose status
+```
+
+### `exec`
+
+Spuštění příkazu ve všech nakonfigurovaných repozitářích.
+
+**Syntaxe:**
+```bash
+git-compose exec <command> [options]
+```
+
+**Možnosti:**
+- `--convert-paths` - Automatická konverze formátů cest
+- `--target <path>` - Přepsání target adresáře
+
+**Příklady:**
+
+```bash
+# Zobrazení git statusu ve všech repozitářích
+git-compose exec "git status"
+
+# Instalace npm dependencies
+git-compose exec "npm install"
+
+# Spuštění testů
+git-compose exec "npm test"
+
+# Vlastní shell příkaz
+git-compose exec "ls -la"
+```
+
+### `add`
+
+Přidání existujícího Git repozitáře do konfiguračního souboru.
+
+**Syntaxe:**
+```bash
+git-compose add <repo_path> [options]
+```
+
+**Možnosti:**
+- `--verbose` - Podrobný výstup
+- `--absolute` - Použití absolutní cesty místo relativní
+
+**Funkce:**
+- Analýza Git repozitáře na zadané cestě
+- Detekce aktuální větve a remote origin URL
+- Výpočet relativní cesty od target adresáře
+- Přidání do `.git-compose.yaml`
+- Kontrola duplicit
+
+**Příklady:**
+
+```bash
+# Přidání aktuálního adresáře
+git-compose add .
+
+# Přidání specifického repozitáře
+git-compose add ./frontend
+
+# Přidání s verbose výstupem
+git-compose add ./backend --verbose
+
+# Přidání s absolutní cestou
+git-compose add /path/to/repo --absolute
+```
+
+### `extract`
+
+Extrakce podadresáře z repozitáře do nového samostatného repozitáře s filtrovanou Git historií.
+
+**Syntaxe:**
+```bash
+git-compose extract <source-repo-path> <target-directory-path> [options]
+```
+
+**Možnosti:**
+- `--dry-run` - Zobrazit co bude provedeno bez spuštění
+- `--branch <name>` - Která větev se má extrahovat (výchozí: aktuální)
+- `--init-remote <url>` - Vytvořit GitHub repo a nastavit remote (nebo použít existující)
+- `--push` - Push po extrakci (vyžaduje --init-remote)
+- `--force` - Přepsat existující .git v target adresáři
+- `--verbose` - Podrobný výstup
+
+**GitHub Remote Setup:**
+Pokud GitHub repozitář již existuje, `--init-remote` automaticky nastaví remote origin a pushne pokud je specifikováno `--push`.
+
+Podporované formáty URL:
+- Pouze název: `--init-remote "my-repo"`
+- User/repo formát: `--init-remote "username/my-repo"`
+- Plné URL: `--init-remote "https://github.com/username/my-repo.git"`
+
+**Příklady:**
+
+```bash
+# Základní extrakce
+git-compose extract /path/to/source/repo /path/to/source/repo/module
+
+# Nejprve dry run pro kontrolu
+git-compose extract /path/to/source/repo /path/to/source/repo/module --dry-run
+
+# Extrakce a vytvoření GitHub repozitáře
+git-compose extract /path/to/source/repo /path/to/source/repo/module \
+  --init-remote git@github.com:user/module.git --push
+
+# Extrakce specifické větve
+git-compose extract /path/to/source/repo /path/to/source/repo/module \
+  --branch feature-branch --verbose
+
+# Force přepsání existujícího .git
+git-compose extract /path/to/source/repo /path/to/source/repo/module \
+  --force
+```
+
+### `commit`
+
+Interaktivní commit změn ve všech repozitářích.
+
+**Syntaxe:**
+```bash
+git-compose commit
+```
+
+**Workflow:**
+1. Kontrola každého repozitáře na uncommitted změny
+2. Zobrazení statusu a diffu pro repozitáře se změnami
+3. Interaktivní prompt pro commit s vlastní zprávou
+4. Možnost přeskočit repozitář nebo ukončit proces
+
+**Interaktivní menu:**
+- `c` - Commit změn (vyžádá commit message)
+- `s` - Skip tento repozitář
+- `q` - Quit (ukončit proces)
+
+**Příklad:**
+```bash
+git-compose commit
+```
+
+### `pull`
+
+Pull (s rebase) všech repozitářů z jejich remote origins, ale pouze pokud je to potřeba.
+
+**Syntaxe:**
+```bash
+git-compose pull [options]
+```
+
+**Možnosti:**
+- `--verbose` - Podrobný výstup
+
+**Příklad:**
+```bash
+# Základní pull
+git-compose pull
+
+# Pull s verbose výstupem
+git-compose pull --verbose
+```
+
+### `push`
+
+Push všech repozitářů do jejich remote origins, ale pouze pokud je to potřeba.
+
+**Syntaxe:**
+```bash
+git-compose push [options]
+```
+
+**Možnosti:**
+- `--verbose` - Podrobný výstup
+
+**Příklad:**
+```bash
+# Základní push
+git-compose push
+
+# Push s verbose výstupem
+git-compose push --verbose
+```
+
+### `sync`
+
+Synchronizace všech repozitářů zpracováním pulls, commits a pushes.
+
+**Syntaxe:**
+```bash
+git-compose sync [options]
+```
+
+**Možnosti:**
+- `--verbose` - Podrobný výstup
+- `--no-commit` - Automaticky přeskočit repozitáře s uncommitted změnami
+- `--fetch` - Provést git fetch před jakýmikoliv operacemi na každém repozitáři
+
+**Workflow:**
+1. Pull všech repozitářů (kde je potřeba)
+2. Zpracování uncommitted změn (pokud existují)
+3. Push všech repozitářů (kde je potřeba)
+
+**Interaktivní menu** (při uncommitted změnách):
+- `!` - Launch interaktivní shell v adresáři repozitáře
+- `c` - Commit změn (vyžádá commit message)
+- `s` - Skip tento repozitář
+- `q` - Quit (ukončit sync process)
+
+**S `--no-commit`:** Automaticky přeskočí repozitáře s uncommitted změnami, zpracuje pouze clean repozitáře.
+
+**Příklady:**
+
+```bash
+# Základní sync
+git-compose sync
+
+# Sync s verbose výstupem
+git-compose sync --verbose
+
+# Sync bez interaktivního commitu
+git-compose sync --no-commit
+
+# Sync s fetch před operacemi
+git-compose sync --fetch
+```
+
+### `discover`
+
+Objevení všech Git repozitářů v zadaném adresáři a přidání do konfigurace.
+
+**Syntaxe:**
+```bash
+git-compose discover [path] [options]
+```
+
+**Možnosti:**
+- `--verbose` - Podrobný výstup
+
+**Příklad:**
+```bash
+# Discover v aktuálním adresáři
+git-compose discover
+
+# Discover ve specifickém adresáři
+git-compose discover /path/to/projects
+
+# Discover s verbose výstupem
+git-compose discover --verbose
+```
+
+## Konfigurační soubor
+
+### Formát `.git-compose.yaml`
+
+**Doporučený formát (nový):**
+```yaml
+target: /path/to/target/directory
+
+repos:
+  - path: .
+    branch: main
+    origin: https://github.com/user/repo1.git
+  - path: subdir/project
+    branch: develop
+    origin: https://github.com/user/repo2.git
+```
+
+**Starší formát (stále podporován):**
+```yaml
+target: /path/to/target/directory
+
+repo-name-1:
+  path: .
+  branch: main
+  origin: https://github.com/user/repo1.git
+repo-name-2:
+  path: subdir/project
+  branch: develop
+  origin: https://github.com/user/repo2.git
+```
+
+### Target Directory
+
+Target adresář lze specifikovat dvěma způsoby:
+
+1. **V konfiguračním souboru:** Definujte `target` v `.git-compose.yaml`
+2. **Command line možnost:** Použijte `--target <path>` pro přepsání
+
+**DŮLEŽITÉ:** Pokud target není specifikován v config souboru a `--target` možnost není zadána, nástroj zobrazí chybu a ukončí se.
+
+Možnost `--target` má přednost před config souborem.
+
+### Konverze formátů cest
+
+git-compose automaticky detekuje nekompatibilitu formátů cest mezi různými operačními systémy:
+
+- **Windows cesty** (např. `C:\work\projects\test`)
+- **Unix/Linux cesty** (např. `/c/work/projects/test`)
+
+**Výchozí chování:** Pokud je detekována nekompatibilní cesta, nástroj zobrazí chybu a navrhne použití `--convert-paths`.
+
+**S `--convert-paths`:** Nástroj automaticky konvertuje cesty mezi formáty a zobrazí varovnou zprávu s informací o konverzi.
+
+## Běžné workflows
+
+### Setup nového workspace
+
+```bash
+# 1. Vytvořte konfigurační soubor
+cat > .git-compose.yaml << EOF
+target: /path/to/workspace
+repos:
+  - path: .
+    branch: main
+    origin: https://github.com/user/main-repo.git
+  - path: modules/auth
+    branch: develop
+    origin: https://github.com/user/auth-module.git
+EOF
+
+# 2. Build workspace
+git-compose build
+
+# 3. Ověření
+git-compose status
+```
+
+### Přidání existujících repozitářů
+
+```bash
+# Discover všechny repozitáře v adresáři
+git-compose discover /path/to/projects
+
+# Nebo přidávejte jednotlivě
+git-compose add ./project1
+git-compose add ./project2
+```
+
+### Denní synchronizace
+
+```bash
+# Pull, commit a push všeho najednou
+git-compose sync
+```
+
+### Extrakce modulu
+
+```bash
+# 1. Dry run pro kontrolu
+git-compose extract ./monorepo ./monorepo/packages/auth --dry-run
+
+# 2. Extrakce s GitHub remote
+git-compose extract ./monorepo ./monorepo/packages/auth \
+  --init-remote user/auth-module --push
+
+# 3. Přidání do konfigurace
+git-compose add ./monorepo/packages/auth
+```
+
+## Tipy a triky
+
+### Použití aliasů
+
+```bash
+# Přidejte do ~/.bashrc nebo ~/.zshrc
+alias gc='git-compose'
+alias gcb='git-compose build'
+alias gcs='git-compose status'
+alias gcx='git-compose exec'
+alias gcp='git-compose pull'
+alias gcP='git-compose push'
+alias gcS='git-compose sync'
+```
+
+### Rychlé příkazy napříč všemi repozitáři
+
+```bash
+# Zobrazit všechny větve
+git-compose exec "git branch -vv"
+
+# Stáhnout všechny remote větve
+git-compose exec "git fetch --all"
+
+# Vyčistit untracked soubory
+git-compose exec "git clean -fd"
+```
+
+### Práce s multiple environments
+
+```bash
+# Vytvořte různé config soubory
+.git-compose.dev.yaml
+.git-compose.staging.yaml
+.git-compose.prod.yaml
+
+# Použijte je
+git-compose --config .git-compose.dev.yaml build
+git-compose --config .git-compose.staging.yaml status
+```
+
+## Další zdroje
+
+- [Quick Start](quick-start.md) - Rychlý začátek
+- [Troubleshooting](troubleshooting.md) - Řešení problémů
+- [Developer Guide](developer.md) - Pro vývojáře
+
+## Získání nápovědy
+
+```bash
+# Obecná nápověda
+git-compose --help
+
+# Nápověda pro konkrétní příkaz
+git-compose build --help
+git-compose extract --help
+```

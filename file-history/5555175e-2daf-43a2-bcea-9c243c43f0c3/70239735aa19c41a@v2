@@ -1,0 +1,512 @@
+# Developer Guide
+
+Průvodce pro vývojáře přispívající do **git-composer**.
+
+## Architektura projektu
+
+### Technologie
+
+- **Runtime:** bun (v1.2.21+)
+- **Jazyk:** TypeScript
+- **CLI Framework:** Commander.js
+- **Git Operations:** simple-git
+- **Code Formatting:** Prettier s import sorting pluginem
+
+### Struktura projektu
+
+```
+git-composer/
+├── src/
+│   ├── index.ts              # Main CLI entry point
+│   ├── config/               # Configuration handling
+│   │   ├── constants.ts
+│   │   ├── types.ts
+│   │   ├── loadConfig.ts
+│   │   ├── getRepositoriesFromConfig.ts
+│   │   └── index.ts
+│   ├── configuration/        # Config-related utilities
+│   │   ├── loadAndValidateConfig.ts
+│   │   └── index.ts
+│   ├── core/                 # Core application logic
+│   │   ├── withConfig.ts
+│   │   └── index.ts
+│   ├── directory/            # Directory operations
+│   │   ├── executeCommandInRepos.ts
+│   │   └── index.ts
+│   ├── gitOperations/        # Git operations
+│   │   ├── cloneOperations.ts
+│   │   ├── fetchOperations.ts
+│   │   ├── processOperations.ts
+│   │   ├── extractOperations.ts
+│   │   ├── addOperations.ts
+│   │   ├── discoverOperations.ts
+│   │   ├── commitAllRepositories.ts
+│   │   ├── commitRepository.ts
+│   │   ├── handleInteractiveCommit.ts
+│   │   ├── handleInteractiveRebase.ts
+│   │   ├── pullRepository.ts
+│   │   ├── pullAllRepositories.ts
+│   │   ├── pushRepository.ts
+│   │   ├── pushAllRepositories.ts
+│   │   ├── syncRepository.ts
+│   │   ├── syncRepositories.ts
+│   │   ├── checkRepositoryStatus.ts
+│   │   ├── displayGitDiff.ts
+│   │   ├── runInteractiveShell.ts
+│   │   └── index.ts
+│   ├── os/                   # OS-specific utilities
+│   │   ├── isWindows.ts
+│   │   ├── isWindowsPath.ts
+│   │   ├── windowsToUnix.ts
+│   │   ├── unixToWindows.ts
+│   │   └── index.ts
+│   └── ui/                   # User interface components
+│       ├── showStatus.ts
+│       ├── progressIndicator.ts
+│       ├── stripAnsiCodes.ts
+│       └── index.ts
+├── doc/                      # Documentation
+├── tests/                    # Tests
+├── git-compose               # Wrapper script
+├── package.json
+├── tsconfig.json
+├── .git-compose.yaml
+├── CLAUDE.md                 # AI assistant instructions
+└── README.md
+```
+
+## Vývojové konvence
+
+### Code Style
+
+**1 funkce = 1 soubor**
+```typescript
+// ✅ Správně: Každá funkce ve vlastním souboru
+// src/gitOperations/cloneRepository.ts
+export async function cloneRepository(...) { }
+
+// src/gitOperations/pushRepository.ts
+export async function pushRepository(...) { }
+```
+
+**Preferujte malé znovupoužitelné funkce**
+```typescript
+// ✅ Dobré: Malé, zaměřené funkce
+export function isWindowsPath(path: string): boolean {
+  return /^[A-Z]:[\\\/]/.test(path);
+}
+
+// ❌ Špatné: Příliš velká funkce dělající mnoho věcí
+export function handleAllPathConversions(...) { }
+```
+
+**ANSI výstup s bold a italic**
+```typescript
+// Pro UX používejte bold a italic kde je to vhodné
+import chalk from 'chalk';
+
+console.log(chalk.bold.green('✓ Success'));
+console.log(chalk.italic.gray('Details...'));
+console.log(chalk.bold.red('✗ Error'));
+```
+
+## Development Workflow
+
+### Setup vývojového prostředí
+
+```bash
+# 1. Clone repozitáře
+git clone git@github.com:jasir/git-composer.git
+cd git-composer
+
+# 2. Instalace dependencies
+bun install
+
+# 3. Vytvořte feature branch
+git checkout -b feature/your-feature-name
+```
+
+### Spuštění projektu
+
+**Primární metoda:**
+```bash
+./git-compose <command>
+```
+
+**Alternativní metoda:**
+```bash
+bun run src/index.ts <command>
+```
+
+### Testing
+
+```bash
+# Ruční testování
+./git-compose build --verbose
+./git-compose status
+./git-compose exec "echo test"
+
+# Test s testovacím configem
+./git-compose --config ./tests/.git-compose.test.yaml build
+```
+
+### Code Formatting
+
+```bash
+# Format všech souborů
+bun run format
+
+# Nebo použijte Prettier přímo
+npx prettier --write "src/**/*.ts"
+```
+
+## Přidání nové funkcionality
+
+### 1. Přidání nového příkazu
+
+**Krok 1:** Vytvořte operation soubor
+```typescript
+// src/gitOperations/myNewOperation.ts
+import { GitRepo } from '../config/types';
+
+export async function myNewOperation(
+  repos: GitRepo[],
+  options: { verbose?: boolean }
+): Promise<void> {
+  for (const repo of repos) {
+    // Vaše implementace
+  }
+}
+```
+
+**Krok 2:** Exportujte z index
+```typescript
+// src/gitOperations/index.ts
+export { myNewOperation } from './myNewOperation';
+```
+
+**Krok 3:** Přidejte příkaz do CLI
+```typescript
+// src/index.ts
+import { myNewOperation } from './gitOperations';
+
+program
+  .command('my-command')
+  .description('Description of my command')
+  .option('--verbose', 'Verbose output')
+  .action(async (options) => {
+    await withConfig(options, async (config) => {
+      const repos = getRepositoriesFromConfig(config);
+      await myNewOperation(repos, options);
+    });
+  });
+```
+
+**Krok 4:** Aktualizujte dokumentaci
+- Přidejte do `doc/usage.md`
+- Aktualizujte příklady v `doc/quick-start.md`
+- Přidejte troubleshooting do `doc/troubleshooting.md`
+
+### 2. Přidání nové utility funkce
+
+```typescript
+// src/utils/myUtility.ts
+export function myUtility(input: string): string {
+  // Implementace
+  return result;
+}
+
+// src/utils/index.ts
+export { myUtility } from './myUtility';
+```
+
+### 3. Přidání nové config možnosti
+
+**Krok 1:** Aktualizujte typy
+```typescript
+// src/config/types.ts
+export interface Config {
+  target: string;
+  repos: GitRepo[];
+  myNewOption?: string; // Přidejte novou možnost
+}
+```
+
+**Krok 2:** Aktualizujte loadConfig
+```typescript
+// src/config/loadConfig.ts
+export function loadConfig(path: string): Config {
+  const data = yaml.load(fs.readFileSync(path, 'utf8'));
+
+  return {
+    target: data.target,
+    repos: data.repos,
+    myNewOption: data.myNewOption, // Načtěte novou možnost
+  };
+}
+```
+
+**Krok 3:** Použijte v operations
+```typescript
+// src/gitOperations/someOperation.ts
+export async function someOperation(config: Config) {
+  if (config.myNewOption) {
+    // Použijte novou možnost
+  }
+}
+```
+
+## Debugging
+
+### Verbose Mode
+
+```bash
+# Zapněte verbose výstup
+./git-compose build --verbose
+
+# V kódu
+if (options.verbose) {
+  console.log(chalk.gray('Debug info...'));
+}
+```
+
+### Environment Variables
+
+```typescript
+// Kontrola environment
+console.log('CWD:', process.cwd());
+console.log('ORIGINAL_CWD:', process.env.ORIGINAL_CWD);
+console.log('Platform:', process.platform);
+```
+
+### Debugging Git Operations
+
+```typescript
+// Použijte simple-git s debugging
+import simpleGit from 'simple-git';
+
+const git = simpleGit(repoPath, {
+  binary: 'git',
+  maxConcurrentProcesses: 1
+});
+
+// Log všech git příkazů
+git.outputHandler((command, stdout, stderr) => {
+  console.log('Git command:', command);
+  stdout.pipe(process.stdout);
+  stderr.pipe(process.stderr);
+});
+```
+
+## Testování
+
+### Manuální testovací scénáře
+
+**Test 1: Basic build**
+```bash
+# Setup
+cat > test-config.yaml << 'EOF'
+target: ./test-workspace
+repos:
+  - path: .
+    branch: main
+    origin: https://github.com/PIC16B/git-practice.git
+EOF
+
+# Test
+./git-compose --config test-config.yaml build
+./git-compose --config test-config.yaml status
+
+# Cleanup
+rm -rf ./test-workspace test-config.yaml
+```
+
+**Test 2: Extract**
+```bash
+# Setup
+git clone https://github.com/PIC16B/git-practice.git test-source
+mkdir -p test-source/subdir
+echo "test" > test-source/subdir/file.txt
+cd test-source && git add . && git commit -m "Add subdir" && cd ..
+
+# Test
+./git-compose extract ./test-source ./test-source/subdir --dry-run
+./git-compose extract ./test-source ./test-source/subdir --force
+
+# Cleanup
+rm -rf test-source
+```
+
+**Test 3: Sync workflow**
+```bash
+# Setup workspace s více repozitáři
+# Proveďte změny
+# Test sync
+./git-compose sync --verbose
+```
+
+## Příspívání
+
+### Pull Request Workflow
+
+**1. Vytvořte feature branch**
+```bash
+git checkout -b feature/add-awesome-feature
+```
+
+**2. Proveďte změny**
+```bash
+# Vaše změny
+git add .
+git commit -m "feat: add awesome feature"
+```
+
+**3. Push a vytvořte PR**
+```bash
+git push origin feature/add-awesome-feature
+# Vytvořte PR na GitHubu
+```
+
+### Commit Message Konvence
+
+Používáme [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+feat: přidání nové funkcionality
+fix: oprava bugu
+docs: změny v dokumentaci
+style: formátování, chybějící středníky, atd.
+refactor: refaktoring kódu
+test: přidání testů
+chore: údržba, dependencies, atd.
+```
+
+**Příklady:**
+```
+feat: add discover command
+fix: handle path conversion on Windows
+docs: update usage guide
+refactor: split large function into smaller ones
+chore: update dependencies
+```
+
+## Best Practices
+
+### Error Handling
+
+```typescript
+// ✅ Vždy zachyťte a správně zpracujte chyby
+try {
+  await git.clone(origin, path);
+} catch (error) {
+  console.error(chalk.red(`✗ Failed to clone: ${error.message}`));
+  if (options.verbose) {
+    console.error(chalk.gray(error.stack));
+  }
+  throw error; // nebo return false
+}
+```
+
+### User Feedback
+
+```typescript
+// ✅ Poskytujte vizuální feedback
+console.log(chalk.bold.cyan('⚡ Processing repositories...'));
+console.log(chalk.green('✓ Success'));
+console.log(chalk.yellow('⚠ Warning'));
+console.log(chalk.red('✗ Error'));
+console.log(chalk.gray('  Details...'));
+```
+
+### Path Handling
+
+```typescript
+// ✅ Vždy normalizujte cesty
+import path from 'path';
+
+const normalizedPath = path.normalize(userPath);
+const absolutePath = path.resolve(normalizedPath);
+
+// ✅ Použijte OS-specific funkce
+import { isWindowsPath, windowsToUnix } from './os';
+
+if (isWindowsPath(targetPath)) {
+  targetPath = windowsToUnix(targetPath);
+}
+```
+
+### Async Operations
+
+```typescript
+// ✅ Použijte async/await
+async function processRepos(repos: GitRepo[]) {
+  for (const repo of repos) {
+    await processRepo(repo);
+  }
+}
+
+// ✅ Pro paralelní operace
+await Promise.all(repos.map(repo => processRepo(repo)));
+```
+
+## Vydávání nových verzí
+
+### Semantic Versioning
+
+Používáme [SemVer](https://semver.org/):
+
+- **MAJOR** (1.x.x): Breaking changes
+- **MINOR** (x.1.x): Nové funkcionality (backward compatible)
+- **PATCH** (x.x.1): Bug fixes
+
+### Release Process
+
+```bash
+# 1. Aktualizujte CHANGELOG.md
+# 2. Aktualizujte verzi v package.json a README.md
+# 3. Commit
+git add .
+git commit -m "chore: release v1.1.0"
+
+# 4. Tag
+git tag v1.1.0
+
+# 5. Push
+git push origin main --tags
+```
+
+## Důležité soubory
+
+### CLAUDE.md
+
+Soubor s instrukcemi pro AI asistenty (Claude Code). Aktualizujte ho při přidávání nových funkcí nebo změně architektury.
+
+### package.json
+
+```json
+{
+  "name": "git-composer",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\""
+  }
+}
+```
+
+### tsconfig.json
+
+TypeScript konfigurace - standardní nastavení pro Node.js projekt.
+
+## Další zdroje
+
+- [Commander.js Docs](https://github.com/tj/commander.js/)
+- [simple-git Docs](https://github.com/steveukx/git-js)
+- [Chalk Docs](https://github.com/chalk/chalk)
+- [Prettier Docs](https://prettier.io/docs/en/)
+
+## Kontakt
+
+- **GitHub Issues:** https://github.com/jasir/git-composer/issues
+- **Pull Requests:** https://github.com/jasir/git-composer/pulls
+
+Děkujeme za váš přínos! 🎉

@@ -1,0 +1,325 @@
+---
+namespace: epks
+document:
+  enabled: true
+  name: epks-emailing-documentation
+  tags: [emailing, šablony, notifikace, email]
+  version: v1.0.0
+  created: 2025-09-29
+---
+
+# EPKS - Email systém a šablony
+
+Dokumentace emailového systému projektu EPKS. Systém zajišťuje automatické odesílání emailů při různých stavech zpracování přihlášky ke stravování.
+
+## 📧 Přehled email šablon
+
+EPKS obsahuje **4 základní email šablony** umístěné v adresáři `email-layouts/`:
+
+### 1. Poděkovací email (dekujeme.email.md)
+**Účel:** Automatické potvrzení o přijetí vyplněného formuláře
+
+**Kdy se odesílá:** Ihned po úspěšném odeslání přihlášky rodičem
+
+**Obsah:**
+- Poděkování za vyplnění formuláře
+- Informace o nutnosti počkat na kontrolu
+- Informace o dalším postupu (potvrzovací email)
+- Zmínka o e-jídelníček a žolík přístupových údajích (pokud jídelna tyto služby používá)
+
+**Variabilní parametry:**
+- `lang` - jazyk (cs, sk, en, ua)
+- `message` - text pro preheader
+
+**Lokace:** `email-layouts/dekujeme-emali/dekujeme.email.md`
+
+### 2. Přihlašovací email (prihlaseni.email.md)
+**Účel:** Zaslání odkazu na formulář přihlášky
+
+**Kdy se odesílá:** Při potřebě zaslat rodičům odkaz na formulář přihlášky
+
+**Obsah:**
+- Pozdrav
+- Odkaz na formulář přihlášky
+- Pozdrav od týmu podpory
+
+**Variabilní parametry:**
+- `url` - URL odkaz na formulář (např. `https://prihlaska.altisima.cz/...`)
+- `lang` - jazyk (cs, sk, en, ua)
+- `preheader` - text pro preheader
+
+**Lokace:** `email-layouts/prihlasovaci-email/prihlaseni.email.md`
+
+### 3. Email s údaji k přihlášení (udajekprihlaseni.email.md)
+**Účel:** Zaslání přístupových údajů stravníkovi po schválení přihlášky
+
+**Kdy se odesílá:** Po zkontrolování a schválení přihlášky administrátorem jídelny
+
+**Obsah:**
+- Potvrzení zápisu do jídelny
+- Přístupové údaje k e-jídelníček
+- Přístupové údaje k žolík (pokud jídelna používá)
+- Instrukce k prvnímu přihlášení
+
+**Variabilní parametry:**
+- `lang` - jazyk (cs, sk, en, ua)
+- `loginData` - objekt s přihlašovacími údaji
+- `canteenName` - název jídelny
+
+**Lokace:** `email-layouts/stravnik-udaje-kprihlaseni-emali/udajekprihlaseni.email.md`
+
+### 4. Email žádost o opravu (zadostoopravu.email.md)
+**Účel:** Žádost o doplnění nebo opravu údajů v přihlášce
+
+**Kdy se odesílá:** Když administrátor zjistí chybné nebo neúplné údaje
+
+**Obsah:**
+- Informace o problému s přihláškou
+- Seznam požadovaných oprav
+- Kontaktní údaje pro zpětnou vazbu
+- Instrukce jak postupovat
+
+**Variabilní parametry:**
+- `lang` - jazyk (cs, sk, en, ua)
+- `corrections` - seznam požadovaných oprav
+- `contactEmail` - kontaktní email jídelny
+
+**Lokace:** `email-layouts/zadostoopravu-email/zadostoopravu.email.md`
+
+## 🌍 Vícejazyčnost
+
+Všechny email šablony podporují **4 jazyky**:
+
+| Jazyk | Kód | Popis |
+|-------|-----|-------|
+| 🇨🇿 Čeština | `cs` | Výchozí jazyk |
+| 🇸🇰 Slovenština | `sk` | Slovenská lokalizace |
+| 🇬🇧 Angličtina | `en` | Anglická lokalizace |
+| 🇺🇦 Ukrajinština | `ua` | Ukrajinská lokalizace |
+
+### Implementace jazyků
+
+Jazyky jsou implementovány pomocí **Pug conditional statements**:
+
+```pug
+if lang === 'cs'
+  div
+    p Dobrý den,
+    p děkujeme Vám za vyplnění formuláře.
+else if lang === 'sk'
+  div
+    p Dobrý deň,
+    p ďakujeme Vám za vyplnenie formulára.
+else if lang === 'en'
+  div
+    p Hello,
+    p Thank you for completing the form.
+else if lang === 'ua'
+  div
+    p Привіт,
+    p дякуємо Вам за заповнення форми.
+```
+
+## 🎨 Design a styling
+
+### CSS styling
+Všechny email šablony používají **responsive-wide.css** pro zajištění správného zobrazení na různých zařízeních:
+
+```pug
+head
+  style
+    include responsive-wide.css
+```
+
+### Layout struktura
+Emaily používají **tabulkový layout** pro maximální kompatibilitu s email klienty:
+
+```pug
+table.body(role="presentation" border="0" cellpadding="0" cellspacing="0")
+  tr
+    td.container
+      .content
+        table.main(role="presentation")
+          tr
+            td.wrapper
+              // Obsah emailu
+```
+
+### Preheader
+Každý email obsahuje **preheader** - krátký text zobrazený v náhledu emailu před otevřením:
+
+```pug
+span.preheader #{message}
+```
+
+## 📬 Footer všech emailů
+
+Všechny emaily obsahují **jednotný footer** s kontaktními údaji:
+
+```
+Altisima software SE
+Kubelíkova 46, 130 00 Praha 3
+Telefon: +420 222 711 241
+Web: www.altisima.cz
+```
+
+## 🔧 Technická implementace
+
+### ENT email objekty
+Email šablony jsou definovány jako **emailTemplate** objekty:
+
+```yaml
+---
+emailTemplate:
+  enabled: true
+  namespace: epks
+  name: dekujeme
+wikiPage:
+  enabled: true
+  name: dekujeme-email
+  parent: emails
+  wiki: epks
+---
+```
+
+### Rendering šablon
+1. **Pug template engine** - šablony jsou psány v Pugu
+2. **Parametry** - šablony přijímají parametry (url, lang, message, atd.)
+3. **Kompilace** - ENT framework kompiluje Pug do HTML
+4. **Odesílání** - HTML email je odeslán pomocí SMTP serveru
+
+### Volání z komponent
+
+```js
+// V komponentě/store - volání API pro odeslání emailu
+await this.callRestApi({
+  func: 'sendEmail',
+  payload: {
+    emailType: 'dekujeme',
+    lang: 'cs',
+    recipientEmail: 'parent@example.com',
+    data: {
+      message: 'Děkujeme za vyplnění přihlášky'
+    }
+  }
+})
+```
+
+## 📊 Workflow odesílání emailů
+
+### 1. Odeslání přihlášky
+```
+Rodič vyplní formulář
+    ↓
+Formulář se uloží do DB
+    ↓
+Automatické odeslání "dekujeme" emailu
+    ↓
+Status: čeká na kontrolu
+```
+
+### 2. Schválení přihlášky
+```
+Administrátor zkontroluje přihlášku
+    ↓
+Přihláška schválena
+    ↓
+Automatické odeslání "udajekprihlaseni" emailu
+    ↓
+Status: schváleno
+```
+
+### 3. Žádost o opravu
+```
+Administrátor najde chybu
+    ↓
+Označí položky k opravě
+    ↓
+Automatické odeslání "zadostoopravu" emailu
+    ↓
+Status: čeká na opravu
+```
+
+### 4. Zaslání odkazu na formulář
+```
+Rodič požádá o odkaz
+    ↓
+Administrátor vygeneruje odkaz
+    ↓
+Odeslání "prihlaseni" emailu s URL
+    ↓
+Rodič může vyplnit formulář
+```
+
+## 🛠️ Správa emailů v administraci
+
+### Administrátorské funkce
+- **Náhled emailu** - před odesláním možnost zobrazit náhled
+- **Testovací odeslání** - možnost odeslat testovací email
+- **Historie odeslaných emailů** - přehled všech odeslaných emailů
+- **Šablony** - možnost úpravy šablon (pro superadmina)
+
+### Log odeslaných emailů
+Každé odeslání emailu je zaznamenáno:
+- Datum a čas odeslání
+- Příjemce
+- Typ emailu
+- Jazyk
+- Status doručení
+
+## 🔐 Bezpečnost
+
+### Ochrana před spamem
+- **Rate limiting** - omezení počtu emailů za časový interval
+- **Validace emailových adres** - kontrola platnosti před odesláním
+- **CAPTCHA** - ochrana formuláře před boty
+
+### GDPR compliance
+- **Souhlas se zpracováním** - rodič musí souhlasit s GDPR
+- **Možnost odhlášení** - možnost zrušit zasílání emailů
+- **Uchovávání dat** - emaily uchovány dle zákonných požadavků
+
+## 📝 Best practices
+
+### Pro vývojáře
+1. **Vždy testuj** - před nasazením otestuj všechny jazykové verze
+2. **Responzivita** - ověř zobrazení na různých zařízeních
+3. **Email klienti** - testuj v různých email klientech (Gmail, Outlook, Apple Mail)
+4. **Fallbacky** - vždy připrav fallback pro nepodporované funkce
+
+### Pro administrátory
+1. **Kontrola před odesláním** - vždy zkontroluj údaje před odesláním
+2. **Správná šablona** - použij správný typ emailu pro danou situaci
+3. **Jazyk příjemce** - odešli email ve správném jazyce
+4. **Follow-up** - sleduj, zda rodič reagoval na email
+
+## 🔍 Debugging
+
+### Jak debugovat emaily
+
+```js
+// V console můžeš zkontrolovat parametry emailu
+console.log('ZZZ Email params:', {
+  emailType: 'dekujeme',
+  lang: 'cs',
+  recipient: email,
+  data: emailData
+})
+```
+
+### Časté problémy
+- **Email nedorazil** - zkontroluj spam složku
+- **Špatné formátování** - problém s CSS v email klientovi
+- **Chybný jazyk** - nesprávně předaný `lang` parametr
+- **Chybějící URL** - chybějící nebo nevalidní `url` parametr
+
+## 📚 Související dokumentace
+
+- [[doc/administration]] - Dokumentace administrace
+- [[epks-form]] - Dokumentace hlavního formuláře
+- [[epks.boot]] - Konfigurace SMTP serveru
+
+---
+
+*Poslední aktualizace: 2025-09-29*
+*Autor: Brain Documentation Keeper*

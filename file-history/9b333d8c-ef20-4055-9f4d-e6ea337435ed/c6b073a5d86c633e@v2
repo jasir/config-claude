@@ -1,0 +1,142 @@
+# Installation
+
+Kompletní průvodce instalací **git-composer**.
+
+## Požadavky
+
+- **bun** runtime (v1.2.21 nebo vyšší)
+- **Git** (pro práci s repozitáři)
+- **Node.js** (pro některé dependencies)
+
+### Instalace bun
+
+Pokud ještě nemáte nainstalovaný bun:
+
+```bash
+# Linux/macOS
+curl -fsSL https://bun.sh/install | bash
+
+# Nebo via npm
+npm install -g bun
+```
+
+## Instalace git-composer
+
+### 1. Clone repozitáře
+
+```bash
+git clone git@github.com:jasir/git-composer.git
+cd git-composer
+```
+
+### 2. Instalace dependencies
+
+```bash
+bun install
+```
+
+### 3. Ověření instalace
+
+```bash
+./git-compose --help
+```
+
+Měli byste vidět nápovědu se seznamem dostupných příkazů.
+
+## Globální instalace
+
+Pro použití `git-compose` z jakéhokoliv adresáře vytvořte symbolický odkaz:
+
+```bash
+sudo ln -s /path/to/your/git-composer/git-compose /usr/local/bin/git-compose
+```
+
+**Příklad** (pokud je projekt v `/c/work/projects/git-composer`):
+
+```bash
+sudo ln -s /c/work/projects/git-composer/git-compose /usr/local/bin/git-compose
+```
+
+### Ověření globální instalace
+
+```bash
+# Z jakéhokoliv adresáře
+git-compose --help
+```
+
+## Aktualizace
+
+Pro aktualizaci na nejnovější verzi:
+
+```bash
+cd /path/to/git-composer
+git pull origin main
+bun install
+```
+
+## Odinstalace
+
+### Odstranění globálního odkazu
+
+```bash
+sudo rm /usr/local/bin/git-compose
+```
+
+### Odstranění projektu
+
+```bash
+rm -rf /path/to/git-composer
+```
+
+## Řešení problémů při instalaci
+
+### Bun není nalezen
+
+**Problém:** `command not found: bun`
+
+**Řešení:**
+```bash
+# Přidejte bun do PATH
+echo 'export PATH="$HOME/.bun/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Chyba při vytváření symbolického odkazu
+
+**Problém:** `Permission denied`
+
+**Řešení:**
+```bash
+# Použijte sudo
+sudo ln -s /path/to/git-composer/git-compose /usr/local/bin/git-compose
+
+# Nebo vytvořte odkaz v lokálním bin adresáři
+mkdir -p ~/bin
+ln -s /path/to/git-composer/git-compose ~/bin/git-compose
+export PATH="$HOME/bin:$PATH"
+```
+
+### Dependencies se nenainstalují
+
+**Problém:** Chyba při `bun install`
+
+**Řešení:**
+```bash
+# Zkuste vyčistit cache
+rm -rf node_modules
+rm bun.lockb
+bun install
+```
+
+## Další kroky
+
+Po úspěšné instalaci:
+1. Přejděte na [Quick Start](quick-start.md) pro rychlé seznámení
+2. Prostudujte [Usage dokumentaci](usage.md) pro detailní popis příkazů
+3. Vytvořte svůj první `.git-compose.yaml` konfigurační soubor
+
+## Podpora
+
+Pokud narazíte na problémy:
+- Zkontrolujte [Troubleshooting](troubleshooting.md)
+- Vytvořte issue na [GitHub](https://github.com/jasir/git-composer/issues)

@@ -1,0 +1,5 @@
+# git-compose
+
+**TypeScript CLI tool for managing multiple Git repositories as defined in a YAML configuration file.**
+
+**→ [Complete Documentation](doc/index.md)**

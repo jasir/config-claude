@@ -1,0 +1,204 @@
+# EPKS - Elektronická přihláška ke stravování
+
+**Verze:** v2.0.1
+**Namespace:** epks
+**Repozitář:** git@github.com:altisima/epks-module.git
+**Branch:** develop
+
+## 📋 O projektu
+
+EPKS (Elektronická přihláška ke stravování) je webová aplikace vytvořená v ENT frameworku pro správu elektronických přihlášek ke stravování ve školních jídelnách. Systém umožňuje rodičům vyplnit online formulář pro přihlášení jejich dětí ke stravování a administrátorům jídelen spravovat tyto přihlášky.
+
+## 🎯 Hlavní funkce
+
+- **📝 Online formulář přihlášky** - veřejně přístupný formulář pro rodiče
+- **👥 Administrace jídelen** - správa přihlášek pro administratory jednotlivých jídelen
+- **🔐 Interní administrace** - centrální správa všech jídelen a formulářů pro superadminy
+- **📊 Přehled odpovědí** - tabulkový výpis a detail jednotlivých přihlášek
+- **🖨️ Tisk formulářů** - možnost tisku vyplněných přihlášek
+- **📧 Email notifikace** - automatické odesílání emailů (poděkování, přihlašovací údaje, žádost o opravu)
+- **🌍 Vícejazyčnost** - podpora více jazyků pro formuláře
+
+## 🏗️ Struktura projektu
+
+```
+epks/
+├── base/                      # Základní komponenty
+│   └── epks-base-page.component.md
+├── boot/                      # Boot soubor pro inicializaci serveru
+│   └── epks.boot.md
+├── components/                # Globální komponenty
+│   ├── base-dialog.component.md
+│   └── client-status.component.md
+├── email-layouts/             # Email šablony
+│   ├── dekujeme-emali/
+│   ├── prihlasovaci-email/
+│   ├── stravnik-udaje-kprihlaseni-emali/
+│   └── zadostoopravu-email/
+├── layout/                    # Layout komponenty
+│   ├── Layout.md
+│   └── index.epks.html.md
+├── lib/                       # Knihovny
+│   ├── central-server.lib.md
+│   ├── epks.lib.md
+│   └── parseUrl.lib.md
+├── pages/                     # Stránky aplikace
+│   ├── administrace/          # Administrace pro jídelny
+│   ├── form-page/             # Hlavní formulář přihlášky
+│   ├── form-thanks/           # Poděkování po odeslání
+│   ├── hp/                    # Homepage
+│   ├── interni-administrace/  # Centrální správa
+│   ├── konfigurace-stojanu/   # Konfigurace kiosků
+│   ├── login/                 # Přihlášení
+│   └── login-thanks/          # Poděkování po přihlášení
+├── server/                    # Server-side skripty
+├── doc/                       # Dokumentace
+├── epks.namespace.md          # Definice namespace
+└── epks.package.md            # Definice balíčku
+```
+
+## 📄 Stránky a funkce
+
+### Veřejné stránky
+- **`/prihlaska/:canteen_slug/:slug_id/:lang?`** - Formulář přihlášky ke stravování
+- **`/pages/epks/form-thanks`** - Poděkování po odeslání formuláře
+- **`/pages/epks/hp`** - Homepage
+- **`/pages/epks/login`** - Přihlašovací stránka
+- **`/pages/epks/login-thanks`** - Poděkování po přihlášení
+
+### Administrační stránky (vyžadují přihlášení)
+- **`/pages/epks/administrace`** - Administrace pro jednotlivé jídelny
+  - Zobrazení tabulky přihlášek
+  - Detail jednotlivých odpovědí
+  - Tisk formulářů
+  - Nastavení formuláře
+
+- **`/pages/epks/interni-administrace`** - Centrální administrace pro superadminy
+  - Správa všech jídelen
+  - Správa formulářů
+  - Přehled přihlášek napříč jídelnami
+
+- **`/pages/epks/konfigurace-stojanu`** - Konfigurace kiosků/stojanů
+
+## 🔌 Komponenty
+
+### Administrační komponenty
+- `epks-admin-response-detail` - Detail jedné přihlášky
+- `epks-admin-responses-table` - Tabulka všech přihlášek
+- `epks-admin-settings` - Nastavení formuláře
+- `epks-admin-print` - Komponenta pro tisk
+
+### Formulářové komponenty
+- `epks-main-form` - Hlavní formulář přihlášky
+
+### Interní administrační komponenty
+- `canteens-admin` - Správa jídelen
+- `canteens-superadmin` - Superadmin správa jídelen
+- `epks-forms-admin` - Správa formulářů
+- `epks-internal-canteen-responses` - Přehled odpovědí z jídelen
+- `epks-internl-canteen-form` - Formulář pro jídelny
+
+### Ostatní komponenty
+- `base-dialog` - Základní dialogové okno
+- `client-status` - Status připojení klientů
+
+## 🗄️ Databáze
+
+### EPKS databáze
+- **Host:** devel.altisima.cz
+- **Port:** 10196
+- **Database:** epks-dev
+- **Schema:** public
+
+### Aktualizace databáze
+- **Host:** devel.altisima.cz
+- **Port:** 10096
+- **Database:** aktserver-dev
+- **Schema:** public
+
+## 🔗 Integrace
+
+### Central Server
+Projekt je integrován s **Central Server** pro centrální správu:
+- Socket.IO komunikace pro real-time aktualizace
+- Správa připojených klientů
+- Centrální autentizace a autorizace
+- Remote restart možnost
+
+```js
+// Registrace v Central Serveru
+{
+  customerId: 526,
+  version: 'v2.0.1',
+  type: 'epks-server',
+  description: 'EPKS server instance',
+  hostname: os.hostname()
+}
+```
+
+## 📧 Email šablony
+
+Systém obsahuje následující email šablony:
+- **dekujeme.email.md** - Poděkovací email po odeslání přihlášky
+- **prihlaseni.email.md** - Přihlašovací email s údaji
+- **udajekprihlaseni.email.md** - Email s údaji k přihlášení pro stravníka
+- **zadostoopravu.email.md** - Email s žádostí o opravu údajů
+
+## 🛠️ Technické informace
+
+### ENT Framework
+Projekt je postaven na **ENT Framework v2**:
+- Vue.js 2 + Quasar Framework
+- Pug templating engine
+- Socket.IO real-time komunikace
+- PostgreSQL databáze
+- Self-modifying architektura
+
+### Použité namespace
+- **epks** - hlavní namespace projektu
+- **base** - základní komponenty z ENT
+
+### Knihovny
+- `central-server.lib` - Integrace s Central Serverem
+- `epks.lib` - EPKS utility funkce
+- `parseUrl.lib` - Parsování URL parametrů
+
+## 🚀 Deployment
+
+Projekt běží jako Docker kontejner s následujícími parametry:
+- **Environment:** `local` / `production` (ENV: `ENT_ENV`)
+- **Central Server URL:** Konfigurace v `epks.servers.centralServerUrl`
+
+### Boot proces
+1. Inicializace databázových připojení (EPKS + Aktualizace DB)
+2. Připojení k Central Serveru přes Socket.IO
+3. Registrace jako `central-server-epks` namespace
+4. Periodické načítání připojených klientů (každých 5s)
+5. Listener pro remote restart příkaz
+
+## 📝 Poslední změny
+
+**Poslední commit:** `f90e4dd4 - fix: path to libs (2025-09-09)`
+
+**Nedávné změny:**
+- Oprava cest k knihovnám ve všech komponentách a stránkách
+- Aktualizace komponent administrace
+- Úprava formulářové stránky
+
+## 📚 Dokumentace
+
+Pro více informací o ENT frameworku a vývoji komponent viz:
+- [[ENT-AGENT-GUIDE.book.md]] - Kompletní dokumentace ENT objektů
+- [[ent.index.md]] - ENT Framework základní koncepce
+- [[vault-mapping.index.md]] - Struktura vault projektů
+
+## 🔐 Přístup a práva
+
+### Role v systému
+1. **Superadmin** - plný přístup ke všem jídelnám a nastavením
+2. **Admin jídelny** - přístup k administraci konkrétní jídelny
+3. **Veřejnost** - přístup k formuláři přihlášky
+
+---
+
+*Projekt EPKS je součástí Altisima Central Vault a je spravován pomocí git-composer.*
