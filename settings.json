@@ -3,6 +3,13 @@
   "env": {
     "CLAUDE_CODE": "1"
   },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash"
+    ],
+    "deny": []
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -86,10 +93,5 @@
       }
     ]
   },
-  "includeCoAuthoredBy": false,
-  "permissions": {
-    "allow": ["Bash"],
-    "deny": []
-  }
+  "alwaysThinkingEnabled": true
 }
-
