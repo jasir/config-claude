@@ -10,3 +10,4 @@ settings.json.backup*
 changes.log
 command-log.txt
 history.jsonl
+file-history
