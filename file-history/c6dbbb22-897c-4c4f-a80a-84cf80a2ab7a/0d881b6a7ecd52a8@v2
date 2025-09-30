@@ -1,0 +1,261 @@
+# db:sql
+
+Provádí SQL dotazy na PostgreSQL databázi s různými výstupními formáty.
+
+## Použití
+
+```bash
+alt db:sql [volby] <databáze> <dotaz>
+```
+
+## Argumenty
+
+- `<databáze>` - Název databáze pro provedení dotazu
+- `<dotaz>` - SQL dotaz k provedení
+
+## Volby
+
+- `-h, --host [host]` - PostgreSQL hostitel (výchozí: devel.altisima.cz)
+- `-p, --port [port]` - PostgreSQL port (výchozí: 10097)
+- `-u, --username [uživatel]` - Uživatelské jméno (výchozí: postgres)
+- `--password [heslo]` - Heslo (nebo použijte proměnnou PGPASSWORD)
+- `-d, --db [databáze]` - Název databáze (pokud není zadán jako argument)
+- `--verbose` - Zobrazí detailní informace o provedení
+- `--json` - Formátuje výstup jako JSON
+- `--csv` - Formátuje výstup jako CSV
+- `--tsv` - Formátuje výstup jako TSV
+- `--no-header` - Skryje záhlaví ve výstupu
+- `--limit [počet]` - Omezí počet řádků ve výstupu
+- `--file [soubor]` - Načte dotaz ze souboru místo argumentu
+- `--transaction` - Provede dotaz v transakci
+- `--dry-run` - Zobrazí dotaz bez provedení
+
+## Příklady
+
+### Základní dotaz:
+```bash
+# Výběr všech uživatelů
+alt db:sql mujprojekt "SELECT * FROM uzivatele LIMIT 10"
+```
+
+### S různými výstupními formáty:
+```bash
+# JSON formát
+alt db:sql produkce_db "SELECT COUNT(*) AS total FROM uzivatele" --json
+
+# CSV formát
+alt db:sql test_db "SELECT * FROM produkty ORDER BY cena" --csv
+
+# TSV formát
+alt db:sql mujprojekt "SELECT jmeno, email FROM uzivatele WHERE aktivni = true" --tsv
+```
+
+### Pokročilé dotazy:
+```bash
+# JOIN s více tabulkami
+alt db:sql produkce_db "SELECT u.jmeno, p.nazev, o.datum FROM uzivatele u JOIN objednavky o ON u.id = o.uzivatel_id JOIN produkty p ON o.produkt_id = p.id WHERE o.datum > '2024-01-01'"
+
+# Agregační funkce
+alt db:sql mujprojekt "SELECT kategorie, COUNT(*) AS pocet, AVG(cena) AS prumer_cena FROM produkty GROUP BY kategorie HAVING COUNT(*) > 10"
+```
+
+### Zpracování z souboru:
+```bash
+# Načtení dotazu ze souboru
+alt db:sql produkce_db --file /path/to/query.sql
+
+# Transakční provedení
+alt db:sql test_db --transaction "BEGIN; UPDATE uzivatele SET email = 'new@example.com' WHERE id = 1; COMMIT;"
+```
+
+### Omezení výstupu:
+```bash
+# Omezení počtu řádků
+alt db:sql produkce_db "SELECT * FROM logy ORDER BY datum DESC" --limit 100
+
+# Bez záhlaví
+alt db:sql test_db "SELECT email FROM uzivatele WHERE aktivni = true" --no-header
+```
+
+### Suchý běh:
+```bash
+# Zobrazí dotaz bez provedení
+alt db:sql produkce_db "DROP TABLE temp_data" --dry-run
+```
+
+## Výstup
+
+### Standardní tabulární výstup:
+```
+ id |   jmeno   |        email         | aktivni
+----+-----------+---------------------+---------
+  1 | Jan Novák | jan@example.com     | true
+  2 | Petra Dvořákova | petra@example.com | true
+  3 | Tomáš Černý | tomas@example.com   | false
+(3 řádky)
+```
+
+### JSON výstup:
+```json
+[
+  {
+    "id": 1,
+    "jmeno": "Jan Novák",
+    "email": "jan@example.com",
+    "aktivni": true
+  },
+  {
+    "id": 2,
+    "jmeno": "Petra Dvořákova",
+    "email": "petra@example.com",
+    "aktivni": true
+  }
+]
+```
+
+### CSV výstup:
+```csv
+id,jmeno,email,aktivni
+1,"Jan Novák",jan@example.com,true
+2,"Petra Dvořákova",petra@example.com,true
+3,"Tomáš Černý",tomas@example.com,false
+```
+
+## Řešení problémů
+
+### Chyba syntaxe:
+```bash
+# Zkontrolujte syntaxi dotazu
+alt db:sql test_db "SELECT * FROM" --dry-run
+
+# Použijte validátor syntaxe
+echo "SELECT * FROM uzivatele" | psql -h devel.altisima.cz -p 10097 -U postgres -d test_db -c "\\t"
+```
+
+### Připojení selhalo:
+```bash
+# Otestujte připojení
+alt db:version --verbose
+
+# Zkontrolujte existenci databáze
+alt db:list
+```
+
+### Nedostatečná oprávnění:
+```bash
+# Zkontrolujte oprávnění
+alt db:sql postgres "SELECT current_user;"
+
+# Připojte se jako správce
+alt db:sql --username postgres produkce_db "SELECT * FROM pg_user;"
+```
+
+### Velký objem dat:
+```bash
+# Použijte LIMIT
+alt db:sql produkce_db "SELECT * FROM velka_tabulka" --limit 1000
+
+# Použijte stránkování
+alt db:sql produkce_db "SELECT * FROM velka_tabulka OFFSET 0 LIMIT 100"
+```
+
+## Technické detaily
+
+- Používá `psql` utility pro provedení dotazů
+- Podporuje všechny PostgreSQL funkce a operátory
+- Automaticky spravuje připojení a transakce
+- Podporuje velké dotazy s výsledky omezenými pamětí
+- Implementuje ochranu proti SQL injection
+
+## Bezpečnostní doporučení
+
+### Ochrana proti SQL injection:
+```bash
+# ❌ NEBEZPEČNÉ - nikdy nedávejte uživatelský vstup přímo do dotazu
+alt db:sql produkce_db "SELECT * FROM uzivatele WHERE jmeno = '$USER_INPUT'"
+
+# ✅ BEZPEČNÉ - použijte parametrizované dotazy
+alt db:sql produkce_db "SELECT * FROM uzivatele WHERE jmeno = ?" --file parametrized_query.sql
+```
+
+### Kontrola oprávnění:
+```bash
+# Vždy používejte nejnižší nutná oprávnění
+alt db:sql produkce_db --username readonly_user "SELECT * FROM uzivatele"
+
+# Nikdy nepoužívejte superuživatele pro běžné operace
+# ❌ špatně
+alt db:sql produkce_db --username postgres "SELECT * FROM uzivatele"
+```
+
+### Auditování:
+```bash
+# Povolte auditování dotazů
+alt db:sql produkce_db "ALTER SYSTEM SET log_statement = 'all';"
+alt db:sql produkce_db "SELECT pg_reload_conf();"
+```
+
+## Použití ve skriptech
+
+### Bash skript pro automatizaci:
+```bash
+#!/bin/bash
+# Zkontrolujte počet aktivních uživatelů
+ACTIVE_USERS=$(alt db:sql produkce_db "SELECT COUNT(*) FROM uzivatele WHERE aktivni = true" --json | jq -r '.[0].count')
+
+if [[ "$ACTIVE_USERS" -gt 1000 ]]; then
+    echo "Varování: vysoký počet aktivních uživatelů: $ACTIVE_USERS"
+fi
+```
+
+### Export dat:
+```bash
+# Exportujte data do CSV souboru
+alt db:sql produkce_db "SELECT * FROM uzivatele" --csv > uzivatele.csv
+
+# Exportujte data do JSON
+alt db:sql produkce_db "SELECT jmeno, email, created_at FROM uzivatele ORDER BY created_at DESC" --json > uzivatele.json
+```
+
+### Hromadné operace:
+```bash
+# Aktualizujte více záznamů
+alt db:sql produkce_db --transaction "
+BEGIN;
+UPDATE uzivatele SET aktivni = false WHERE last_login < '2024-01-01';
+UPDATE produkty SET dostupne = false WHERE sklad < 10;
+COMMIT;
+"
+```
+
+## Výkonové tipy
+
+### Optimalizace dotazů:
+```bash
+# Používejte EXPLAIN pro analýzu výkonu
+alt db:sql produkce_db "EXPLAIN ANALYZE SELECT * FROM objednavky WHERE datum > '2024-01-01'"
+
+# Vytvářejte indexy pro často používané dotazy
+alt db:sql produkce_db "CREATE INDEX idx_uzivatele_email ON uzivatele(email);"
+```
+
+### Správa velkých dat:
+```bash
+# Používejte CURSOR pro velké výsledky
+alt db:sql produkce_db "BEGIN; DECLARE cur CURSOR FOR SELECT * FROM velka_tabulka; FETCH 100 FROM cur;"
+
+# Používejte COPY pro rychlý import/export
+alt db:sql produkce_db "\\COPY uzivatele TO '/tmp/uzivatele.csv' CSV HEADER"
+```
+
+## Viz také
+
+- [db:table](db-table.md) - Prohlížení tabulek
+- [db:info](db-info.md) - Informace o databázi
+- [db:create](db-create.md) - Vytvoření databáze
+- [db:dump](db-dump.md) - Záloha databáze
+- [db:restore](db-restore.md) - Obnova databáze
+
+## Možnosti databáze
+
+Všechny databázové příkazy podporují standardní možnosti připojení. Viz [hlavní dokumentace](../index.md#konfigurace) pro detaily.

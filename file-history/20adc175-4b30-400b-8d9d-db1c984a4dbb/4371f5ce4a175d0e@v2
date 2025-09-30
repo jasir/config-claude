@@ -1,0 +1,91 @@
+# efood:dump-prod
+
+Production dump pro efood systém - vytváří zálohu produkční databáze efood.
+
+## Popis
+
+Příkaz `efood:dump-prod` vytváří kompletní zálohu produkční databáze efood systému. Dump je rozdělen na dva soubory - schema (struktura) a data. Tento příkaz je určen pro zálohování produkčního prostředí a následnou obnovu vývojového prostředí.
+
+**Varování:** Tento příkaz pracuje s produkčními daty a vyžaduje správné nastavení přístupových údajů.
+
+## Syntaxe
+
+```bash
+alt efood:dump-prod
+```
+
+## Vlastnosti
+
+- **Výstupní soubory:**
+  - `dump-efood-scheme.sql` - čistá struktura databáze
+  - `dump-efood-data.sql` - data bez logů a platebních informací
+
+- **Exkludované tabulky z datového dumpu:**
+  - `access_log` - přístupové logy
+  - `payment` - platební data (bezpečnostní opatření)
+  - `event_log` - event logy
+
+- **Produkční parametry:**
+  - Host: `e-jidelnicek.cz`
+  - Databáze: `3834-efood`
+  - Uživatel: `3834-efood`
+
+## Příklady
+
+### Vytvoření produkčního dumpu
+```bash
+# Vytvoří kompletní zálohu produkční databáze
+alt efood:dump-prod
+```
+
+**Výstup:**
+```
+...done
+...dumped data to dump-efood.sql
+```
+
+## Požadavky
+
+- Nastavený `~/.pgpass` soubor s přístupovými údaji k produkční databázi
+- Přístup k produkčnímu serveru `e-jidelnicek.cz`
+- Dostupné `pg_dump` nástroje
+
+## Bezpečnostní upozornění
+
+⚠️ **Kritická bezpečnostní doporučení:**
+
+1. **Přístupové údaje:** Ujistěte se, že `~/.pgpass` má správná oprávnění (600)
+2. **Citlivá data:** Platební data jsou automaticky exkludována z dumpu
+3. **Produkční prostředí:** Používejte pouze pro oprávněné operace
+4. **Storage:** Uchovávejte dumpy v bezpečném místě
+
+## Chyby a řešení
+
+### Chyba připojení k produkční databázi
+```bash
+pg_dump: error: connection to database "3834-efood" failed: Connection refused
+```
+
+**Řešení:**
+- Zkontrolujte připojení k VPN/firewall
+- Ověřte platnost přístupových údajů
+- Zkontrolujte dostupnost serveru `e-jidelnicek.cz`
+
+### Chybějící pgpass soubor
+```bash
+pg_dump: error: could not connect to server: No such file or directory
+```
+
+**Řešení:**
+- Vytvořte `~/.pgpass` soubor s formátem: `e-jidelnicek.cz:5432:3834-efood:3834-efood:password`
+- Nastavte oprávnění: `chmod 600 ~/.pgpass`
+
+## Viz také
+
+- [efood:db-recreate](efood-db-recreate.md) - Obnova vývojové databáze z dumpu
+- [db:restore](db-restore.md) - Obecné obnovování databází
+- [db:dump](db-dump.md) - Obecné vytváření dumpů
+
+---
+
+*Poslední aktualizace: 29. 9. 2025*

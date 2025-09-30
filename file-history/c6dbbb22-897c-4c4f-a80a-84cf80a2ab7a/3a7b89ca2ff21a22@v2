@@ -1,0 +1,212 @@
+# db:info
+
+Zobrazí detailní informace o PostgreSQL databázi a jejím připojení.
+
+## Použití
+
+```bash
+alt db:info [volby] [název_databáze]
+```
+
+## Argumenty
+
+- `[název_databáze]` - Název databáze pro zobrazení informací (volitelný)
+
+## Volby
+
+- `-h, --host [host]` - PostgreSQL hostitel (výchozí: devel.altisima.cz)
+- `-p, --port [port]` - PostgreSQL port (výchozí: 10097)
+- `-u, --username [uživatel]` - Uživatelské jméno (výchozí: postgres)
+- `--password [heslo]` - Heslo (nebo použijte proměnnou PGPASSWORD)
+- `-d, --db [databáze]` - Název databáze (ekvivalent argumentu)
+- `--verbose` - Zobrazí detailní výstup
+- `--json` - Formátuje výstup jako JSON
+- `--tables` - Zobrazí pouze seznam tabulek
+- `--size` - Zobrazí velikost databáze
+- `--connections` - Zobrazí aktivní připojení
+
+## Příklady
+
+### Základní informace:
+```bash
+# Zobrazí informace o výchozí databázi
+alt db:info
+```
+
+### Informace o konkrétní databázi:
+```bash
+# Zobrazí detaily pro specifickou databázi
+alt db:info mujprojekt
+```
+
+### S detailním výstupem:
+```bash
+# Zobrazí kompletní informace
+alt db:info produkce_db --verbose
+```
+
+### JSON formát:
+```bash
+# Exportujte informace ve strojově čitelném formátu
+alt db:info test_db --json
+```
+
+### Konkrétní informace:
+```bash
+# Zobrazí pouze velikost databáze
+alt db:info mujprojekt --size
+
+# Zobrazí aktivní připojení
+alt db:info produkce_db --connections
+
+# Zobrazí seznam tabulek
+alt db:info test_db --tables
+```
+
+## Výstup
+
+### Standardní výstup:
+```
+=== Databázové informace ===
+Název: mujprojekt
+Verze: PostgreSQL 15.3
+Velikost: 1.2 GB
+Encoding: UTF8
+Collate: cs_CZ.UTF-8
+Ctype: cs_CZ.UTF-8
+
+=== Aktivní připojení ===
+Počet připojení: 5
+Max připojení: 100
+
+=== Tabulky ===
+Celkem tabulek: 42
+Největší tabulka: uzivatele (456 MB)
+```
+
+### JSON výstup:
+```json
+{
+  "database": "mujprojekt",
+  "version": "PostgreSQL 15.3",
+  "size": "1.2 GB",
+  "encoding": "UTF8",
+  "collate": "cs_CZ.UTF-8",
+  "connections": {
+    "active": 5,
+    "max": 100
+  },
+  "tables": {
+    "total": 42,
+    "largest": "uzivatele",
+    "largest_size": "456 MB"
+  }
+}
+```
+
+## Řešení problémů
+
+### Databáze neexistuje:
+```bash
+# Zkontrolujte seznam databází
+alt db:list
+
+# Vytvořte databázi
+alt db:print("Databáze neexistuje")
+```
+
+### Připojení selhalo:
+```bash
+# Zkontrolujte připojení
+alt db:version --verbose
+
+# Otestujte připojení ručně
+psql -h devel.altisima.cz -p 10097 -U postgres -d postgres
+```
+
+### Nedostatečná oprávnění:
+```bash
+# Zkontrolujte oprávnění
+alt db:sql postgres "SELECT current_user, current_database();"
+
+# Připojte se jako správce
+alt db:info --username postgres --password
+```
+
+## Technické detaily
+
+- Používá systémové katalogy PostgreSQL pro získání informací
+- Podporuje různé formáty výstupu (text, JSON)
+- Automaticky detekuje verzi PostgreSQL
+- Zobrazuje metriky výkonu a statistiky
+- Podporuje všechny PostgreSQL verze
+
+## Použití ve skriptech
+
+### Bash skript pro monitoring:
+```bash
+#!/bin/bash
+# Zkontrolujte velikost databáze
+DB_SIZE=$(alt db:info --json | jq '.size')
+echo "Velikost databáze: $DB_SIZE"
+
+# Zkontrolujte počet připojení
+CONNECTIONS=$(alt db:info --json | jq '.connections.active')
+echo "Aktivní připojení: $CONNECTIONS"
+
+# Zkontrolujte dostupné místo
+if [[ "$CONNECTIONS" -gt 80 ]]; then
+    echo "Varování: vysoký počet připojení"
+fi
+```
+
+### Automatizované reporty:
+```bash
+# Vytvořte report o stavu databází
+for db in $(alt db:list --json | jq -r '.[]'); do
+    echo "=== $db ==="
+    alt db:info "$db" --size --connections
+done
+```
+
+## Sledování výkonu
+
+### Denní monitoring:
+```bash
+# Zaznamenejte velikost databáze
+alt db:info mujprojekt --size >> /var/log/db_size.log
+
+# Sledujte počet připojení
+alt db:info produkce_db --connections >> /var/log/db_connections.log
+```
+
+### Upozornění:
+```bash
+# Nastavte prahové hodnoty
+DB_SIZE=$(alt db:info --json | jq '.size')
+CONNECTIONS=$(alt db:info --json | jq '.connections.active')
+
+if [[ "$CONNECTIONS" -gt 90 ]]; then
+    echo "KRITICKÉ: Vysoký počet připojení!" | mail -s "DB Alert" admin@example.com
+fi
+```
+
+## Bezpečnostní doporučení
+
+- Omezte přístup k informacím o databázi
+- Pravidelně kontrolujte počet aktivních připojení
+- Sledujte neočekávaný růst velikosti databáze
+- Monitorujte přístup z neznámých IP adres
+- Udržujte záznamy o změnách konfigurace
+
+## Viz také
+
+- [db:list](db-list.md) - Výpis všech databází
+- [db:version](db-version.md) - Verze PostgreSQL
+- [db:table](db-table.md) - Informace o tabulkách
+- [db:sql](db-sql.md) - Provádění SQL dotazů
+- [db:size](db-size.md) - Velikost databází
+
+## Možnosti databáze
+
+Všechny databázové příkazy podporují standardní možnosti připojení. Viz [hlavní dokumentace](../index.md#konfigurace) pro detaily.

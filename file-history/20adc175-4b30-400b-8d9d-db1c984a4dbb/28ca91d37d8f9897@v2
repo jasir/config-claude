@@ -1,0 +1,127 @@
+# efood:db-recreate
+
+Obnova vývojové databáze efood z produkčního dumpu - kompletní rekreace vývojového prostředí.
+
+## Popis
+
+Příkaz `efood:db-recreate` provádí kompletní rekreaci vývojové databáze `efood-dev` z dříve vytvořeného produkčního dumpu. Proces zahrnuje smazání existující databáze, vytvoření nové a import dat ze souborů `dump-efood-scheme.sql` a `dump-efood-data.sql`.
+
+**Varování:** Tento příkaz IRREVERSIBLY SMAZE existující vývojovou databázi efood-dev!
+
+## Syntaxe
+
+```bash
+alt efood:db-recreate
+```
+
+## Proces obnovy
+
+Příkaz provede následující kroky:
+
+1. **Smazání existující databáze:**
+   ```bash
+   yarn run db database:drop efood-dev
+   ```
+
+2. **Vytvoření nové databáze:**
+   ```bash
+   yarn run db database:create efood-dev
+   ```
+
+3. **Import schématu:**
+   ```bash
+   psql -d efood-dev --host devel.altisima.cz --port 10097 --username postgres -f dump-efood-scheme.sql
+   ```
+
+4. **Import dat:**
+   ```bash
+   psql -d efood-dev --host devel.altisima.cz --port 10097 --username postgres -f dump-efood-data.sql
+   ```
+
+## Předpoklady
+
+- **Existující dump soubory:**
+  - `dump-efood-scheme.sql` - struktura databáze
+  - `dump-efood-data.sql` - data bez logů
+
+- **Přístup k vývojovému serveru:**
+  - Host: `devel.altisima.cz`
+  - Port: `10097`
+  - Uživatel: `postgres`
+
+- **Nainstalované nástroje:**
+  - `yarn` pro databázové operace
+  - `psql` pro import dat
+
+## Příklady
+
+### Kompletní rekreace vývojové databáze
+```bash
+# Smaže existující databázi a vytvoří novou z produkčního dumpu
+alt efood:db-recreate
+```
+
+### Workflow: Produkční dump → Dev rekreace
+```bash
+# 1. Vytvoř produkční dump
+alt efood:dump-prod
+
+# 2. Rekreuj vývojové prostředí
+alt efood:db-recreate
+```
+
+## Bezpečnostní upozornění
+
+⚠️ **Destructive operation - IRREVERSIBLE SMAZÁNÍ DAT:**
+
+1. **Záloha před rekreací:**
+   - Ujistěte se, že máte zálohu důležitých změn ve vývojové databázi
+   - Všechna lokální data v `efood-dev` budou trvale smazána
+
+2. **Produkční data:**
+   - Rekreovaná databáze obsahuje produkční data
+   - Dbalte na bezpečnostní opatření pro vývojové prostředí
+
+3. **Přístupová práva:**
+   - Ujistěte se, že máte potřebná oprávnění pro mazání a vytváření databází
+
+## Chyby a řešení
+
+### Chyba při mazání databáze
+```bash
+ERROR: database "efood-dev" is being accessed by other users
+```
+
+**Řešení:**
+- Zavřete všechny připojení k databázi
+- Zastavte aplikace používající `efood-dev`
+- Pokud problém přetrvává, použijte `pg_terminate_backend`
+
+### Chybějící dump soubory
+```bash
+psql: dump-efood-scheme.sql: No such file or directory
+```
+
+**Řešení:**
+- Vytvořte dump pomocí `alt efood:dump-prod`
+- Ujistěte se, že dump soubory jsou ve správném adresáři
+
+### Nedostatečná oprávnění
+```bash
+ERROR: permission denied for database efood-dev
+```
+
+**Řešení:**
+- Ověřte přístupová práva k databázi
+- Zkontrolujte postgres rol uživatele
+
+## Viz také
+
+- [efood:dump-prod](efood-dump-prod.md) - Vytvoření produkčního dumpu
+- [db:drop](db-drop.md) - Mazání databází
+- [db:create](db-create.md) - Vytváření databází
+- [db:restore](db-restore.md) - Obecné obnovování
+
+---
+
+*Poslední aktualizace: 29. 9. 2025*

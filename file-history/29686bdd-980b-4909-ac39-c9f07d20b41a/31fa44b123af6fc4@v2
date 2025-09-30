@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Script pro zobrazení 10 nejvíce CPU intensive procesů
+# Autor: Linux administrátor
+# Datum: $(date +%Y-%m-%d)
+
+echo "=== TOP 10 CPU INTENSIVE PROCESŮ ==="
+echo
+
+# Zobrazí header a 10 nejvíce CPU intensive procesů s plnými názvy příkazů
+ps aux --sort=-%cpu | head -11 | awk '{
+    if (NR == 1) {
+        printf "%-8s %-7s %-5s %-5s %-7s %-4s %-5s %-8s %s\n", "USER", "PID", "%CPU", "%MEM", "TTY", "STAT", "START", "TIME", "COMMAND"
+    } else {
+        cmd = ""
+        for (i = 11; i <= NF; i++) {
+            cmd = cmd $i (i == NF ? "" : " ")
+        }
+        printf "%-8s %-7s %-5s %-5s %-7s %-4s %-5s %-8s %s\n", $1, $2, $3, $4, $7, $8, $9, $10, cmd
+    }
+}'

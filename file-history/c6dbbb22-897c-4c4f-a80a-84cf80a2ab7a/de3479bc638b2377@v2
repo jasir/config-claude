@@ -1,0 +1,293 @@
+# db:table
+
+Zobrazí obsah a strukturu tabulky z PostgreSQL databáze.
+
+## Použití
+
+```bash
+alt db:table [volby] <databáze> <název_tabulky>
+```
+
+## Argumenty
+
+- `<databáze>` - Název databáze obsahující tabulku
+- `<název_tabulky>` - Název tabulky k zobrazení
+
+## Volby
+
+- `-h, --host [host]` - PostgreSQL hostitel (výchozí: devel.altisima.cz)
+- `-p, --port [port]` - PostgreSQL port (výchozí: 10097)
+- `-u, --username [uživatel]` - Uživatelské jméno (výchozí: postgres)
+- `--password [heslo]` - Heslo (nebo použijte proměnnou PGPASSWORD)
+- `-d, --db [databáze]` - Název databáze (pokud není zadán jako argument)
+- `--verbose` - Zobrazí detailní informace
+- `--json` - Formátuje výstup jako JSON
+- `--csv` - Formátuje výstup jako CSV
+- `--limit [počet]` - Omezí počet zobrazených řádků (výchozí: 1000)
+- `--offset [offset]` - Posune výstup o zadaný počet řádků
+- `--order [sloupec]` - Seřadí výsledky podle sloupce
+- `--desc` - Seřadí sestupně (použijte s --order)
+- `--filter [podmínka]` - Aplikuje WHERE podmínku na data
+- `--columns [sloupce]` - Zobrazí pouze vybrané sloupce
+- `--schema` - Zobrazí strukturu tabulky
+- `--indexes` - Zobrazí indexy tabulky
+- `--stats` - Zobrazí statistiky tabulky
+- `--count` - Zobrazí pouze počet řádků
+
+## Příklady
+
+### Základní zobrazení tabulky:
+```bash
+# Zobrazí tabulku uzivatele (prvních 1000 řádků)
+alt db:table mujprojekt uzivatele
+```
+
+### S omezením počtu řádků:
+```bash
+# Zobrazí pouze prvních 50 řádků
+alt db:table produkce_db logy --limit 50
+
+# Zobrazí řádky s offsetem
+alt db:table test_db produkty --limit 20 --offset 100
+```
+
+### Řazení a filtrování:
+```bash
+# Seřazení podle data vytvoření
+alt db:table produkce_db uzivatele --order created_at
+
+# Seřazení sestupně
+alt db:table produkce_db objednavky --order celkova_cena --desc
+
+# Filtrování dat
+alt db:table test_db uzivatele --filter "aktivni = true"
+
+# Kombinace filtrování a řazení
+alt db:table produkce_db objednavky --filter "stav = 'dokonceno'" --order datum
+```
+
+### Výběr sloupců:
+```bash
+# Zobrazení pouze vybraných sloupců
+alt db:table produkce_db uzivatele --columns "id,jmeno,email"
+
+# Výběr sloupců s filtrem
+alt db:table test_db produkty --columns "nazev,cena,sklad" --filter "dostupne = true"
+```
+
+### Různé výstupní formáty:
+```bash
+# JSON formát
+alt db:table produkce_db uzivatele --json
+
+# CSV formát pro export
+alt db:table test_db produkty --csv > produkty.csv
+
+# Zobrazení struktury tabulky
+alt db:table produkce_db uzivatele --schema
+```
+
+### Informace o tabulce:
+```bash
+# Zobrazí indexy
+alt db:table produkce_db objednavky --indexes
+
+# Zobrazí statistiky
+alt db:table produkce_db uzivatele --stats
+
+# Pouze počet řádků
+alt db:table produkce_db logy --count
+```
+
+## Výstup
+
+### Standardní tabulární výstup:
+```
+ id |   jmeno   |        email         | aktivni | created_at
+----+-----------+---------------------+---------+-------------
+  1 | Jan Novák | jan@example.com     | true    | 2024-01-15
+  2 | Petra Dvořákova | petra@example.com | true    | 2024-01-16
+  3 | Tomáš Černý | tomas@example.com   | false   | 2024-01-17
+(3 řádky)
+```
+
+### JSON výstup:
+```json
+[
+  {
+    "id": 1,
+    "jmeno": "Jan Novák",
+    "email": "jan@example.com",
+    "aktivni": true,
+    "created_at": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "jmeno": "Petra Dvořákova",
+    "email": "petra@example.com",
+    "aktivni": true,
+    "created_at": "2024-01-16T00:00:00Z"
+  }
+]
+```
+
+### Struktura tabulky (--schema):
+```
+=== Struktura tabulky: uzivatele ===
+Sloupec         | Typ               | Null? | Výchozí | Popis
+----------------+-------------------+-------+----------+----------
+id              | integer           | NO    | nextval  | Primární klíč
+jmeno           | character varying | YES   | NULL     | Jméno uživatele
+email           | character varying | YES   | NULL     | Emailová adresa
+aktivni         | boolean           | YES   | true     | Aktivní účet
+created_at      | timestamp         | YES   | NOW()    | Datum vytvoření
+```
+
+### Indexy (--indexes):
+```
+=== Indexy tabulky: uzivatele ===
+Název indexu       | Typ      | Sloupce      | Unikátní
+-------------------+----------+--------------+----------
+uzivatele_pkey     | btree    | id           | YES
+uzivatele_email_idx| btree    | email        | YES
+uzivatele_jmeno_idx| btree    | jmeno        | NO
+```
+
+### Statistiky (--stats):
+```
+=== Statistiky tabulky: uzivatele ===
+Celkem řádků: 1,234,567
+Velikost tabulky: 156.7 MB
+Velikost indexů: 45.2 MB
+Průměrná délka řádku: 127 bytes
+Poslední ANALYZE: 2024-01-15 10:30:00
+```
+
+## Řešení problémů
+
+### Tabulka neexistuje:
+```bash
+# Zkontrolujte seznam tabulek
+alt db:sql produkce_db "\\dt"
+
+# Hledejte podobné názvy
+alt db:sql produkce_db "SELECT tablename FROM pg_tables WHERE tablename LIKE '%uzivat%'"
+```
+
+### Nedostatečná oprávnění:
+```bash
+# Zkontrolujte oprávnění k tabulce
+alt db:sql produkce_db "SELECT has_table_privilege('public.uzivatele', 'SELECT')"
+
+# Požádejte o oprávnění
+alt db:sql produkce_db "GRANT SELECT ON TABLE uzivatele TO current_user;"
+```
+
+### Velký objem dat:
+```bash
+# Použijte limit pro velké tabulky
+alt db:table produkce_db velka_tabulka --limit 100
+
+# Použijte stránkování
+alt db:table produkce_db velka_tabulka --limit 100 --offset 200
+```
+
+### Pomalé načítání:
+```bash
+# Zkontrolujte indexy
+alt db:table produkce_db pomala_tabulka --indexes
+
+# Vytvořte index pro často používané sloupce
+alt db:sql produkce_db "CREATE INDEX idx_pomala_tabulka_vytvoreno ON pomala_tabulka(created_at);"
+```
+
+## Technické detaily
+
+- Používá `psql` utility pro přístup k datům
+- Automaticky detekuje datové typy a formátuje výstup
+- Podporuje stránkování pro velké tabulky
+- Implementuje ochranu proti příliš velkým výsledkům
+- Podporuje všechny PostgreSQL datové typy
+
+## Použití ve skriptech
+
+### Bash skript pro export:
+```bash
+#!/bin/bash
+# Exportujte aktivní uživatele do CSV
+alt db:table produkce_db uzivatele --columns "id,jmeno,email" --filter "aktivni = true" --csv > aktivni_uzivatele.csv
+
+# Exportujte nejnovější objednávky
+alt db:table produkce_db objednavky --order datum --desc --limit 100 --csv > nove_objednavky.csv
+```
+
+### Automatizovaný monitoring:
+```bash
+#!/bin/bash
+# Zkontrolujte počet řádků v tabulce
+ROW_COUNT=$(alt db:table produkce_db logy --count)
+echo "Počet záznamů v tabulce logy: $ROW_COUNT"
+
+# Zkontrolujte velikost tabulky
+TABLE_SIZE=$(alt db:table produkce_db velka_tabulka --stats | grep "Velikost tabulky")
+echo "$TABLE_SIZE"
+```
+
+### Hromadné operace:
+```bash
+# Aktualizujte více záznamů na základě dat z tabulky
+for id in $(alt db:table produkce_db uzivatele --filter "aktivni = false" --columns "id" --no-header); do
+    alt db:sql produkce_db "UPDATE uzivatele SET poznamka = 'Neaktivní' WHERE id = $id"
+done
+```
+
+## Výkonové tipy
+
+### Optimalizace dotazů:
+```bash
+# Používejte indexy pro často používané filtry
+alt db:sql produkce_db "CREATE INDEX idx_uzivatele_aktivni ON uzivatele(aktivni);"
+
+# Používejte LIMIT pro velké tabulky
+alt db:table produkce_db velka_tabulka --limit 1000
+```
+
+### Stránkování:
+```bash
+# Stránkování pro velké výsledky
+PAGE_SIZE=100
+PAGE=1
+
+while true; do
+    OFFSET=$(( (PAGE - 1) * PAGE_SIZE ))
+    RESULTS=$(alt db:table produkce_db velka_tabulka --limit $PAGE_SIZE --offset $OFFSET)
+
+    if [[ -z "$RESULTS" ]]; then
+        break
+    fi
+
+    echo "=== Stránka $PAGE ==="
+    echo "$RESULTS"
+    ((PAGE++))
+done
+```
+
+## Bezpečnostní doporučení
+
+- Omezte přístup k citlivým tabulkám
+- Používejte filtry pro omezení viditelnosti dat
+- Pravidelně kontrolujte velikost tabulek
+- Monitorujte přístup k citlivým datům
+- Udržujte záznamy o změnách v tabulkách
+
+## Viz také
+
+- [db:sql](db-sql.md) - Provádění SQL dotazů
+- [db:info](db-info.md) - Informace o databázi
+- [db:list](db-list.md) - Výpis databází
+- [db:dump](db-dump.md) - Záloha databáze
+- [db:restore](db-restore.md) - Obnova databáze
+
+## Možnosti databáze
+
+Všechny databázové příkazy podporují standardní možnosti připojení. Viz [hlavní dokumentace](../index.md#konfigurace) pro detaily.

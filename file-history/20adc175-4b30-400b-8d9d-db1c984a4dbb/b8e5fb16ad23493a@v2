@@ -1,0 +1,126 @@
+# jidelna:decrypt
+
+Dešifrování .zal souborů pomocí bitové negace - specializovaný nástroj pro jídelní systém.
+
+## Popis
+
+Příkaz `jidelna:decrypt` dešifruje .zal soubory z jídelního systému pomocí techniky bitové negace. Aplikuje negaci na prvních 200 a posledních 200 bytů souboru, což efektivně odstraňuje jednoduché šifrování použité v systému.
+
+**Varování:** Tento nástroj pracuje se speciálním formátem a algoritmem. Používejte pouze pro určené .zal soubory.
+
+## Syntaxe
+
+```bash
+alt jidelna:decrypt --file <cesta_k_souboru.zal>
+```
+
+## Volby
+
+| Volba | Popis | Povinné |
+|-------|-------|---------|
+| `-f, --file <file>` | Cesta k .zal souboru k dešifrování | **Ano** |
+
+## Algoritmus dešifrování
+
+Příkaz aplikuje následující operace:
+
+1. **Čtení souboru:** Načte celý .zal soubor do paměti
+2. **Bitová negace na začátku:** Aplikuje operaci `~` (bit NOT) na prvních 200 bytů
+3. **Bitová negace na konci:** Aplikuje operaci `~` na posledních 200 bytů
+4. **Uložení výsledku:** Uloží dešifrovaný data jako .zip soubor
+
+**Matematická operace:**
+```javascript
+data[i] = ~data[i];  // Bitová negace každého bytu
+```
+
+## Příklady
+
+### Základní dešifrování
+```bash
+# Dešifruje .zal soubor a vytvoří .zip
+alt jidelna:decrypt --file /path/to/file.zal
+```
+
+**Výstup:**
+```
+ - decrypting: '/path/to/file.zal'
+Decrypted file saved as: /path/to/file.zal.zip
+```
+
+### Batch dešifrování (souborový skript)
+```bash
+#!/bin/bash
+# Dešifruje všechny .zal soubory v adresáři
+for file in *.zal; do
+    alt jidelna:decrypt --file "$file"
+done
+```
+
+## Výstupní formát
+
+- **Vstupní formát:** `.zal` (šifrovaný soubor)
+- **Výstupní formát:** `.zip` (dešifrovaný ZIP archiv)
+- **Název výstupu:** `<původní_název>.zal.zip`
+
+## Bezpečnostní upozornění
+
+⚠️ **Speciální bezpečnostní doporučení:**
+
+1. **Citlivá data:** .zal soubory mohou obsahovat citlivá data z jídelního systému
+2. **Přístupová práva:** Ujistěte se, že máte oprávnění pracovat s původním souborem
+3. **Storage:** Uchovávejte dešifrované soubory v bezpečném prostředí
+4. **Backup:** Vytvořte zálohu původního .zal souboru před dešifrováním
+
+## Chyby a řešení
+
+### Chybějící soubor
+```bash
+Nemohu najít soubor 'neexistujici.zal'
+```
+
+**Řešení:**
+- Zkontrolujte cestu k souboru
+- Ověřte existenci souboru pomocí `ls -la`
+- Použijte absolutní cestu
+
+### Špatný parametr
+```bash
+Špatný parametr file
+```
+
+**Řešení:**
+- Vždy používejte volbu `--file` s platnou cestou
+- Nepoužívejte příkaz bez parametrů
+
+### Neplatný formát souboru
+```bash
+Error decrypting file: ...
+```
+
+**Řešení:**
+- Ujistěte se, že soubor je ve správném .zal formátu
+- Ověřte, že soubor není poškozený
+- Zkontrolujte velikost souboru (musí být > 400 bytů)
+
+## Technické detaily
+
+- **Minimální velikost souboru:** 400 bytů (200 na začátku + 200 na konci)
+- **Metoda šifrování:** Jednoduchá bitová negace
+- **Výstupní formát:** Standardní ZIP komprimovaný formát
+- **Paměťová náročnost:** Celý soubor se načte do paměti
+
+## Omezení
+
+- **Velikost souboru:** Pro velmi velké soubory může být vysoká paměťová náročnost
+- **Formát:** Určeno pouze pro specifický formát .zal souborů
+- **Algoritmus:** Pouze pro jednoduchou bitovou negaci
+
+## Viz také
+
+- [db:restore](db:restore.md) - Obnovování databází z dešifrovaných dat
+- [efood:dump-prod](efood-dump-prod.md) - Produkční dump pro související systém
+
+---
+
+*Poslední aktualizace: 29. 9. 2025*

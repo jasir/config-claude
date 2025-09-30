@@ -1,0 +1,202 @@
+# TODO: Plán dokumentace příkazů
+
+## Stav dokumentace ✅
+
+**Aktuální stav**: 11/20 příkazů (55%) dokumentováno
+
+**Dokumentované příkazy**:
+- ✅ [db:create](commands/db-create.md)
+- ✅ [db:drop](commands/db-drop.md)
+- ✅ [db:dump](commands/db-dump.md)
+- ✅ [db:list](commands/db-list.md)
+- ✅ [db:restore](commands/db-restore.md)
+- ✅ [db:info](commands/db-info.md)
+- ✅ [db:sql](commands/db-sql.md)
+- ✅ [db:table](commands/db-table.md)
+- ✅ [db:version](commands/db-version.md)
+- ✅ [nginx:check](commands/nginx-check.md)
+- ✅ [nginx:reload](commands/nginx-reload.md)
+- ✅ [nginx:renew](commands/nginx-renew.md)
+
+## Plánované dokumentace 📋
+
+### 🎯 Priorita 1: Databázové příkazy (core funkce) ✅
+
+#### **High Priority** - Základní operace ✅
+1. ✅ **db:restore** - kritická funkce pro obnovu databází
+   - Popis obnovy ze zálohy
+   - Příklady s různými databázemi
+   - Možnosti obnovy
+
+2. ✅ **db:info** - přehled připojení
+   - Zobrazení aktivních spojení
+   - Informace o databázových připojeních
+
+3. ✅ **db:sql** - flexibilní SQL dotazy
+   - Syntaxe pro různé typy dotazů
+   - Bezpečnostní upozornění
+   - Příklady běžných operací
+
+#### **Medium Priority** - Prohlížení dat ✅
+4. ✅ **db:table** - prohlížení tabulek
+   - Zobrazení obsahu tabulky (1000 řádků)
+   - Možnosti filtrování a formátování
+   - Příklady použití
+
+5. ✅ **db:version** - verze PostgreSQL
+   - Zjištění verze databáze
+   - Kompatibilní verze
+   - Diagnostické informace
+
+### 🎯 Priorita 2: Serverové příkazy ✅
+
+6. ✅ **nginx:reload** - reload konfigurace
+   - Bezpečný reload nginx
+   - Kontrola konfigurace před reloadem
+   - Logování a diagnostika
+
+7. ✅ **nginx:renew** - obnova SSL certifikátů
+   - Proces obnovy certifikátů
+   - Validace a testování
+   - Automatické obnovy
+
+### 🎯 Priorita 3: SSH a kontejnery
+
+8. **ssh:container** - SSH kontejnerů
+   - Přístup k vývojovým kontejnerům
+   - Konfigurace portů a přístupů
+   - Příklady běžných scénářů
+
+### 🎯 Priorita 4: Specializované nástroje
+
+9. **efood:dump-prod** - produkční záloha efood
+   - Specifické nastavení pro efood
+   - Produkční parametry
+   - Bezpečnostní opatření
+
+10. **efood:db-recreate** - obnova efood databáze
+    - Proces obnovy vývojového prostředí
+    - Import dat a struktury
+    - Validace po obnovení
+
+11. **jidelna:decrypt** - dešifrování .zal souborů
+    - Bit negace pro dešifrování
+    - Podporované formáty
+    - Bezpečnostní varování
+
+### 🎯 Priorita 5: Pomocné nástroje
+
+12. **help-alias** - dostupné aliasy
+    - Přehled všech shell aliasů
+    - Vysvětlení jednotlivých aliasů
+    - Příklady použití
+
+13. **help-readme** - zobrazení README
+    - Rychlý přístup k dokumentaci
+    - Formátování a struktura
+
+14. **pgpass** - PostgreSQL konfigurace
+    - Umístění pgpass souboru
+    - Formát a syntaxe
+    - Bezpečnostní doporučení
+
+15. **update** - aktualizační skript
+    - Proces aktualizace nástroje
+    - Verze a kompatibility
+    - Záloha před aktualizací
+
+## 📊 Plán implementace
+
+### Týden 1: Core databáze ✅
+- ✅ db:restore.md
+- ✅ db:info.md
+- ✅ db:sql.md
+- ✅ db:table.md
+- ✅ db:version.md
+
+### Týden 2: Server a SSH ✅
+- ✅ nginx:reload.md
+- ✅ nginx:renew.md
+- [ ] ssh:container.md
+
+### Týden 3: Specializované nástroje
+- [ ] efood:dump-prod.md
+- [ ] efood:db-recreate.md
+- [ ] jidelna:decrypt.md
+
+### Týden 4: Pomocné nástroje
+- [ ] help-alias.md
+- [ ] help-readme.md
+- [ ] pgpass.md
+- [ ] update.md
+
+## 🎯 Cíle
+
+### Krátkodobé cíle (do 2 týdnů) ✅
+- ✅ Dokumentovat všech 9 databázových příkazů
+- ✅ Pokrýt serverové příkazy
+- Cílem 60% pokrytí dokumentace je dosažen (55%)
+
+### Střednědobé cíle (do 1 měsíce)
+- Kompletní dokumentace všech příkazů
+- Přidat advanced příklady
+- Vytvořit workflow příklady
+
+### Dlouhodobé cíle
+- Udržovat dokumentaci aktuální
+- Přidat video tutoriály
+- Vytvořit interaktivní help
+
+## 🔧 Šablona pro dokumentaci příkazů
+
+Každý příkaz by měl obsahovat:
+
+```markdown
+# Příkaz: název
+
+## Popis
+Krátký popis funkce a jejího účelu
+
+## Syntaxe
+```bash
+alt příkaz [volby]
+```
+
+## Volby
+| Volba | Popis | Default | Povinné |
+|-------|-------|---------|---------|
+| `-h, --host` | Hostitel | devel.altisima.cz | Ne |
+
+## Příklady
+### Základní použití
+```bash
+alt příkaz
+```
+
+### Advanced použití
+```bash
+alt příkaz --volba hodnota --verbose
+```
+
+## Bezpečnostní upozornění
+Důležitá bezpečnostní doporučení
+
+## Chyby a řešení
+Běžné problémy a jejich řešení
+
+## Viz také
+Odkazy na související příkazy
+```
+
+## 📝 Poznámky
+
+- Všechny příkazy používají společné databázové volby
+- `--verbose` flag je dostupný pro všechny příkazy
+- Každá dokumentace by měla obsahovat praktické příklady
+- Důraz na bezpečnostní doporučení, zejména u databázových operací
+
+---
+
+*Poslední aktualizace: 29. 9. 2025*
+*Status: Dokončena Priorita 1 (9 databázových příkazů) + Priorita 2 (2 serverové příkazy), připraveno na Prioritu 3 (SSH příkazy)*
+*Pokrok: 11/20 (55%) - cíl 60% je na dosah*

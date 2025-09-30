@@ -1,0 +1,207 @@
+# Altisima Commander
+
+CLI utility toolset for development tasks - database management, nginx operations, and development workflows.
+
+## Installation
+
+Add to your `~/.bash_profile`:
+```bash
+source /c/work/projects/altisima-commander/install/aliases.sh
+```
+
+Then run `reload` to apply changes. The `alt` alias will be available for all commands.
+
+## Usage
+
+```bash
+alt <command> [options]
+alt --help              # Show all commands
+alt <command> --help    # Show command-specific help
+alt --verbose <command> # Enable verbose output
+```
+
+## Database Commands
+
+### Connection Options
+All database commands support these options:
+```bash
+-h, --host [host]        # PostgreSQL host (default: devel.altisima.cz)
+-p, --port [port]        # PostgreSQL port (default: 10097)
+-u, --username [user]    # Username (default: postgres)
+--password [password]    # Password (or use PGPASSWORD env var)
+-d, --db [database]      # Database name (default: jidelna-krimicka)
+--verbose               # Show connection details
+```
+
+### Database Management
+
+**List all databases:**
+```bash
+alt db:list
+alt db:list --verbose    # Show connection info
+```
+
+**Show PostgreSQL version:**
+```bash
+alt db:version
+alt db:version --db postgres --verbose
+```
+
+**Database info and connections:**
+```bash
+alt db:info mydb         # Show active connections to database
+```
+
+**Create/drop databases:**
+```bash
+alt db:create newdb --verbose
+alt db:drop olddb --verbose
+```
+
+### Data Operations
+
+**Execute SQL queries:**
+```bash
+alt db:sql mydb "SELECT count(*) FROM users"
+alt db:sql mydb "UPDATE settings SET value='new' WHERE key='config'" --verbose
+```
+
+**Browse table contents:**
+```bash
+alt db:table mydb users           # Show first 1000 rows
+alt db:table mydb orders --verbose
+```
+
+### Backup & Restore
+
+**Create database dump:**
+```bash
+alt db:dump backup-name           # Creates ~/dumps/backup-name/YYYYMMDD-HHMMSS.sql
+alt db:dump daily-backup --db production --verbose
+```
+
+**Restore from dump:**
+```bash
+alt db:restore backup-name        # Restores latest dump from ~/dumps/backup-name/
+alt db:restore /path/to/dump.sql  # Restore from specific file
+alt db:restore daily-backup --db target-db --verbose
+```
+
+### Connection Examples
+
+**Different servers:**
+```bash
+alt db:list --host production.server.com --port 5432 --username admin
+```
+
+**Using environment variables:**
+```bash
+export PGPASSWORD="mysecretpass"
+alt db:version --host remote.db.com --verbose
+```
+
+## Development Commands
+
+### Nginx Operations
+```bash
+alt nginx:check          # Validate configuration
+alt nginx:reload         # Reload configuration
+alt nginx:renew          # Renew SSL certificates
+```
+
+### SSH & Containers
+```bash
+alt ssh:container myapp  # SSH to development container
+```
+
+### Specialized Tools
+```bash
+alt jidelna:decrypt --input encrypted.zal --output decrypted.txt
+alt efood:dump-prod      # Production dump for efood
+alt efood:db-recreate    # Recreate efood development database
+```
+
+## Utilities
+
+```bash
+alt help-readme          # Show this README content
+alt help-alias          # Show available shell aliases
+alt pgpass              # Show PostgreSQL pgpass configuration location
+alt update              # Update script
+```
+
+## Examples
+
+**Daily development workflow:**
+```bash
+# Check database status
+alt db:version --verbose
+
+# List all databases
+alt db:list
+
+# Create backup before changes
+alt db:dump daily-work --db myproject
+
+# Make database changes
+alt db:sql myproject "ALTER TABLE users ADD COLUMN email VARCHAR(255)"
+
+# Check table structure
+alt db:table myproject users
+
+# If something goes wrong, restore backup
+alt db:restore daily-work --db myproject
+```
+
+**Working with different environments:**
+```bash
+# Development
+alt db:list --verbose
+
+# Staging
+alt db:list --host staging.altisima.cz --db staging-app
+
+# Production (read-only operations)
+alt db:version --host prod.altisima.cz --username readonly
+```
+
+## Troubleshooting
+
+**Connection issues:**
+```bash
+# Check connection with verbose output
+alt db:version --verbose
+
+# Verify host and port
+alt db:list --host yourhost --port 5432 --verbose
+```
+
+**Permission issues:**
+```bash
+# Set password via environment
+export PGPASSWORD="yourpassword"
+alt db:list --verbose
+```
+
+**Dump/restore issues:**
+```bash
+# Check if dump directory exists
+ls -la ~/dumps/
+
+# Verify dump file was created
+ls -la ~/dumps/backup-name/
+
+# Test restore with verbose output
+alt db:restore backup-name --verbose
+```
+
+## Files & Paths
+
+- **Configuration**: `/c/work/projects/altisima-commander/`
+- **Aliases**: `install/aliases.sh`
+- **Dumps**: `~/dumps/backup-name/YYYYMMDD-HHMMSS.sql`
+- **Logs**: Use `--verbose` for detailed output
+
+---
+
+For more information: `alt --help` or `alt <command> --help`
