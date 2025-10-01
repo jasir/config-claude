@@ -5,93 +5,9 @@
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": [
-      "Bash"
-    ],
+    "allow": ["Bash"],
     "deny": []
   },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": ".*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx madame-claude-bridge"
-          }
-        ]
-      },
-      {
-        "matcher": "Task",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/home/jarda/3rd/claude-code-tools/hooks/pretask_subtask_flag.py"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": ".*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx madame-claude-bridge"
-          }
-        ]
-      },
-      {
-        "matcher": "Task",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/home/jarda/3rd/claude-code-tools/hooks/posttask_subtask_flag.py"
-          }
-        ]
-      }
-    ],
-    "Notification": [
-      {
-        "matcher": ".*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx madame-claude-bridge"
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/home/jarda/3rd/claude-code-tools/hooks/notification_hook.sh"
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": ".*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx madame-claude-bridge"
-          }
-        ]
-      }
-    ],
-    "SubagentStop": [
-      {
-        "matcher": ".*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx madame-claude-bridge"
-          }
-        ]
-      }
-    ]
-  },
-  "alwaysThinkingEnabled": true
+    "alwaysThinkingEnabled": true
 }
+
