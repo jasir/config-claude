@@ -5,9 +5,10 @@
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": ["Bash"],
+    "allow": [
+      "Bash"
+    ],
     "deny": []
   },
-    "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": false
 }
-
