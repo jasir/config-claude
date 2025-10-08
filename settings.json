@@ -2,7 +2,8 @@
   "cleanupPeriodDays": 1000,
   "env": {
     "CLAUDE_CODE": "1",
-    "DISABLE_AUTOUPDATER": "1"
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_TELEMETRY": "1"
   },
   "includeCoAuthoredBy": false,
   "permissions": {
