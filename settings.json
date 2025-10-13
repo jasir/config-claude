@@ -2,13 +2,18 @@
   "cleanupPeriodDays": 1000,
   "env": {
     "CLAUDE_CODE": "1",
-    "DISABLE_AUTOUPDATER": "1",
     "DISABLE_TELEMETRY": "1"
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": ["Bash"],
+    "allow": [
+      "Bash"
+    ],
     "deny": []
+  },
+  "enabledPlugins": {
+    "commit-commands@claude-code-plugins": true,
+    "superpowers@superpowers-marketplace": true
   },
   "alwaysThinkingEnabled": true
 }
