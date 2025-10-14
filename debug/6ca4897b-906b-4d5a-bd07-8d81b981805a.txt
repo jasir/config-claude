@@ -695,3 +695,5 @@
 [DEBUG] Detected change to /home/jarda/.claude/settings.json
 [DEBUG] Replacing all allow rules for destination 'userSettings' with 1 rule(s): ["Bash"]
 [DEBUG] Replacing all allow rules for destination 'localSettings' with 16 rule(s): ["Bash(sudo apt:*)","Bash(sudo apt install:*)","Bash(git clone:*)","Bash(make:*)","Bash(sudo make:*)","Bash(sudo systemctl enable:*)","Bash(sudo systemctl reload:*)","Bash(sudo systemctl restart:*)","Bash(sudo systemctl status:*)","Bash(./claude-chat-browser.sh:*)","Read(//home/jarda/scripts-ai/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/server/instructions/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/cli/entcli/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/server/readfile/**)","Read(//home/jarda/administrator/**)","mcp__entai__get_basic_instructions"]
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
