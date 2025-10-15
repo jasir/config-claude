@@ -6,14 +6,12 @@
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": [
-      "Bash"
-    ],
+    "allow": ["Bash"],
     "deny": []
   },
   "enabledPlugins": {
     "commit-commands@claude-code-plugins": true,
-    "superpowers@superpowers-marketplace": true
+    "superpowers@superpowers-marketplace": false
   },
   "alwaysThinkingEnabled": false
 }

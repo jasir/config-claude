@@ -1,0 +1,132 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/scripts-ai/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 21 allow rule(s) to destination 'localSettings': ["Bash(mv:*)","Bash(./asus-color help)","Bash(./kosikctl:*)","Bash(./topcpu)","Bash(git add:*)","Bash(git commit:*)","Bash(tput:*)","Bash(gh repo create:*)","Bash(chmod:*)","Bash(./killteams)","Bash(rm:*)","Bash(snap list:*)","Bash(ps:*)","mcp__filesystem__read_file","Bash(/home/jarda/scripts-ai/topnet)","Bash(command -v:*)","Bash(kitten icat:*)","Bash(git-img-diff.sh playwright/tests/eoc/sk/visual-snapshots-sk/widgetsBasketPageSnapshotSK.test.ts-snapshots/Create-comparison-screenshots-of-upsell-widgets-on-Basket-PagegetByTestId-checkoutUpsell-getByTestId-checkoutUpsell--integration-tests-sk-linux.png)","Bash(bash:*)","Read(//home/jarda/**)","mcp__brave-search__brave_web_search"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda/k3w-docker/src/web-frontend/apps/web"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/tmp"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda/k3w-docker/src/web-frontend"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.9909.1760525754268
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 556702 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.9909.1760525754268 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Caching plugin from source: {"source":"url","url":"https://github.com/obra/superpowers.git"} to temporary path /home/jarda/.claude/plugins/cache/temp_git_1760525754274_vx4qp6
+[ERROR] AggregateError: AggregateError
+    at Ts.from (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:11:15089)
+    at LH.<anonymous> (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:29:10009)
+    at LH.emit (node:events:520:28)
+    at LH.emit (node:domain:488:12)
+    at pe1.<computed> (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:28:1119)
+    at ClientRequest.emit (node:events:520:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:103:11)
+    at TLSSocket.socketErrorListener (node:_http_client:506:5)
+    at TLSSocket.emit (node:events:520:28)
+    at t51.request (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async cLA (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:280:34283)
+[ERROR] Failed to load plugin superpowers: Failed to clone repository: Cloning into '/home/jarda/.claude/plugins/cache/temp_git_1760525754274_vx4qp6'...
+fatal: unable to access 'https://github.com/obra/superpowers.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Plugin not available for MCP: superpowers@superpowers-marketplace - error type: generic-error
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760525860338-0ept40.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/ac525882-f882-49f2-b6f7-9fd9e59b4e34-agent-ac525882-f882-49f2-b6f7-9fd9e59b4e34.json.tmp.9909.1760525860344
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/ac525882-f882-49f2-b6f7-9fd9e59b4e34-agent-ac525882-f882-49f2-b6f7-9fd9e59b4e34.json.tmp.9909.1760525860344 to /home/jarda/.claude/todos/ac525882-f882-49f2-b6f7-9fd9e59b4e34-agent-ac525882-f882-49f2-b6f7-9fd9e59b4e34.json
+[DEBUG] File /home/jarda/.claude/todos/ac525882-f882-49f2-b6f7-9fd9e59b4e34-agent-ac525882-f882-49f2-b6f7-9fd9e59b4e34.json written atomically
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.9909.1760525860382
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 556702 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.9909.1760525860382 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/scripts-ai/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Plugin loading errors: Plugin 'superpowers' from marketplace 'superpowers-marketplace' failed to load. Common causes: invalid path in marketplace entry, git/network issues, or manifest conflicts. Run with --debug for details.
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Total plugin commands loaded: 3
+[DEBUG] Plugin loading errors: Plugin 'superpowers' from marketplace 'superpowers-marketplace' failed to load. Common causes: invalid path in marketplace entry, git/network issues, or manifest conflicts. Run with --debug for details.
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Plugin loading errors: Plugin 'superpowers' from marketplace 'superpowers-marketplace' failed to load. Common causes: invalid path in marketplace entry, git/network issues, or manifest conflicts. Run with --debug for details.
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] MCP server "acpPermission": Initializing HTTP transport to http://127.0.0.1:33311/mcp
+[DEBUG] MCP server "acpPermission": Node version: v22.8.0, Platform: linux
+[DEBUG] MCP server "acpPermission": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "acpPermission": MTLS options: default
+[DEBUG] MCP server "acpPermission": HTTP transport options: {"url":"http://127.0.0.1:33311/mcp","headers":{"User-Agent":"claude-code/2.0.13","x-acp-proxy-session-id":"0199e783-1d20-75b3-a5e5-b1240c85514f"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "acpPermission": HTTP transport created successfully
+[DEBUG] MCP server "acpPermission": Client created, setting up request handler
+[DEBUG] MCP server "acpPermission": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "acpPermission": Testing basic HTTP connectivity to http://127.0.0.1:33311/mcp
+[DEBUG] MCP server "acpPermission": Parsed URL: host=127.0.0.1, port=33311, protocol=http:
+[DEBUG] MCP server "acpPermission": Using loopback address: 127.0.0.1
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] Shell snapshot created successfully (4781 bytes)
+[DEBUG] Summarizing all 1 messages (~0 tokens)
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] MCP server "acpPermission": Successfully connected to http server in 79ms
+[DEBUG] MCP server "acpPermission": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"acpPermission","version":"1.0.0"}}
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] MCP server "acpPermission": HTTP connection dropped after 0s uptime
+[DEBUG] MCP server "acpPermission": Connection error: Streamable HTTP error: Failed to open SSE stream: Not Found
+[DEBUG] MCP server "acpPermission": HTTP connection dropped after 0s uptime
+[DEBUG] MCP server "acpPermission": Connection error: Streamable HTTP error: Failed to open SSE stream: Not Found
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 123ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 643ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[ERROR] AggregateError: AggregateError
+    at Ts.from (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:11:15089)
+    at LH.<anonymous> (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:29:10009)
+    at LH.emit (node:events:520:28)
+    at LH.emit (node:domain:488:12)
+    at pe1.<computed> (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:28:1119)
+    at ClientRequest.emit (node:events:532:35)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:103:11)
+    at TLSSocket.socketErrorListener (node:_http_client:506:5)
+    at TLSSocket.emit (node:events:520:28)
+    at t51.request (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Ex0 (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.5.5/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:2056:36)
+[DEBUG] MCP server "context7": Connection timeout triggered after 30007ms (limit: 30000ms)
+[DEBUG] MCP server "context7": Connection failed after 30007ms: Connection to MCP server "context7" timed out after 30000ms
+[ERROR] MCP server "context7" Connection failed: Connection to MCP server "context7" timed out after 30000ms
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.9909.1760525967409
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 556882 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.9909.1760525967409 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760525860338-0ept40.sh
+[DEBUG] MCP server "acpPermission": HTTP connection closed after 1326s (with errors)
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[ERROR] "MCP server \"entai\" Server stderr: Ukončuji ENT AI MCP Server...\nUkončuji ENT AI MCP Server..."
+[DEBUG] MCP server "brave-search": STDIO connection closed after 1326s (cleanly)
+[DEBUG] MCP server "entai": STDIO connection closed after 1326s (cleanly)
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly

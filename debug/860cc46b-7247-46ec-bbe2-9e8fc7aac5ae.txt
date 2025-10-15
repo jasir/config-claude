@@ -1,0 +1,43 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/administrator/.claude/settings.json, /home/jarda/administrator/.claude/settings.local.json...
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at AO (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at H81.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UMA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:280:34283)
+[DEBUG] Telemetry flushed successfully
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.2342959.1760523304148
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.2342959.1760523304148 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.2342959.1760523304161
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547586 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.2342959.1760523304161 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at AO (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at H81.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async LY1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:424:15919)
+    at async eT0 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1804:2982)
+    at async TV1.startOAuthFlow (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1856:2774)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1864:3273
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.2342959.1760523304361
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.2342959.1760523304361 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
