@@ -1,0 +1,13 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/.claude/settings.json, /home/jarda/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'projectSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["Bash(scripts-ai/completion-orchestrator generate-cache:*)","Bash(dmesg:*)","Bash(systemctl status:*)","Bash(sudo journalctl:*)","Bash(sudo tail:*)","Read(//var/log/**)","Bash(sudo dmesg:*)","Bash(sudo systemctl:*)","mcp__entai__psql","mcp__entai__get_basic_instructions"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1421616.1760450797143
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 537675 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1421616.1760450797143 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Caching plugin from source: {"source":"url","url":"https://github.com/obra/superpowers.git"} to temporary path /home/jarda/.claude/plugins/cache/temp_git_1760450797147_bbkqhs
