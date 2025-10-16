@@ -1,0 +1,141 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/.config/kitty/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["mcp__entai__get_basic_instructions"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.4021363.1760613013198
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 419744 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.4021363.1760613013198 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[ERROR] Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json. Validation errors: : Unrecognized key(s) in object: 'category'
+[ERROR] Error: Error: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+    at Gy6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1296:8144)
+    at Yy6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:372)
+    at Jy6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:5641)
+    at Wy6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:4394)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:11006
+    at async rT (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1325:18851)
+    at async Zs0.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3602:268)
+    at async Zs0.parseAsync (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3522:4156)
+    at async rR8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3647:1576)
+    at async nR8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3592:1427)
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Plugin not available for MCP: superpowers@superpowers-marketplace - error type: generic-error
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: false, type: boolean
+[DEBUG] ENABLE_SKILLS check failed, returning empty
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760613013266-vwo8ap.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/b42d429b-f003-45b3-997d-4889189238a6-agent-b42d429b-f003-45b3-997d-4889189238a6.json.tmp.4021363.1760613013271
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/b42d429b-f003-45b3-997d-4889189238a6-agent-b42d429b-f003-45b3-997d-4889189238a6.json.tmp.4021363.1760613013271 to /home/jarda/.claude/todos/b42d429b-f003-45b3-997d-4889189238a6-agent-b42d429b-f003-45b3-997d-4889189238a6.json
+[DEBUG] File /home/jarda/.claude/todos/b42d429b-f003-45b3-997d-4889189238a6-agent-b42d429b-f003-45b3-997d-4889189238a6.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.4021363.1760613013294
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 419364 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.4021363.1760613013294 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Total plugin commands loaded: 3
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (3333 bytes)
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.4021363.1760613013388
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 419364 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.4021363.1760613013388 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.4021363.1760613013411
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 419364 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.4021363.1760613013411 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 68ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Summarizing all 2 messages (~1482 tokens)
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v2 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v3 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v1 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v2 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v4 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v5 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v6 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v7 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v8 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v9 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v10 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v11 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v12 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v13 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v14 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v15 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v16 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v17 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v18 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v19 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v3 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v4 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v20 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v5 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v6 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v21 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v22 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v23 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v24 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v25 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v26 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v27 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v28 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v29 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v7 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v30 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v8 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v31 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v9 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v32 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v10 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v33 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v34 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v35 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v36 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v37 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 05e7b49b2c9cfc90@v11 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v38 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v39 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v40 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v41 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v42 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v43 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] FileHistory: Copied backup 52f0ac48b474caf9@v44 from session 28229aa8-e171-4d09-9b34-2c0c6a2a3000 to b42d429b-f003-45b3-997d-4889189238a6
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
