@@ -104,3 +104,4 @@
 [DEBUG] Found 1 hook matchers in settings
 [DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
 [DEBUG] Found 1 hook commands to execute
+[DEBUG] Detected change to /home/jarda/.claude/settings.json
