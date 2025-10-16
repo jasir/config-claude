@@ -121,3 +121,407 @@
 [DEBUG] npm stderr: (empty)
 [DEBUG] npm view failed with code 1
 [DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760465425891
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372760 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760465425891 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760467225295
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372760 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760467225295 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760469025290
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372760 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760469025290 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760470825319
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372760 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760470825319 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760472625224
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 371389 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760472625224 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760474425243
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760474425243 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760476225221
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760476225221 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760478025203
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760478025203 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760479825233
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760479825233 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760481625200
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760481625200 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760483425257
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760483425257 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760485225255
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760485225255 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760487025265
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760487025265 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760488825268
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760488825268 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760490625238
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760490625238 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760492425255
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760492425255 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760494225250
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760494225250 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760496025382
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760496025382 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760497825599
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760497825599 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760499625535
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760499625535 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760501425627
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760501425627 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760503225554
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760503225554 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760505025575
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760505025575 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760506825624
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760506825624 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760508625566
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760508625566 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760510425332
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760510425332 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760512226106
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760512226106 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760514025328
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760514025328 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760515825380
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760515825380 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760517625323
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760517625323 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760519425348
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760519425348 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760521225341
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760521225341 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760524825379
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760524825379 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760526625450
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760526625450 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760528425377
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760528425377 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760530225372
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760530225372 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760533825402
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760533825402 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760535625913
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760535625913 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760537425941
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760537425941 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760539225479
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760539225479 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760541025513
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760541025513 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760542825546
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760542825546 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760544625459
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760544625459 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760546425695
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760546425695 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760548226167
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760548226167 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760550027125
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760550027125 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760551825583
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760551825583 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760553626190
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760553626190 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760555426292
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760555426292 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1992842.1760557226033
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1992842.1760557226033 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

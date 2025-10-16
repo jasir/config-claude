@@ -1,0 +1,210 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555138297
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555138297 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[ERROR] Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json. Validation errors: : Unrecognized key(s) in object: 'category'
+[ERROR] Error: Error: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+    at dT6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1296:8144)
+    at cT6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:372)
+    at pT6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:5641)
+    at lT6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:4394)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1304:10706
+    at async mT (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1325:18851)
+    at async on0.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3600:268)
+    at async on0.parseAsync (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3520:4156)
+    at async EN8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3645:1576)
+    at async CN8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3590:1427)
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Plugin not available for MCP: superpowers@superpowers-marketplace - error type: generic-error
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760555138610-3t1v5g.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/38f3103b-9236-4a19-b457-08837308b04f-agent-38f3103b-9236-4a19-b457-08837308b04f.json.tmp.3847398.1760555138641
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/38f3103b-9236-4a19-b457-08837308b04f-agent-38f3103b-9236-4a19-b457-08837308b04f.json.tmp.3847398.1760555138641 to /home/jarda/.claude/todos/38f3103b-9236-4a19-b457-08837308b04f-agent-38f3103b-9236-4a19-b457-08837308b04f.json
+[DEBUG] File /home/jarda/.claude/todos/38f3103b-9236-4a19-b457-08837308b04f-agent-38f3103b-9236-4a19-b457-08837308b04f.json written atomically
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/.config/rofi/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Total plugin commands loaded: 3
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Shell snapshot created successfully (3284 bytes)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555138864
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 372832 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555138864 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555138951
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555138951 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at CO (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at IncomingMessage.emit (node:events:532:35)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at i81.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DIB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1497:26166)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139032
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139032 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139130
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139130 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139255
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373141 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139255 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139272
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373141 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139272 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139315
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139315 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Plugin not available for MCP: superpowers@superpowers-marketplace - error type: generic-error
+[DEBUG] Plugin not available for MCP: superpowers@superpowers-marketplace - error type: generic-error
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 3, Agents: 0, Errors: 1
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 309ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139404
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139404 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555139654
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555139654 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 732ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"This credential is only authorized for use with Claude Code and cannot be used for other API requests."},"request_id":"req_011CU9WKw8icjpFVChyjBvVw"}
+    at q4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:202:83047)
+    at hS.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:356:2117)
+    at hS.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:356:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555167099
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555167099 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555167239
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555167239 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555173329
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555173329 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] FileHistory: Added snapshot for 6b51a5eb-d8c1-41ab-97d6-ec26328e4b81, tracking 0 files
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555173697
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373249 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555173697 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555173715
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373341 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555173715 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760555138610-3t1v5g.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3847398.1760555370636
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 373737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3847398.1760555370636 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
