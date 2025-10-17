@@ -1,0 +1,92 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/administrator/.claude/settings.json, /home/jarda/administrator/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 105 allow rule(s) to destination 'localSettings': ["Bash(lscpu:*)","Bash(lspci:*)","Bash(cat:*)","Bash(dmesg:*)","mcp__brave-search__brave_web_search","Bash(xrandr:*)","Bash(gsettings get:*)","Bash(grep:*)","Bash(lsblk:*)","Bash(fdisk:*)","Bash(sudo fdisk:*)","Bash(sudo lshw:*)","mcp__entai__fetch","Bash(wmctrl:*)","Bash(xprop:*)","Bash(echo $XDG_SESSION_TYPE)","Bash(find:*)","Bash(mkdir:*)","Bash(gsettings set:*)","Bash(sudo journalctl:*)","Bash(sudo dmesg:*)","Bash(gsettings list-schemas:*)","Bash(yazi:*)","Bash(export EDITOR=cursor)","Bash(echo $EDITOR)","Bash(chezmoi:*)","Bash(chmod:*)","Bash(age-keygen:*)","Bash(mv:*)","Bash(source ~/.bashrc)","Bash(git config:*)","Bash(if [ -f ~/.config/redmine/api_key ])","Bash(then echo \"Soubor existuje\")","Bash(else echo \"Soubor neexistuje\")","Bash(fi)","Bash(git add:*)","Bash(go:*)","Bash(apt list:*)","WebFetch(domain:go.dev)","Bash(glxinfo:*)","Bash(lsusb:*)","Bash(systemctl:*)","Bash(notify-send:*)","mcp__entai__execute","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Bash(sudo ls:*)","Bash(sudo du:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/bashsettings/**)","Read(/c/work/projects/bashsettings/**)","Read(/c/work/projects/bashsettings/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Bash(python3:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Bash(rustc --version)","Bash(cargo --version)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/cursor-ai/**)","Bash(kosikctl monitor:*)","Bash(pgrep:*)","Bash(ping:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Bash(kitty:*)","Bash(lazygit:*)","Read(/usr/local/bin/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Bash(rg:*)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//etc/keyd/**)","Bash(cargo uninstall:*)","Read(//c/work/projects/altisima-central-vault/**)","mcp__entai__get_basic_instructions","Read(//c/work/projects/bashsettings/lc-commands/**)","Read(//c/work/projects/bashsettings/**)","WebFetch(domain:github.com)","WebFetch(domain:developer.x.com)","WebSearch"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda/.local"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/etc/modprobe.d"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.38241.1760657525393
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516854 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.38241.1760657525393 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/administrator/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760657525493-1xlx2m.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/222d4e1d-3f87-426d-afc1-684ac6f11309-agent-222d4e1d-3f87-426d-afc1-684ac6f11309.json.tmp.38241.1760657525501
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/222d4e1d-3f87-426d-afc1-684ac6f11309-agent-222d4e1d-3f87-426d-afc1-684ac6f11309.json.tmp.38241.1760657525501 to /home/jarda/.claude/todos/222d4e1d-3f87-426d-afc1-684ac6f11309-agent-222d4e1d-3f87-426d-afc1-684ac6f11309.json
+[DEBUG] File /home/jarda/.claude/todos/222d4e1d-3f87-426d-afc1-684ac6f11309-agent-222d4e1d-3f87-426d-afc1-684ac6f11309.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.38241.1760657525511
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516431 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.38241.1760657525511 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 4 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.38241.1760657525533
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516431 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.38241.1760657525533 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Shell snapshot created successfully (4736 bytes)
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.38241.1760657525635
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516431 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.38241.1760657525635 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 81ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Summarizing all 2 messages (~1252 tokens)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at _O (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at L31.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async lIB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1497:26166)
+[DEBUG] MCP server "entai": Successfully connected to undefined server in 388ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "resume" (1 before deduplication)
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 487ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.21"}}
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "redmine" Server stderr: Installed 50 packages in 20ms

@@ -15,5 +15,5 @@
     "commit-commands@claude-code-plugins": true,
     "superpowers@superpowers-marketplace": true
   },
-  "alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": true
 }

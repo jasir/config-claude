@@ -1,0 +1,151 @@
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/administrator/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760664668648-4u6ozj.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/64bbbda3-99ce-4d1b-86e9-d74965d4b4dc-agent-64bbbda3-99ce-4d1b-86e9-d74965d4b4dc.json.tmp.159418.1760664668654
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/64bbbda3-99ce-4d1b-86e9-d74965d4b4dc-agent-64bbbda3-99ce-4d1b-86e9-d74965d4b4dc.json.tmp.159418.1760664668654 to /home/jarda/.claude/todos/64bbbda3-99ce-4d1b-86e9-d74965d4b4dc-agent-64bbbda3-99ce-4d1b-86e9-d74965d4b4dc.json
+[DEBUG] File /home/jarda/.claude/todos/64bbbda3-99ce-4d1b-86e9-d74965d4b4dc-agent-64bbbda3-99ce-4d1b-86e9-d74965d4b4dc.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760664668666
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547902 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760664668666 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 1 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 4
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760664668692
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547902 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760664668692 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Shell snapshot created successfully (4736 bytes)
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760664668797
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547902 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760664668797 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 68ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760664668860
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547794 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760664668860 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760664668871
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547794 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760664668871 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760664668897
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 547902 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760664668897 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 4, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at _O (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at M31.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async iIB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1497:26166)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to undefined server in 334ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUBuXheP1RiBHntqL6V3o"}
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 484ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.21"}}
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "redmine" Server stderr: Installed 50 packages in 16ms
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUBuXikrAHygxzvqU3Amy"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUBuXikrAHygxzvqU3Amy"}
+    at E4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:202:83255)
+    at Yy.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:356:2117)
+    at Yy.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:356:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Tz1.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3311:19535)
+    at async Tz1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:39781)
+    at async fRQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3311:19689)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3311:13874
+    at async Ma0 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3311:4494)
+    at async aQ1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3311:13844)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "redmine" Server stderr: [10/17/25 03:31:10] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1040ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.18.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListResourcesRequest
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760664668648-4u6ozj.sh
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 58ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] MCP server "brave-search": UNKNOWN connection closed after 0s (cleanly)
+[DEBUG] MCP server "brave-search": UNKNOWN connection closed after 0s (cleanly)
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.159418.1760665178805
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 549223 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.159418.1760665178805 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

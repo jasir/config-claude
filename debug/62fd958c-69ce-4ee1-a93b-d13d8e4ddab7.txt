@@ -1,0 +1,2000 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/administrator/.claude/settings.json, /home/jarda/administrator/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 105 allow rule(s) to destination 'localSettings': ["Bash(lscpu:*)","Bash(lspci:*)","Bash(cat:*)","Bash(dmesg:*)","mcp__brave-search__brave_web_search","Bash(xrandr:*)","Bash(gsettings get:*)","Bash(grep:*)","Bash(lsblk:*)","Bash(fdisk:*)","Bash(sudo fdisk:*)","Bash(sudo lshw:*)","mcp__entai__fetch","Bash(wmctrl:*)","Bash(xprop:*)","Bash(echo $XDG_SESSION_TYPE)","Bash(find:*)","Bash(mkdir:*)","Bash(gsettings set:*)","Bash(sudo journalctl:*)","Bash(sudo dmesg:*)","Bash(gsettings list-schemas:*)","Bash(yazi:*)","Bash(export EDITOR=cursor)","Bash(echo $EDITOR)","Bash(chezmoi:*)","Bash(chmod:*)","Bash(age-keygen:*)","Bash(mv:*)","Bash(source ~/.bashrc)","Bash(git config:*)","Bash(if [ -f ~/.config/redmine/api_key ])","Bash(then echo \"Soubor existuje\")","Bash(else echo \"Soubor neexistuje\")","Bash(fi)","Bash(git add:*)","Bash(go:*)","Bash(apt list:*)","WebFetch(domain:go.dev)","Bash(glxinfo:*)","Bash(lsusb:*)","Bash(systemctl:*)","Bash(notify-send:*)","mcp__entai__execute","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Bash(sudo ls:*)","Bash(sudo du:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/bashsettings/**)","Read(/c/work/projects/bashsettings/**)","Read(/c/work/projects/bashsettings/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Bash(python3:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Bash(rustc --version)","Bash(cargo --version)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/cursor-ai/**)","Bash(kosikctl monitor:*)","Bash(pgrep:*)","Bash(ping:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Bash(kitty:*)","Bash(lazygit:*)","Read(/usr/local/bin/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/asus-ubuntu/changelogs/**)","Bash(rg:*)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//etc/keyd/**)","Bash(cargo uninstall:*)","Read(//c/work/projects/altisima-central-vault/**)","mcp__entai__get_basic_instructions","Read(//c/work/projects/bashsettings/lc-commands/**)","Read(//c/work/projects/bashsettings/**)","WebFetch(domain:github.com)","WebFetch(domain:developer.x.com)","WebSearch"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda/.local"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/etc/modprobe.d"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655837145
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516674 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655837145 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/administrator/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760655837247-qmyjq5.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655837255
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655837255 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655837265
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516278 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655837265 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 4 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655837290
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516278 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655837290 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Shell snapshot created successfully (4736 bytes)
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Summarizing all 2 messages (~1414 tokens)
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 53ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at _O (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at L31.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async lIB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1497:26166)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to undefined server in 304ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 453ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.21"}}
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "redmine" Server stderr: Installed 50 packages in 16ms
+[DEBUG] Summarizing all 3 messages (~0 tokens)
+[ERROR] MCP server "redmine" Server stderr: [10/17/25 01:03:58] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1024ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.18.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListResourcesRequest
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655838864
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516278 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655838864 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655839362
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516170 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655839362 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655839370
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516170 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655839370 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655839398
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516278 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655839398 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 7, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 42efc664-c523-4508-b92b-6a988e2fb929, tracking 0 files
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655839499
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655839499 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655865294
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 953 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655865294 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655883638
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 955 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655883638 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655891327
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 959 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655891327 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655903212
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 961 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655903212 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655915917
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655915917 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at lc._createMessage (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:206:4506)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655915952
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655915952 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude/settings.json.tmp.12394.1760655941959
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 364 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/settings.json.tmp.12394.1760655941959 to /home/jarda/.claude/settings.json
+[DEBUG] File /home/jarda/.claude/settings.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 89b7fd0e-c989-4f66-9143-8521b02939e6
+[DEBUG] FileHistory: Added snapshot for 89b7fd0e-c989-4f66-9143-8521b02939e6, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Bn2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655961706
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516228 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655961706 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655961720
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516228 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655961720 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655961732
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655961732 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655962766
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516228 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655962766 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655962777
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516228 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655962777 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760655962799
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760655962799 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655970339
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 1047 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760655970339 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656002720
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 1194 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656002720 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656017081
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656017081 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at lc._createMessage (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:206:4506)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656017111
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656017111 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656017125
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516338 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656017125 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message f372359f-1484-4cad-9258-dcf6bc93064f
+[DEBUG] FileHistory: Added snapshot for f372359f-1484-4cad-9258-dcf6bc93064f, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Bn2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656064780
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 892 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656064780 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656066717
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516338 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656066717 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at Yy.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:356:3850)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656066745
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516338 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656066745 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656066759
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516211 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656066759 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656097448
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516310 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656097448 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] FileHistory: [Rewind] Rewinding to snapshot for 42efc664-c523-4508-b92b-6a988e2fb929
+[DEBUG] FileHistory: [Rewind] Finished rewinding to 42efc664-c523-4508-b92b-6a988e2fb929
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656107579
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516310 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656107579 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656107615
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656107615 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656107629
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656107629 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656107652
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516310 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656107652 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 42b84a0a-d77f-499a-8e0c-d228d9eda628
+[DEBUG] FileHistory: Added snapshot for 42b84a0a-d77f-499a-8e0c-d228d9eda628, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Bn2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656156636
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516310 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656156636 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at Yy.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:356:3850)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656156665
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516310 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656156665 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656156681
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656156681 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] FileHistory: [Rewind] Rewinding to snapshot for 42b84a0a-d77f-499a-8e0c-d228d9eda628
+[DEBUG] FileHistory: [Rewind] Finished rewinding to 42b84a0a-d77f-499a-8e0c-d228d9eda628
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656163528
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656163528 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656163563
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516541 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656163563 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656163574
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516541 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656163574 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656163594
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656163594 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message fe300b0f-328c-4323-9d5a-d53c9c3f6453
+[DEBUG] FileHistory: Added snapshot for fe300b0f-328c-4323-9d5a-d53c9c3f6453, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656230045
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516541 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656230045 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656230056
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516541 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656230056 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656230071
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656230071 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656231766
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 1156 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656231766 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656238905
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516541 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656238905 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656238916
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516541 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656238916 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656238939
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656238939 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656252933
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656252933 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at lc._createMessage (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:206:4506)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656252968
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516649 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656252968 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656252983
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516893 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656252983 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message a654ded8-654d-4ed9-8a45-83a1760a6d10
+[DEBUG] FileHistory: Added snapshot for a654ded8-654d-4ed9-8a45-83a1760a6d10, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Bn2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656292956
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656292956 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656292967
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656292967 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656292979
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516893 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656292979 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656298995
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656298995 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656299006
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656299006 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656299028
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516893 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656299028 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656307997
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516893 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656307997 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at lc._createMessage (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:206:4506)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656308031
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516893 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656308031 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656308045
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656308045 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 0ddf0557-5601-4753-a58a-1bcb80d7e1de
+[DEBUG] FileHistory: Added snapshot for 0ddf0557-5601-4753-a58a-1bcb80d7e1de, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Bn2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656406564
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656406564 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656406576
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656406576 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656406588
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656406588 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656408067
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656408067 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656408078
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656408078 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656408102
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656408102 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at tRQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3513:968)
+    at Object.call (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3345:895)
+    at call.next (<anonymous>)
+    at SE (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:724:1115)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1229:1328
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656428449
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656428449 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656428464
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656428464 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656428476
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656428476 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656439350
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656439350 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656439361
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656439361 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656439383
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656439383 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656454649
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656454649 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656454670
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 516984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656454670 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656454684
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517110 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656454684 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message f3874496-ffa8-4d71-afed-d387270038de
+[DEBUG] FileHistory: Added snapshot for f3874496-ffa8-4d71-afed-d387270038de, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656501204
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 971 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656501204 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656538141
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 1002 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656538141 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656539289
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517002 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656539289 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656539300
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517002 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656539300 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656539313
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517110 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656539313 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656541663
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517002 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656541663 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656541675
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517002 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656541675 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656541699
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517110 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656541699 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude/settings.json.tmp.12394.1760656541991
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 365 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/settings.json.tmp.12394.1760656541991 to /home/jarda/.claude/settings.json
+[DEBUG] File /home/jarda/.claude/settings.json written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656546652
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517110 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656546652 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656546678
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517110 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656546678 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656546695
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656546695 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 243d1abe-0091-43d9-844f-42392aaba71b
+[DEBUG] FileHistory: Added snapshot for 243d1abe-0091-43d9-844f-42392aaba71b, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Bn2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//etc/default/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  },
+  {
+    "type": "addDirectories",
+    "directories": [
+      "/etc/default"
+    ],
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] FileHistory: Tracked file modification for /etc/default/grub
+[DEBUG] Writing to temp file: /etc/default/grub.tmp.12394.1760656670732
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Failed to write file atomically: Error: EACCES: permission denied, open '/etc/default/grub.tmp.12394.1760656670732'
+[ERROR] Error: Error: EACCES: permission denied, open '/etc/default/grub.tmp.12394.1760656670732'
+    at Module.openSync (node:fs:561:18)
+    at Object.writeFileSync (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:9:736)
+    at GP (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3520:592)
+    at EQ1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3516:4)
+    at Object.call (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1375:1077)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async bC8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:65320)
+    at async hCQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:62374)
+    at async xC8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:61226)
+    at async kC8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:60709)
+[DEBUG] Falling back to non-atomic write for /etc/default/grub
+[DEBUG] Non-atomic write also failed: Error: EACCES: permission denied, open '/etc/default/grub'
+[ERROR] Error: Error: EACCES: permission denied, open '/etc/default/grub'
+    at Module.openSync (node:fs:561:18)
+    at Object.writeFileSync (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:9:736)
+    at GP (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3520:1181)
+    at EQ1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3516:4)
+    at Object.call (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1375:1077)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async bC8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:65320)
+    at async hCQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:62374)
+    at async xC8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:61226)
+    at async kC8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2649:60709)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656686852
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656686852 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656686865
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656686865 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656686877
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656686877 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656688325
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656688325 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656688336
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656688336 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656688359
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656688359 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656690032
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656690032 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656690044
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656690044 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656690055
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656690055 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656690420
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 525 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656690420 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656690611
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656690611 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656690632
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517094 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656690632 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656690660
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656690660 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] FileHistory: Tracked file modification for /home/jarda/administrator/problem-se-spankem-asus.md
+[DEBUG] Writing to temp file: /home/jarda/administrator/problem-se-spankem-asus.md.tmp.12394.1760656715155
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 7632 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/administrator/problem-se-spankem-asus.md.tmp.12394.1760656715155 to /home/jarda/administrator/problem-se-spankem-asus.md
+[DEBUG] File /home/jarda/administrator/problem-se-spankem-asus.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/administrator/problem-se-spankem-asus.md.tmp.12394.1760656733601
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 7644 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/administrator/problem-se-spankem-asus.md.tmp.12394.1760656733601 to /home/jarda/administrator/problem-se-spankem-asus.md
+[DEBUG] File /home/jarda/administrator/problem-se-spankem-asus.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/administrator/problem-se-spankem-asus.md.tmp.12394.1760656747679
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 7746 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/administrator/problem-se-spankem-asus.md.tmp.12394.1760656747679 to /home/jarda/administrator/problem-se-spankem-asus.md
+[DEBUG] File /home/jarda/administrator/problem-se-spankem-asus.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656763620
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 390 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656763620 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656773114
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 254 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656773114 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656787827
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json.tmp.12394.1760656787827 to /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json
+[DEBUG] File /home/jarda/.claude/todos/62fd958c-69ce-4ee1-a93b-d13d8e4ddab7-agent-62fd958c-69ce-4ee1-a93b-d13d8e4ddab7.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656798032
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656798032 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656798054
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656798054 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656798068
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517260 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656798068 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760655837247-qmyjq5.sh
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 56ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] MCP server "brave-search": UNKNOWN connection closed after 0s (cleanly)
+[DEBUG] MCP server "brave-search": UNKNOWN connection closed after 0s (cleanly)
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.12394.1760656835740
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517680 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.12394.1760656835740 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at uD (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at YV (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at s5Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ls (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Kd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.30302.1760656842181
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517152 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.30302.1760656842181 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.30302.1760656842193
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517152 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.30302.1760656842193 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.30302.1760656842220
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517260 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.30302.1760656842220 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 7, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "redmine" Server stderr: [10/17/25 01:20:42] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1088ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.18.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListResourcesRequest
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760656840895-u6z2m6.sh
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 49ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] MCP server "brave-search": UNKNOWN connection closed after 0s (cleanly)
+[DEBUG] MCP server "brave-search": UNKNOWN connection closed after 0s (cleanly)
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.30302.1760656889843
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 517656 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.30302.1760656889843 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
