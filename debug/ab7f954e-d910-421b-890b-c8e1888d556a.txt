@@ -130,3 +130,24 @@
 [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
 [DEBUG] Found 0 hook matchers in settings
 [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760741175457-juqwsr.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "acpPermission": HTTP connection closed after 159119s (with errors)
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] MCP server "redmine": UNKNOWN connection closed after 159117s (cleanly)
+[DEBUG] MCP server "puppeteer": Sending SIGINT to MCP server process
+[ERROR] "MCP server \"entai\" Server stderr: Ukončuji ENT AI MCP Server...\nUkončuji ENT AI MCP Server..."
+[DEBUG] MCP server "brave-search": STDIO connection closed after 159119s (cleanly)
+[DEBUG] MCP server "puppeteer": STDIO connection closed after 159117s (cleanly)
+[DEBUG] MCP server "entai": STDIO connection closed after 159118s (cleanly)
+[DEBUG] MCP server "redmine": UNKNOWN connection closed after 159117s (cleanly)
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "puppeteer": MCP server process exited cleanly
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": STDIO connection closed after 159118s (cleanly)
+[DEBUG] MCP server "context7": MCP server process exited cleanly
