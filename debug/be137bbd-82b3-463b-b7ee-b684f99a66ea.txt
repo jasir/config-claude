@@ -1,0 +1,63 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.962284.1760892093906
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 768335 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.962284.1760892093906 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[ERROR] Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json. Validation errors: : Unrecognized key(s) in object: 'category'
+[ERROR] Error: Error: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+    at A_6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1297:8144)
+    at B_6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1305:372)
+    at Z_6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1305:5641)
+    at Q_6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1305:4394)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1305:11006
+    at async YP (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1326:23574)
+    at async gs0.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3686:269)
+    at async gs0.parseAsync (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3606:4156)
+    at async BP8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3731:1576)
+    at async tT8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3676:1536)
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Plugin not available for MCP: superpowers@superpowers-marketplace - error type: generic-error
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/.config/nvim/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760892094118-boqcmy.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/be137bbd-82b3-463b-b7ee-b684f99a66ea-agent-be137bbd-82b3-463b-b7ee-b684f99a66ea.json.tmp.962284.1760892094132
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/be137bbd-82b3-463b-b7ee-b684f99a66ea-agent-be137bbd-82b3-463b-b7ee-b684f99a66ea.json.tmp.962284.1760892094132 to /home/jarda/.claude/todos/be137bbd-82b3-463b-b7ee-b684f99a66ea-agent-be137bbd-82b3-463b-b7ee-b684f99a66ea.json
+[DEBUG] File /home/jarda/.claude/todos/be137bbd-82b3-463b-b7ee-b684f99a66ea-agent-be137bbd-82b3-463b-b7ee-b684f99a66ea.json written atomically
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] getPluginSkills: Processing 1 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Plugin loading errors: Plugin superpowers has an invalid manifest file at /home/jarda/.claude/plugins/cache/superpowers/.claude-plugin/plugin.json.
+
+Validation errors: : Unrecognized key(s) in object: 'category'
+
+Please fix the manifest or remove it. The plugin cannot load with an invalid manifest.
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Total plugin commands loaded: 3
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
