@@ -382,3 +382,13 @@ Please fix the manifest or remove it. The plugin cannot load with an invalid man
 [DEBUG] Applied original permissions to temp file
 [DEBUG] Renaming /home/jarda/.claude.json.tmp.1049614.1760899186226 to /home/jarda/.claude.json
 [DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1760898985662-s9brdi.sh
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1049614.1760949063343
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 737489 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1049614.1760949063343 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
