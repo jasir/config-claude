@@ -389,3 +389,13 @@ Please fix the manifest or remove it. The plugin cannot load with an invalid man
 [DEBUG] Detected change to /home/jarda/.claude/settings.json
 [DEBUG] Replacing all allow rules for destination 'userSettings' with 1 rule(s): ["Bash"]
 [DEBUG] Replacing all allow rules for destination 'localSettings' with 2 rule(s): ["mcp__entai__get_basic_instructions","WebFetch(domain:github.com)"]
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1343955.1760995816297
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 562092 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1343955.1760995816297 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
