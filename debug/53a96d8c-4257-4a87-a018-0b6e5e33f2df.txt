@@ -1782,3 +1782,5 @@
 [DEBUG] Metrics opt-out check failed: No API key available
 [DEBUG] Metrics check failed, defaulting to disabled
 [DEBUG] Metrics export disabled by organization setting
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
