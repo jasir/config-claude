@@ -1,0 +1,145 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /c/work/projects/altisima-central-vault/__home/projects/ai/brain/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 19 allow rule(s) to destination 'localSettings': ["Bash(sudo apt:*)","Bash(sudo apt install:*)","Bash(git clone:*)","Bash(make:*)","Bash(sudo make:*)","Bash(sudo systemctl enable:*)","Bash(sudo systemctl reload:*)","Bash(sudo systemctl restart:*)","Bash(sudo systemctl status:*)","Bash(./claude-chat-browser.sh:*)","Read(//home/jarda/scripts-ai/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/server/instructions/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/cli/entcli/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/server/readfile/**)","Read(//home/jarda/administrator/**)","mcp__entai__get_basic_instructions","Skill(superpowers:brainstorming)","mcp__entai__execute","Skill(superpowers:brainstorm)"]
+[DEBUG] Applying permission update: Adding 1 directory with destination 'cliArg': ["/home/jarda/.claude"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051165066
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 386076 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051165066 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/c/work/projects/altisima-central-vault/__home/projects/ai/brain/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761051165142-yggpsr.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/da321449-ffea-4552-993f-66afee00dcc1-agent-da321449-ffea-4552-993f-66afee00dcc1.json.tmp.225025.1761051165148
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/da321449-ffea-4552-993f-66afee00dcc1-agent-da321449-ffea-4552-993f-66afee00dcc1.json.tmp.225025.1761051165148 to /home/jarda/.claude/todos/da321449-ffea-4552-993f-66afee00dcc1-agent-da321449-ffea-4552-993f-66afee00dcc1.json
+[DEBUG] File /home/jarda/.claude/todos/da321449-ffea-4552-993f-66afee00dcc1-agent-da321449-ffea-4552-993f-66afee00dcc1.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051165163
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 385678 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051165163 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (3285 bytes)
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051165275
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 385678 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051165275 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051165298
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 385678 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051165298 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 66ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 325ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Copied backup 262b8315a1b6608b@v1 from session 3bf24881-021f-4226-8244-4e8f07755ce0 to da321449-ffea-4552-993f-66afee00dcc1
+[DEBUG] FileHistory: Copied backup 262b8315a1b6608b@v2 from session 3bf24881-021f-4226-8244-4e8f07755ce0 to da321449-ffea-4552-993f-66afee00dcc1
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "resume" (1 before deduplication)
+[ERROR] Error: Error: Tool mcp__entai__get_basic_instructions not found
+    at $TB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1597:12537)
+    at Fq (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at mr (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+    at GU (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:35216)
+    at k6 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:73:4841)
+    at d5 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:75:32461)
+    at Q.updateContainer (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:79:1827)
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>brain-update is running…</command-message>
+<command-name>/brain-update</command-nam...
+[DEBUG] UserCommandMessage rendering: "brain-update is running…" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051170115
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 385570 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051170115 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051170123
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 385570 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051170123 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051170142
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 385678 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051170142 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 6, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761051165142-yggpsr.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] Metrics opt-out check failed: No API key available
+[DEBUG] Metrics check failed, defaulting to disabled
+[DEBUG] Metrics export disabled by organization setting
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter shutdown complete
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.225025.1761051173790
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 386086 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.225025.1761051173790 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
