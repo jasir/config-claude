@@ -1,0 +1,817 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 6 allow rule(s) to destination 'localSettings': ["Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","mcp__entai__psql","mcp__entai__get_basic_instructions","Skill(superpowers:brainstorming)","Skill(superpowers:subagent-driven-development)","Skill(superpowers:executing-plans)"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166750340
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581908 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166750340 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761166750433-k1zpla.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/f36fbfce-cc4d-484e-8c49-81a20ba80faa-agent-f36fbfce-cc4d-484e-8c49-81a20ba80faa.json.tmp.335510.1761166750439
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/f36fbfce-cc4d-484e-8c49-81a20ba80faa-agent-f36fbfce-cc4d-484e-8c49-81a20ba80faa.json.tmp.335510.1761166750439 to /home/jarda/.claude/todos/f36fbfce-cc4d-484e-8c49-81a20ba80faa-agent-f36fbfce-cc4d-484e-8c49-81a20ba80faa.json
+[DEBUG] File /home/jarda/.claude/todos/f36fbfce-cc4d-484e-8c49-81a20ba80faa-agent-f36fbfce-cc4d-484e-8c49-81a20ba80faa.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (4976 bytes)
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Total plugin agents loaded: 1
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166750578
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581908 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166750578 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 66ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Summarizing all 2 messages (~2797 tokens)
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at HR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:532:35)
+    at Unzip.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at M71.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async JHB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1540:25937)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 324ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 710ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.22"}}
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "redmine" Server stderr: Installed 50 packages in 21ms
+[DEBUG] Summarizing last 2 of 134 messages (~91612 tokens)
+[ERROR] MCP server "redmine" Server stderr: [10/22/25 22:59:12] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1348ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.18.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:672
+                             ListResourcesRequest
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166752632
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581908 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166752632 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166752701
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581800 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166752701 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166752711
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581800 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166752711 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166752741
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581908 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166752741 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 6, Agents: 1, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 0aac2f11-4e5b-43d0-8854-19b2ccec6723, tracking 0 files
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166752825
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581933 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166752825 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Summarizing all 2 messages (~2060 tokens)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 8 messages (~109887 tokens)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 2 messages (~2073 tokens)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__brave-search__brave_web_search
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__brave-search__brave_web_search
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__brave-search__brave_web_search" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 3 messages (~0 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: {"type":"error","error":{"type":"500","message":"Unexpected error: 'utf-8' codec can't encode character '\\ud83c' in position 32394: surrogates not allowed"},"request_id":"202510230459162c8a3e1fc6d14f5a"}
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] MCP server "brave-search": Calling MCP tool: brave_web_search
+[DEBUG] MCP server "brave-search": Tool 'brave_web_search' completed successfully in 1s
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__brave-search__brave_web_search
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__brave-search__brave_web_search" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__entai__fetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__entai__fetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__entai__fetch" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] MCP server "entai": Calling MCP tool: fetch
+[ERROR] MCP server "entai" Server stderr: {"type":"debug","content":"Fetching URL (redirect 0): https://www.nic.cz/whois/"}
+[ERROR] MCP server "entai" Server stderr: {"type":"debug","content":"Main content extracted successfully"}
+[DEBUG] MCP server "entai": Tool 'fetch' completed successfully in 505ms
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__entai__fetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__entai__fetch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166791812
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 411 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166791812 to /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json
+[DEBUG] File /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:www.nic.cz)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[ERROR] AxiosError: AxiosError: Request failed with status code 404
+    at HR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:532:35)
+    at Unzip.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at M71.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async cIQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2534:1062)
+    at async pIQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2534:2055)
+    at async Object.call (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2534:8456)
+    at async FS8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2692:65601)
+    at async BNQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2692:62655)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2692:61824
+    at async Oh1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:725:1714)
+    at async IS8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2692:61736)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__brave-search__brave_web_search
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__brave-search__brave_web_search
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__brave-search__brave_web_search" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166797604
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 456 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166797604 to /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json
+[DEBUG] File /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["mcp__brave-search__brave_web_search"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] MCP server "brave-search": Calling MCP tool: brave_web_search
+[DEBUG] MCP server "brave-search": Tool 'brave_web_search' completed successfully in 560ms
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__brave-search__brave_web_search
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__brave-search__brave_web_search" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166809093
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 475 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166809093 to /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json
+[DEBUG] File /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[ERROR] Error streaming, falling back to non-streaming mode: 422 {"detail":[{"type":"missing","loc":["body","tools",0,"input_schema"],"msg":"Field required","input":{"type":"web_search_20250305","name":"web_search","max_uses":8}}]}
+[ERROR] Error in non-streaming fallback: 422 {"detail":[{"type":"missing","loc":["body","tools",0,"input_schema"],"msg":"Field required","input":{"type":"web_search_20250305","name":"web_search","max_uses":8}}]}
+[ERROR] Error: Error: 422 {"detail":[{"type":"missing","loc":["body","tools",0,"input_schema"],"msg":"Field required","input":{"type":"web_search_20250305","name":"web_search","max_uses":8}}]}
+    at N4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:203:83250)
+    at by.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at by.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DfQ._t1.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:18883)
+    at async _t1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2692:39781)
+    at async DfQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:19051)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:13073
+    at async Yo0 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:4513)
+    at async T41 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:13043)
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__brave-search__brave_web_search
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__brave-search__brave_web_search
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__brave-search__brave_web_search" (0 before deduplication)
+[DEBUG] MCP server "brave-search": Calling MCP tool: brave_web_search
+[DEBUG] MCP server "brave-search": Tool 'brave_web_search' completed successfully in 499ms
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__brave-search__brave_web_search
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__brave-search__brave_web_search" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166815315
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 508 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json.tmp.335510.1761166815315 to /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json
+[DEBUG] File /c/work/projects/altisima-central-vault/__home/projects/ai/brain/projects/central-server/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:who.is)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-cleanup, /brain-project-status, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166822859
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581933 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166822859 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761166822922
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 581933 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761166822922 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] Error in non-streaming fallback: 500 {"type":"error","error":{"type":"500","message":"Unexpected error: 'utf-8' codec can't encode character '\\ud83c' in position 32394: surrogates not allowed"},"request_id":"2025102305022398dce3c31a444cdd"}
+[ERROR] Error: Error: 500 {"type":"error","error":{"type":"500","message":"Unexpected error: 'utf-8' codec can't encode character '\\ud83c' in position 32394: surrogates not allowed"},"request_id":"2025102305022398dce3c31a444cdd"}
+    at N4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:203:83319)
+    at by.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at by.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DfQ._t1.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:18883)
+    at async _t1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2692:39781)
+    at async DfQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:19051)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:12841
+    at async Yo0 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:4513)
+    at async Dd (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3356:12812)
+[DEBUG] Metrics opt-out check failed: No API key available
+[DEBUG] Metrics check failed, defaulting to disabled
+[DEBUG] Metrics export disabled by organization setting
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761166750433-k1zpla.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter shutdown complete
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.335510.1761167166962
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 582352 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.335510.1761167166962 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

@@ -1,0 +1,119 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/.claude/settings.json, /home/jarda/.claude/settings.local.json, /home/jarda/.claude/settings-ping.json...
+[DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["Bash(scripts-ai/completion-orchestrator generate-cache:*)","Bash(dmesg:*)","Bash(systemctl status:*)","Bash(sudo journalctl:*)","Bash(sudo tail:*)","Read(//var/log/**)","Bash(sudo dmesg:*)","Bash(sudo systemctl:*)","mcp__entai__psql","mcp__entai__get_basic_instructions"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131316
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577556 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131316 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761086131405-c5nvei.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/5f6f7c40-808a-44d8-89ad-0c26f34ba49b-agent-5f6f7c40-808a-44d8-89ad-0c26f34ba49b.json.tmp.534524.1761086131412
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/5f6f7c40-808a-44d8-89ad-0c26f34ba49b-agent-5f6f7c40-808a-44d8-89ad-0c26f34ba49b.json.tmp.534524.1761086131412 to /home/jarda/.claude/todos/5f6f7c40-808a-44d8-89ad-0c26f34ba49b-agent-5f6f7c40-808a-44d8-89ad-0c26f34ba49b.json
+[DEBUG] File /home/jarda/.claude/todos/5f6f7c40-808a-44d8-89ad-0c26f34ba49b-agent-5f6f7c40-808a-44d8-89ad-0c26f34ba49b.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131426
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577161 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131426 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131449
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577161 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131449 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131493
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577161 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131493 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131553
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577053 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131553 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131566
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577053 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131566 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086131600
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577161 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086131600 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (4977 bytes)
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at HR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at M71.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async JHB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1540:25937)
+[DEBUG] Stream started - received first chunk
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] FileHistory: Added snapshot for 95a62168-f5c8-4ec1-bf47-6acfb0148478, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/context</command-name>
+            <command-message>context</command-message>
+       ...
+[DEBUG] UserCommandMessage rendering: "context" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086133724
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577161 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086133724 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761086131405-c5nvei.sh
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.534524.1761086139134
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 577555 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.534524.1761086139134 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

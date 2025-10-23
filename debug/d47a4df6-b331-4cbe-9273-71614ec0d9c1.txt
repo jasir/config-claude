@@ -1,0 +1,76 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/.claude/settings.json, /home/jarda/.claude/settings.local.json, /home/jarda/.claude/settings-ping.json...
+[DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["Bash(scripts-ai/completion-orchestrator generate-cache:*)","Bash(dmesg:*)","Bash(systemctl status:*)","Bash(sudo journalctl:*)","Bash(sudo tail:*)","Read(//var/log/**)","Bash(sudo dmesg:*)","Bash(sudo systemctl:*)","mcp__entai__psql","mcp__entai__get_basic_instructions"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.168654.1761141602320
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 579417 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.168654.1761141602320 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+[DEBUG] Looking for shell config file: /home/jarda/.zshrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-zsh-1761141602405-q6keh6.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/d47a4df6-b331-4cbe-9273-71614ec0d9c1-agent-d47a4df6-b331-4cbe-9273-71614ec0d9c1.json.tmp.168654.1761141602410
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/d47a4df6-b331-4cbe-9273-71614ec0d9c1-agent-d47a4df6-b331-4cbe-9273-71614ec0d9c1.json.tmp.168654.1761141602410 to /home/jarda/.claude/todos/d47a4df6-b331-4cbe-9273-71614ec0d9c1-agent-d47a4df6-b331-4cbe-9273-71614ec0d9c1.json
+[DEBUG] File /home/jarda/.claude/todos/d47a4df6-b331-4cbe-9273-71614ec0d9c1-agent-d47a4df6-b331-4cbe-9273-71614ec0d9c1.json written atomically
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.168654.1761141602437
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 579417 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.168654.1761141602437 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (57255 bytes)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.168654.1761141602696
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 579417 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.168654.1761141602696 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at HR (file:///home/jarda/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at Unzip.emit (node:events:529:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at M71.request (file:///home/jarda/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async JHB (file:///home/jarda/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1540:25937)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-zsh-1761141602405-q6keh6.sh

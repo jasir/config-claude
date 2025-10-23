@@ -1,0 +1,6 @@
+[ERROR] Error: Error: Invalid setting source: none. Valid options are: user, project, local
+    at mqA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:63:16328)
+    at Yd8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3734:48)
+    at Jd8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3735:294)
+    at Xd8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3735:1463)
+    at Dd8 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3790:2732)
