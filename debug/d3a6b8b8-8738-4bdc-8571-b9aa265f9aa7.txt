@@ -1,0 +1,176 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/k3w-docker/src/web-frontend/apps/web/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 13 allow rule(s) to destination 'localSettings': ["mcp__mcp-atlassian__jira_get_issue","Bash(yarn check:tsc:*)","Bash(yarn check:prettier:*)","Bash(gh pr view:*)","mcp__mcp-atlassian__confluence_search","mcp__mcp-atlassian__confluence_get_page","Bash(yarn check:eslint:*)","Bash(yarn prettier:*)","mcp__mcp-atlassian__jira_search","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//home/jarda/scripts-ai/**)","mcp__entai__get_basic_instructions"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571789492
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571789492 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/k3w-docker/src/web-frontend/apps/web/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761571789575-0t53h3.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7-agent-d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7.json.tmp.1107883.1761571789583
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7-agent-d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7.json.tmp.1107883.1761571789583 to /home/jarda/.claude/todos/d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7-agent-d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7.json
+[DEBUG] File /home/jarda/.claude/todos/d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7-agent-d3a6b8b8-8738-4bdc-8571-b9aa265f9aa7.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571789640
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571789640 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Total plugin agents loaded: 1
+[DEBUG] Shell snapshot created successfully (3525 bytes)
+[DEBUG] Summarizing all 2 messages (~1911 tokens)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571789893
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571789893 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "mcp-atlassian": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571790401
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571790401 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571790507
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380629 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571790507 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571790518
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380629 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571790518 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571790539
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571790539 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+[DEBUG] Loaded 2 installed plugins from /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Plugin commit-commands@claude-code-plugins already in installed_plugins.json, skipping
+[DEBUG] Plugin superpowers@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Saved 2 installed plugins to /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 2 skipped)
+[DEBUG] Found 2 installed plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 6, Agents: 1, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Summarizing all 7 messages (~65156 tokens)
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 218ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571790812
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380733 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571790812 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 620ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] MCP server "mcp-atlassian" Server stderr: [10/27/25 14:29:51] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+[DEBUG] MCP server "mcp-atlassian": Successfully connected to stdio server in 831ms
+[DEBUG] MCP server "mcp-atlassian": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Atlassian MCP","version":"1.10.1"}}
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 30000ms
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 2 messages (~1990 tokens)
+[ERROR] MCP server "chrome-devtools" Server stderr: ERROR: `chrome-devtools-mcp` does not support Node v22.8.0. Please upgrade to Node 22.12.0 LTS or a newer LTS.
+[DEBUG] MCP server "chrome-devtools": Connection failed after 1111ms: MCP error -32000: Connection closed
+[ERROR] MCP server "chrome-devtools" Connection failed: MCP error -32000: Connection closed
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 12 messages (~104738 tokens)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 2 messages (~1810 tokens)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing all 15 messages (~144495 tokens)
+[DEBUG] Stream started - received first chunk
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571799285
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380733 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571799285 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571799332
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380733 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571799332 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761571789575-0t53h3.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "mcp-atlassian": Sending SIGINT to MCP server process
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "mcp-atlassian": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "mcp-atlassian": SIGTERM failed, sending SIGKILL to MCP server process
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1107883.1761571803143
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381129 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1107883.1761571803143 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

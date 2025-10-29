@@ -1,0 +1,1341 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/administrator/.claude/settings.json, /home/jarda/administrator/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 54 allow rule(s) to destination 'localSettings': ["Read(/home/jarda/.cargo/**)","Read(/home/jarda/**)","Read(/home/jarda/.cargo/**)","Bash(source:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/home/jarda/.config/kitty/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/home/jarda/.local/share/applications/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/git-composer/**)","Read(/home/jarda/scripts-ai/**)","Bash(./myctl servers:*)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Bash(apt show:*)","Bash(apt search:*)","WebSearch","Read(//home/jarda/.pyenv/versions/3.12.11/bin/**)","Read(//home/jarda/**)","Read(//home/jarda/ui-backup/**)","Bash(sudo dmesg:*)","Bash(journalctl:*)","Read(//etc/apt/**)","Read(//etc/**)","Bash(dpkg:*)","Read(//opt/freeplane/**)","Bash(/opt/freeplane/freeplane.sh:*)","Bash(flatpak list:*)","Bash(snap list:*)","Read(//var/log/apt/**)","Bash(find:*)","Read(//opt/**)","Bash(sudo dpkg:*)","Read(//usr/share/freeplane/**)","Read(//usr/local/bin/**)","Bash(sudo rm:*)","Bash(freeplane:*)","Bash(pkill:*)","Bash(cat:*)","Bash(ln:*)","Read(//c/work/projects/bashsettings/**)","Bash(chmod:*)","Bash(bash:*)","Bash(echo:*)","mcp__entai__get_basic_instructions","Skill(superpowers:systematic-debugging)"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410957833
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380120 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410957833 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/administrator/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761410958055-pb6z3h.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/78af94b5-a283-492b-b608-656aedb09ab0-agent-78af94b5-a283-492b-b608-656aedb09ab0.json.tmp.360511.1761410958068
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/78af94b5-a283-492b-b608-656aedb09ab0-agent-78af94b5-a283-492b-b608-656aedb09ab0.json.tmp.360511.1761410958068 to /home/jarda/.claude/todos/78af94b5-a283-492b-b608-656aedb09ab0-agent-78af94b5-a283-492b-b608-656aedb09ab0.json
+[DEBUG] File /home/jarda/.claude/todos/78af94b5-a283-492b-b608-656aedb09ab0-agent-78af94b5-a283-492b-b608-656aedb09ab0.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410958096
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379740 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410958096 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410958215
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379740 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410958215 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Shell snapshot created successfully (3526 bytes)
+[DEBUG] Summarizing all 2 messages (~0 tokens)
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 160ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to undefined server in 643ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410959919
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379740 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410959919 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410960073
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379632 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410960073 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410960087
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379632 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410960087 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761410960135
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379740 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761410960135 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Found 2 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 6, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 0bc8188c-dda1-4ade-9884-b6ac2d81ad73, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] executePreToolHooks called for tool: mcp__entai__get_basic_instructions
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__entai__get_basic_instructions
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__entai__get_basic_instructions" (0 before deduplication)
+[DEBUG] MCP server "entai": Calling MCP tool: get_basic_instructions
+[DEBUG] MCP server "entai": Tool 'get_basic_instructions' completed successfully in 2s
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__entai__get_basic_instructions
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__entai__get_basic_instructions" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] No hook environment files found
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] Error streaming, falling back to non-streaming mode: Connection error.
+[ERROR] Error streaming, falling back to non-streaming mode: Connection error.
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761411012833
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379740 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761411012833 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] Error: Error: Failed to install Claude CLI package: npm error code ETIMEDOUT
+npm error syscall read
+npm error errno -110
+npm error network read ETIMEDOUT
+npm error network This is a problem related to network connectivity.
+npm error network In most cases you are behind a proxy or have bad network settings.
+npm error network
+npm error network If you are behind a proxy, please make sure that the
+npm error network 'proxy' config is set properly.  See: 'npm help config'
+npm error A complete log of this run can be found in: /home/jarda/.npm/_logs/2025-10-25T16_49_23_528Z-debug-0.log
+    at Ea (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1827:572)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2811:32843
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 599e2803-4278-4680-a074-a193f872a4f1
+[DEBUG] FileHistory: Added snapshot for 599e2803-4278-4680-a074-a193f872a4f1, tracking 0 files
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[ERROR] Error streaming, falling back to non-streaming mode: Connection error.
+[ERROR] Error streaming, falling back to non-streaming mode: Connection error.
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761411176084
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379740 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761411176084 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761411176101
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379630 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761411176101 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 00c6d1da-a88e-4a55-8a38-4d830f76d3bc
+[DEBUG] FileHistory: Added snapshot for 00c6d1da-a88e-4a55-8a38-4d830f76d3bc, tracking 0 files
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skills and commands included in Skill tool: brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /brain-finish, /brain-project-status, /brain-cleanup, /brain-update, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[ERROR] Error streaming, falling back to non-streaming mode: Connection error.
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761411466097
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379630 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761411466097 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761411466215
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 379630 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761411466215 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761411466232
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380822 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761411466232 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761412783614
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380822 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761412783614 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] Detected change to /home/jarda/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'userSettings' with 1 rule(s): ["Bash"]
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 54 rule(s): ["Read(/home/jarda/.cargo/**)","Read(/home/jarda/**)","Read(/home/jarda/.cargo/**)","Bash(source:*)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/home/jarda/.config/kitty/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/home/jarda/.local/share/applications/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(/c/work/projects/git-composer/**)","Read(/home/jarda/scripts-ai/**)","Bash(./myctl servers:*)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Bash(apt show:*)","Bash(apt search:*)","WebSearch","Read(//home/jarda/.pyenv/versions/3.12.11/bin/**)","Read(//home/jarda/**)","Read(//home/jarda/ui-backup/**)","Bash(sudo dmesg:*)","Bash(journalctl:*)","Read(//etc/apt/**)","Read(//etc/**)","Bash(dpkg:*)","Read(//opt/freeplane/**)","Bash(/opt/freeplane/freeplane.sh:*)","Bash(flatpak list:*)","Bash(snap list:*)","Read(//var/log/apt/**)","Bash(find:*)","Read(//opt/**)","Bash(sudo dpkg:*)","Read(//usr/share/freeplane/**)","Read(//usr/local/bin/**)","Bash(sudo rm:*)","Bash(freeplane:*)","Bash(pkill:*)","Bash(cat:*)","Bash(ln:*)","Read(//c/work/projects/bashsettings/**)","Bash(chmod:*)","Bash(bash:*)","Bash(echo:*)","mcp__entai__get_basic_instructions","Skill(superpowers:systematic-debugging)"]
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761416361293
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761416361293 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761418161962
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761418161962 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761419961864
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761419961864 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761421762090
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761421762090 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761423562206
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761423562206 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761425362238
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761425362238 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761430761300
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761430761300 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761432561131
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761432561131 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761436161184
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761436161184 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761437961681
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761437961681 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761439761113
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761439761113 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761443361155
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761443361155 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761445161163
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761445161163 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761446961152
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761446961152 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761450561182
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761450561182 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761452361424
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761452361424 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761454161719
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761454161719 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761455961191
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761455961191 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761457761252
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761457761252 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761459561319
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761459561319 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761461362187
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761461362187 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761464964793
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761464964793 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761466777441
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761466777441 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761470363869
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761470363869 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761473961845
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761473961845 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761475761291
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761475761291 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761477561732
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761477561732 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761481166025
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761481166025 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761482964339
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761482964339 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761486564402
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761486564402 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761488361786
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761488361786 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761490161392
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761490161392 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761491968242
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761491968242 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761493761506
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761493761506 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761495561464
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761495561464 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761497362559
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761497362559 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761499164330
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761499164330 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761500963270
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761500963270 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761502762539
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761502762539 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761506364089
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761506364089 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761508164627
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761508164627 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761511762489
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761511762489 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761513563223
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761513563223 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761515362997
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761515362997 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761518961790
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761518961790 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761520762800
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761520762800 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761522562252
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761522562252 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761524361467
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761524361467 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761526161279
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761526161279 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761529761399
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761529761399 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761531561495
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761531561495 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761533361408
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761533361408 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761535161380
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761535161380 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761536961378
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761536961378 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761538761562
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761538761562 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761542361421
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761542361421 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761544161446
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761544161446 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761545961429
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761545961429 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761547761519
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761547761519 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761549561723
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761549561723 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761551361545
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761551361545 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761553162944
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 381167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761553162944 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761556762124
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761556762124 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761560362347
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761560362347 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761562162527
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761562162527 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761563961563
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761563961563 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761565762971
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761565762971 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761567562399
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761567562399 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761569361402
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761569361402 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761571161576
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380737 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761571161576 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761572961415
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380911 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761572961415 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761574761561
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380911 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761574761561 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761576561428
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380911 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761576561428 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761410958055-pb6z3h.sh
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.360511.1761579734505
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 380904 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.360511.1761579734505 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

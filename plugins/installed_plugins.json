@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "plugins": {
+    "commit-commands@claude-code-plugins": {
+      "version": "unknown",
+      "installedAt": "2025-10-25T18:06:27.896Z",
+      "lastUpdated": "2025-10-25T18:06:27.896Z",
+      "installPath": "/home/jarda/.claude/plugins/marketplaces/claude-code-plugins/plugins/commit-commands",
+      "gitCommitSha": "24aa2626cc9eb26208a38853d30dcd5d25a2ac81",
+      "isLocal": true
+    },
+    "superpowers@superpowers-marketplace": {
+      "version": "3.2.3",
+      "installedAt": "2025-10-25T18:06:28.727Z",
+      "lastUpdated": "2025-10-25T18:06:28.727Z",
+      "installPath": "/home/jarda/.claude/plugins/cache/superpowers",
+      "gitCommitSha": "19e2997334eef29d0b4ab3c40a4bc124d200d1fb",
+      "isLocal": false
+    }
+  }
+}
