@@ -675,3 +675,33 @@
 [DEBUG] Metrics opt-out check failed: No API key available
 [DEBUG] Metrics check failed, defaulting to disabled
 [DEBUG] Metrics export disabled by organization setting
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.83595.1761781464783
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 859376 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.83595.1761781464783 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.83595.1761783264867
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 859376 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.83595.1761783264867 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-local
+[DEBUG] AutoUpdater: Using local update method
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.83595.1761785064786
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 859376 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.83595.1761785064786 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
