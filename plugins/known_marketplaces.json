@@ -13,6 +13,14 @@
       "repo": "obra/superpowers-marketplace"
     },
     "installLocation": "/home/jarda/.claude/plugins/marketplaces/superpowers-marketplace",
-    "lastUpdated": "2025-10-20T09:46:20.373Z"
+    "lastUpdated": "2025-10-31T15:34:09.926Z"
+  },
+  "ent-skills": {
+    "source": {
+      "source": "directory",
+      "path": "/c/work/projects/claude-plugins/ent-skills"
+    },
+    "installLocation": "/c/work/projects/claude-plugins/ent-skills",
+    "lastUpdated": "2025-11-01T02:34:17.682Z"
   }
 }

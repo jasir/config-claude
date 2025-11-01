@@ -1,0 +1,760 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /c/work/projects/altisima-central-vault/tm/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 5 allow rule(s) to destination 'localSettings': ["Skill(superpowers:brainstorming)","Skill(superpowers:writing-skills)","Skill(superpowers:test-driven-development)","mcp__entai__get_basic_instructions","Skill(ent-framework-programmer)"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964131912
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85413 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964131912 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964131916
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85413 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964131916 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Loading plugin episodic-memory from source: {"source":"url","url":"https://github.com/obra/episodic-memory.git"}
+[DEBUG] Using cached plugin episodic-memory from /home/jarda/.claude/plugins/cache/episodic-memory
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/c/work/projects/altisima-central-vault/tm/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761964132002-fteqdn.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/12ae4066-70db-41ec-b154-3f957483f8e6-agent-12ae4066-70db-41ec-b154-3f957483f8e6.json.tmp.641798.1761964132009
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/12ae4066-70db-41ec-b154-3f957483f8e6-agent-12ae4066-70db-41ec-b154-3f957483f8e6.json.tmp.641798.1761964132009 to /home/jarda/.claude/todos/12ae4066-70db-41ec-b154-3f957483f8e6-agent-12ae4066-70db-41ec-b154-3f957483f8e6.json
+[DEBUG] File /home/jarda/.claude/todos/12ae4066-70db-41ec-b154-3f957483f8e6-agent-12ae4066-70db-41ec-b154-3f957483f8e6.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132014
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132014 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Plugin loading errors: Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Plugin loading errors: Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Loading hooks from plugin: episodic-memory
+[DEBUG] Registered 3 hooks from 3 plugins
+[DEBUG] Loaded 1 unique skills (managed: 0, user: 1, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Checking plugin episodic-memory: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin episodic-memory default skillsPath: /home/jarda/.claude/plugins/cache/episodic-memory/skills
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 1 skills from plugin episodic-memory default directory
+[DEBUG] Total plugin skills loaded: 21
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132041
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132041 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loaded 1 commands from plugin episodic-memory default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] getSkillsIfEnabled returning: 1 skill dir commands, 21 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (5024 bytes)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Plugin loading errors: Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Loaded 1 agents from plugin episodic-memory default directory
+[DEBUG] Loaded agent from plugin episodic-memory custom file: /home/jarda/.claude/plugins/cache/episodic-memory/agents/search-conversations.md
+[DEBUG] Total plugin agents loaded: 3
+[DEBUG] Summarizing last 13 of 19 messages (~139032 tokens)
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132191
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132191 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 3 unique hooks for query "startup" (3 before deduplication)
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132256
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132256 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132260
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132260 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132273
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132273 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964132276
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964132276 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Found 3 enabled plugins
+[DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+[DEBUG] Loaded 3 installed plugins from /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Plugin commit-commands@claude-code-plugins already in installed_plugins.json, skipping
+[DEBUG] Plugin superpowers@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Plugin episodic-memory@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Found 3 installed plugins
+[DEBUG] Loaded plugins - Enabled: 3, Disabled: 0, Commands: 7, Agents: 3, Errors: 1
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Plugin ent-skills@ent-skills not found in any marketplace, skipping
+[DEBUG] Saved 3 installed plugins to /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 4 skipped)
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 123ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 157ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at uR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:25:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:30:9845)
+    at Unzip.emit (node:events:532:35)
+    at Unzip.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at m7A.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:32:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async rp2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3623:15232)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4japY1kB57rP99bSN"}
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 345ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4jb5JZivCufQfMeY7"}
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4jeYXmdfjbfk72x2u"}
+[ERROR] MCP server "redmine" Server stderr: Installed 54 packages in 24ms
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4kUtvyNz9SWdoBpQT"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4kUtvyNz9SWdoBpQT"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8646
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async v8A (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8616)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4kjn3S4t3y7twuKPx"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4kjn3S4t3y7twuKPx"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8414
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async OS (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8385)
+[DEBUG] Summarizing last 7 of 95 messages (~114046 tokens)
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4kd5pbKtgVjC2ZR1V"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4kd5pbKtgVjC2ZR1V"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8646
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async v8A (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8616)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4mccbDu7TT5wX27JL"}
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4ncPnqo4eSfcqHGMb"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4ncPnqo4eSfcqHGMb"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8414
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async OS (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8385)
+[DEBUG] Summarizing last 2 of 324 messages (~100041 tokens)
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 740ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.26"}}
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4obfutD3VmMTTAbBx"}
+[ERROR] MCP server "redmine" Server stderr: [11/01/25 03:28:53] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1156ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.20.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListPromptsRequest
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4pZTvzyjeKwgmM1mY"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP4pZTvzyjeKwgmM1mY"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8414
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async OS (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8385)
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListResourcesRequest
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 91411690-744a-49fa-8f4a-340369013588, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /brain-update, /brain-project-status, /brain-cleanup, /brain-finish, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan, /search-conversations
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Skills and commands included in Skill tool: ent-framework-programmer, brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills, remembering-conversations
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP7JcjYwFtThKEWmERW"}
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP7JmunYgQsc2K2ctdj"}
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP7Kcm6Ng978k5LrPBm"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP7Kcm6Ng978k5LrPBm"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8414
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async OS (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8385)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:63:708
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15070)
+    at MtB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1096:19492)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP7KoB9Tzana2c59rS4"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgP7KoB9Tzana2c59rS4"}
+    at M4.generate (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:205:83274)
+    at Ck.makeStatusError (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:2117)
+    at Ck.makeRequest (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:359:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seA.model (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14755)
+    at async seA (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:2743:39781)
+    at async hd2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:14909)
+    at async file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8646
+    at async re1 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:1970)
+    at async v8A (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3395:8616)
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964167753
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964167753 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761964132002-fteqdn.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.641798.1761964201125
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85375 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.641798.1761964201125 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964206376
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964206376 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964206379
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964206379 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964206391
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964206391 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964206394
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964206394 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Found 3 enabled plugins
+[DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+[DEBUG] Loaded 3 installed plugins from /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Plugin commit-commands@claude-code-plugins already in installed_plugins.json, skipping
+[DEBUG] Plugin superpowers@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Plugin episodic-memory@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Found 3 installed plugins
+[DEBUG] Loaded plugins - Enabled: 3, Disabled: 0, Commands: 7, Agents: 3, Errors: 1
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Plugin ent-skills@ent-skills not found in any marketplace, skipping
+[DEBUG] Saved 3 installed plugins to /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 4 skipped)
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 174ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at uR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:25:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:30:9845)
+    at Unzip.emit (node:events:532:35)
+    at Unzip.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at m7A.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:32:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async rp2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3623:15232)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 344ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "redmine" Server stderr: Installed 54 packages in 25ms
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 764ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.26"}}
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "redmine" Server stderr: [11/01/25 03:30:07] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1168ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.20.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListResourcesRequest
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: [Rewind] Rewinding to snapshot for 91411690-744a-49fa-8f4a-340369013588
+[DEBUG] FileHistory: [Rewind] Finished rewinding to 91411690-744a-49fa-8f4a-340369013588
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964210619
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964210619 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local, using native: false
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964210652
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964210652 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964210655
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964210655 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964210660
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964210660 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message b73b1b42-7d15-415c-9618-32883d95f7c2
+[DEBUG] FileHistory: Added snapshot for b73b1b42-7d15-415c-9618-32883d95f7c2, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /brain-project-status, /brain-update, /brain-cleanup, /brain-finish, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan, /search-conversations
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Skills and commands included in Skill tool: ent-framework-programmer, brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills, remembering-conversations
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Stream started - received first chunk
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:63:708
+    at Q (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:8:15070)
+    at MtB (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1096:19492)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__entai__get_basic_instructions
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__entai__get_basic_instructions
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__entai__get_basic_instructions" (0 before deduplication)
+[DEBUG] MCP server "entai": Calling MCP tool: get_basic_instructions
+[DEBUG] MCP server "entai": Tool 'get_basic_instructions' completed successfully in 135ms
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__entai__get_basic_instructions
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__entai__get_basic_instructions" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Skills and commands included in Skill tool: ent-framework-programmer, brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills, remembering-conversations
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-project-status, /brain-update, /brain-cleanup, /brain-finish, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan, /search-conversations
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Skill
+[DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Metadata string for ent-framework-programmer:
+[DEBUG] <command-message>The "ent-framework-programmer" skill is running</command-message>
+<command-name>ent-framework-programmer</command-name>
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 2 messages for ent-framework-programmer
+[DEBUG] Message 1: <command-message>The "ent-framework-programmer" skill is running</command-message>
+<command-name>ent-framework-programmer</command-name>
+[DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /home/jarda/.claude/skills/ent-framework-programmer\n\n# ENT Framework Programmer\n\n## Overview\n\n**ENT Framework** = Markdown-based developmen
+[DEBUG] SkillTool returning 2 newMessages for skill ent-framework-programmer
+[DEBUG] newMessage 1: <command-message>The "ent-framework-programmer" skill is running</command-message>
+<command-name>ent-framework-programmer</command-name>...
+[DEBUG] newMessage 2: [{"type":"text","text":"Base directory for this skill: /home/jarda/.claude/skills/ent-framework-programmer\n\n# ENT Framework Programmer\n\n## Overvie...
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "ent-framework-programmer" skill is running</command-message>
+<command-name>ent...
+[DEBUG] UserCommandMessage rendering: "The "ent-framework-programmer" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Getting matching hook commands for PostToolUse with query: Skill
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "ent-framework-programmer" skill is running</command-message>
+<command-name>ent...
+[DEBUG] UserCommandMessage rendering: "The "ent-framework-programmer" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Skills and commands included in Skill tool: ent-framework-programmer, brainstorming, condition-based-waiting, defense-in-depth, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, requesting-code-review, root-cause-tracing, sharing-skills, subagent-driven-development, systematic-debugging, test-driven-development, testing-anti-patterns, testing-skills-with-subagents, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills, remembering-conversations
+[DEBUG] Skill prompt: showing "superpowers:brainstorming" (userFacingName="brainstorming")
+[DEBUG] Skill prompt: showing "superpowers:condition-based-waiting" (userFacingName="condition-based-waiting")
+[DEBUG] Skill prompt: showing "superpowers:defense-in-depth" (userFacingName="defense-in-depth")
+[DEBUG] Skill prompt: showing "superpowers:dispatching-parallel-agents" (userFacingName="dispatching-parallel-agents")
+[DEBUG] Skill prompt: showing "superpowers:executing-plans" (userFacingName="executing-plans")
+[DEBUG] Skill prompt: showing "superpowers:finishing-a-development-branch" (userFacingName="finishing-a-development-branch")
+[DEBUG] Skill prompt: showing "superpowers:receiving-code-review" (userFacingName="receiving-code-review")
+[DEBUG] Skill prompt: showing "superpowers:requesting-code-review" (userFacingName="requesting-code-review")
+[DEBUG] Skill prompt: showing "superpowers:root-cause-tracing" (userFacingName="root-cause-tracing")
+[DEBUG] Skill prompt: showing "superpowers:sharing-skills" (userFacingName="sharing-skills")
+[DEBUG] Skill prompt: showing "superpowers:subagent-driven-development" (userFacingName="subagent-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:systematic-debugging" (userFacingName="systematic-debugging")
+[DEBUG] Skill prompt: showing "superpowers:test-driven-development" (userFacingName="test-driven-development")
+[DEBUG] Skill prompt: showing "superpowers:testing-anti-patterns" (userFacingName="testing-anti-patterns")
+[DEBUG] Skill prompt: showing "superpowers:testing-skills-with-subagents" (userFacingName="testing-skills-with-subagents")
+[DEBUG] Skill prompt: showing "superpowers:using-git-worktrees" (userFacingName="using-git-worktrees")
+[DEBUG] Skill prompt: showing "superpowers:using-superpowers" (userFacingName="using-superpowers")
+[DEBUG] Skill prompt: showing "superpowers:verification-before-completion" (userFacingName="verification-before-completion")
+[DEBUG] Skill prompt: showing "superpowers:writing-plans" (userFacingName="writing-plans")
+[DEBUG] Skill prompt: showing "superpowers:writing-skills" (userFacingName="writing-skills")
+[DEBUG] Skill prompt: showing "episodic-memory:remembering-conversations" (userFacingName="remembering-conversations")
+[DEBUG] Slash commands included in SlashCommand tool: /brain-project-status, /brain-update, /brain-cleanup, /brain-finish, /commit-commands:clean_gone, /commit-commands:commit-push-pr, /commit-commands:commit, /superpowers:brainstorm, /superpowers:execute-plan, /superpowers:write-plan, /search-conversations
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: pug
+    at $D (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4141
+    at Array.map (<anonymous>)
+    at _F (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4132)
+    at JSQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1802:6548)
+    at kw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:74:19414)
+    at ro (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:42806)
+    at v9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38347)
+    at nc (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38275)
+    at cw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38129)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: pug
+    at $D (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4141
+    at Array.map (<anonymous>)
+    at _F (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4132)
+    at JSQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1802:6548)
+    at kw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:74:19414)
+    at ro (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:42806)
+    at v9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38347)
+    at nc (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38275)
+    at cw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38129)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: pug
+    at $D (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4141
+    at Array.map (<anonymous>)
+    at _F (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4132)
+    at JSQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1802:6548)
+    at kw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:74:19414)
+    at ro (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:42806)
+    at v9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38347)
+    at nc (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38275)
+    at cw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38129)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: pug
+    at $D (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4413)
+    at file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4141
+    at Array.map (<anonymous>)
+    at _F (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1180:4132)
+    at JSQ (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:1802:6548)
+    at kw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:74:19414)
+    at ro (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:42806)
+    at v9 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38347)
+    at nc (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38275)
+    at cw (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:76:38129)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964225712
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964225712 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964225722
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964225722 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Detected change to /home/jarda/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'userSettings' with 1 rule(s): ["Bash"]
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 5 rule(s): ["Skill(superpowers:brainstorming)","Skill(superpowers:writing-skills)","Skill(superpowers:test-driven-development)","mcp__entai__get_basic_instructions","Skill(ent-framework-programmer)"]
+[DEBUG] Detected change to /home/jarda/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'userSettings' with 1 rule(s): ["Bash"]
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 5 rule(s): ["Skill(superpowers:brainstorming)","Skill(superpowers:writing-skills)","Skill(superpowers:test-driven-development)","mcp__entai__get_basic_instructions","Skill(ent-framework-programmer)"]
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761964206117-kuwipt.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] Metrics opt-out check failed: No API key available
+[DEBUG] Metrics check failed, defaulting to disabled
+[DEBUG] Metrics export disabled by organization setting
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter shutdown complete
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.645430.1761964482004
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85772 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.645430.1761964482004 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically

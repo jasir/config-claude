@@ -1,0 +1,165 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.636107.1761963967536
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.636107.1761963967536 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Loading plugin episodic-memory from source: {"source":"url","url":"https://github.com/obra/episodic-memory.git"}
+[DEBUG] Using cached plugin episodic-memory from /home/jarda/.claude/plugins/cache/episodic-memory
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/projects/claude-plugins/ent-skills/skills/ent-framework-programmer/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761963967624-qviohc.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/efa3a49d-0024-4b54-bcf0-28d4ef017ed4-agent-efa3a49d-0024-4b54-bcf0-28d4ef017ed4.json.tmp.636107.1761963967629
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/efa3a49d-0024-4b54-bcf0-28d4ef017ed4-agent-efa3a49d-0024-4b54-bcf0-28d4ef017ed4.json.tmp.636107.1761963967629 to /home/jarda/.claude/todos/efa3a49d-0024-4b54-bcf0-28d4ef017ed4-agent-efa3a49d-0024-4b54-bcf0-28d4ef017ed4.json
+[DEBUG] File /home/jarda/.claude/todos/efa3a49d-0024-4b54-bcf0-28d4ef017ed4-agent-efa3a49d-0024-4b54-bcf0-28d4ef017ed4.json written atomically
+[DEBUG] Plugin loading errors: Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Plugin loading errors: Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Loading hooks from plugin: episodic-memory
+[DEBUG] Registered 3 hooks from 3 plugins
+[DEBUG] Loaded 1 unique skills (managed: 0, user: 1, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Checking plugin episodic-memory: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin episodic-memory default skillsPath: /home/jarda/.claude/plugins/cache/episodic-memory/skills
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 1 skills from plugin episodic-memory default directory
+[DEBUG] Total plugin skills loaded: 21
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.636107.1761963967669
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.636107.1761963967669 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loaded 1 commands from plugin episodic-memory default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] getSkillsIfEnabled returning: 1 skill dir commands, 21 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Plugin loading errors: Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Loaded 1 agents from plugin episodic-memory default directory
+[DEBUG] Loaded agent from plugin episodic-memory custom file: /home/jarda/.claude/plugins/cache/episodic-memory/agents/search-conversations.md
+[DEBUG] Total plugin agents loaded: 3
+[DEBUG] MCP server "acpPermission": Initializing HTTP transport to http://127.0.0.1:38833/mcp
+[DEBUG] MCP server "acpPermission": Node version: v24.11.0, Platform: linux
+[DEBUG] MCP server "acpPermission": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "acpPermission": MTLS options: default
+[DEBUG] MCP server "acpPermission": HTTP transport options: {"url":"http://127.0.0.1:38833/mcp","headers":{"User-Agent":"claude-code/2.0.27","x-acp-proxy-session-id":"019a3d3c-81ca-720b-b0ef-8b1c69ac009e"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "acpPermission": HTTP transport created successfully
+[DEBUG] MCP server "acpPermission": Client created, setting up request handler
+[DEBUG] MCP server "acpPermission": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "acpPermission": Testing basic HTTP connectivity to http://127.0.0.1:38833/mcp
+[DEBUG] MCP server "acpPermission": Parsed URL: host=127.0.0.1, port=38833, protocol=http:
+[DEBUG] MCP server "acpPermission": Using loopback address: 127.0.0.1
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] Shell snapshot created successfully (5701 bytes)
+[DEBUG] MCP server "acpPermission": No token data found
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 67ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] MCP server "acpPermission": Successfully connected to http server in 93ms
+[DEBUG] MCP server "acpPermission": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"acpPermission","version":"1.0.0"}}
+[DEBUG] MCP server "acpPermission": No token data found
+[DEBUG] MCP server "acpPermission": HTTP connection dropped after 0s uptime
+[DEBUG] MCP server "acpPermission": Connection error: Streamable HTTP error: Failed to open SSE stream: Not Found
+[DEBUG] MCP server "acpPermission": HTTP connection dropped after 0s uptime
+[DEBUG] MCP server "acpPermission": Connection error: Streamable HTTP error: Failed to open SSE stream: Not Found
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 159ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at UR (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:29:9845)
+    at Unzip.emit (node:events:520:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at g3A.request (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async dh2 (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3574:15030)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.636107.1761963967955
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.636107.1761963967955 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "context7" Server stderr: npm warn Unknown user config "python". This will stop working in the next major version of npm.
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgNrcTNFe4mM1H4d19Hg"}
+[ERROR] Error streaming, falling back to non-streaming mode: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgNrcPQ2GpQNVE218Hmb"}
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 353ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgNrdJxd7hs3o1iFD2AU"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgNrdJxd7hs3o1iFD2AU"}
+    at D4.generate (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:203:83274)
+    at uy.makeStatusError (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:357:2117)
+    at uy.makeRequest (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async qtA.model (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:18846)
+    at async qtA (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:2685:39781)
+    at async vb2 (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:19014)
+    at async file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:12775
+    at async Bo1 (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:4492)
+    at async zd (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:12746)
+[ERROR] MCP server "redmine" Server stderr: Installed 54 packages in 11ms
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 531ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.26"}}
+[ERROR] Error in non-streaming fallback: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgNrdfYJt4mjUFurDyCd"}
+[ERROR] Error: Error: 429 {"type":"error","error":{"type":"rate_limit_error","message":"This request would exceed your account's rate limit. Please try again later."},"request_id":"req_011CUgNrdfYJt4mjUFurDyCd"}
+    at D4.generate (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:203:83274)
+    at uy.makeStatusError (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:357:2117)
+    at uy.makeRequest (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async qtA.model (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:18846)
+    at async qtA (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:2685:39781)
+    at async vb2 (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:19014)
+    at async file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:13007
+    at async Bo1 (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:4492)
+    at async m4A (file:///home/jarda/.local/share/zed/external_agents/claude-code-acp/0.9.0/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:3356:12977)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "redmine" Server stderr: [11/01/25 03:26:09] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1474ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.20.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListResourcesRequest
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 3 unique hooks for query "startup" (3 before deduplication)
+[DEBUG] Detected change to /home/jarda/.claude/settings.json
+[DEBUG] Detected change to /home/jarda/.claude/settings.json
+[DEBUG] Detected change to /home/jarda/.claude/settings.json

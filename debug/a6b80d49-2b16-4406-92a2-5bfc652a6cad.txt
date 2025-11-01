@@ -1,0 +1,99 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /c/work/projects/meditation-app/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/memory/**)"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.606425.1761780153810
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 554654 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.606425.1761780153810 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/c/work/projects/meditation-app/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761780153909-n335jo.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/a6b80d49-2b16-4406-92a2-5bfc652a6cad-agent-a6b80d49-2b16-4406-92a2-5bfc652a6cad.json.tmp.606425.1761780153915
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/a6b80d49-2b16-4406-92a2-5bfc652a6cad-agent-a6b80d49-2b16-4406-92a2-5bfc652a6cad.json.tmp.606425.1761780153915 to /home/jarda/.claude/todos/a6b80d49-2b16-4406-92a2-5bfc652a6cad-agent-a6b80d49-2b16-4406-92a2-5bfc652a6cad.json
+[DEBUG] File /home/jarda/.claude/todos/a6b80d49-2b16-4406-92a2-5bfc652a6cad-agent-a6b80d49-2b16-4406-92a2-5bfc652a6cad.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.606425.1761780153928
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 554273 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.606425.1761780153928 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (4977 bytes)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.606425.1761780154028
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 554273 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.606425.1761780154028 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Total plugin agents loaded: 1
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.606425.1761780154120
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 554273 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.606425.1761780154120 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 69ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] FileHistory: Copied backup 03f0341c1453e9f2@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 41d4de65a6a71fd1@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 36b1acf7949586df@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 41ec7218305fcc3d@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup bbea064eaab6ad78@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 99451f2b3d4f0e12@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 03f0341c1453e9f2@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 41d4de65a6a71fd1@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 36b1acf7949586df@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 41ec7218305fcc3d@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup bbea064eaab6ad78@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 99451f2b3d4f0e12@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 9f2a9648b6cb91b1@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 99451f2b3d4f0e12@v3 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 9f2a9648b6cb91b1@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 0368bee7db14defc@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup edf70ad9863a28cd@v1 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup 0368bee7db14defc@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] FileHistory: Copied backup edf70ad9863a28cd@v2 from session a7f98cf0-2825-46e5-907b-f7710eaeefb3 to a6b80d49-2b16-4406-92a2-5bfc652a6cad
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "resume" (1 before deduplication)
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at wR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at m3A.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eh2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3572:15125)

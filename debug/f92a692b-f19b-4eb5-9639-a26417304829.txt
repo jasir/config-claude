@@ -1,0 +1,75 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /c/work/projects/ent-ai-mcp-servers/.claude/settings.json, /c/work/projects/ent-ai-mcp-servers/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 7 allow rule(s) to destination 'localSettings': ["Bash(bun run:*)","mcp__entai__get_basic_instructions","Read(//home/jarda/scripts-ai/**)","Read(//c/work/projects/map-dump-edit/**)","mcp__entai__ent_eval_in_server","Read(//c/work/projects/ent/**)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/templates/brain/**)"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.685568.1761783935113
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 555698 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.685568.1761783935113 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/c/work/projects/ent-ai-mcp-servers/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1761783935211-8pd4ge.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/f92a692b-f19b-4eb5-9639-a26417304829-agent-f92a692b-f19b-4eb5-9639-a26417304829.json.tmp.685568.1761783935216
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/f92a692b-f19b-4eb5-9639-a26417304829-agent-f92a692b-f19b-4eb5-9639-a26417304829.json.tmp.685568.1761783935216 to /home/jarda/.claude/todos/f92a692b-f19b-4eb5-9639-a26417304829-agent-f92a692b-f19b-4eb5-9639-a26417304829.json
+[DEBUG] File /home/jarda/.claude/todos/f92a692b-f19b-4eb5-9639-a26417304829-agent-f92a692b-f19b-4eb5-9639-a26417304829.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.685568.1761783935229
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 555277 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.685568.1761783935229 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 2 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Total plugin skills loaded: 20
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 20 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (4976 bytes)
+[DEBUG] Summarizing last 3 of 160 messages (~119376 tokens)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.685568.1761783935325
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 555277 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.685568.1761783935325 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Total plugin agents loaded: 1
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.685568.1761783935424
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 555277 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.685568.1761783935424 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 95ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] FileHistory: Copied backup 9dd6bca6ec6069e2@v1 from session 5523773e-5037-4625-b91a-6465d39dceef to f92a692b-f19b-4eb5-9639-a26417304829
+[DEBUG] FileHistory: Copied backup 9dd6bca6ec6069e2@v2 from session 5523773e-5037-4625-b91a-6465d39dceef to f92a692b-f19b-4eb5-9639-a26417304829
+[DEBUG] FileHistory: Copied backup 819c9fab2df92016@v1 from session 5523773e-5037-4625-b91a-6465d39dceef to f92a692b-f19b-4eb5-9639-a26417304829
+[DEBUG] FileHistory: Copied backup 10e3bf871ceb274d@v1 from session 5523773e-5037-4625-b91a-6465d39dceef to f92a692b-f19b-4eb5-9639-a26417304829
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "resume" (1 before deduplication)
