@@ -1,0 +1,128 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /c/work/projects/altisima-central-vault/__home/projects/ai/brain/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 50 allow rule(s) to destination 'localSettings': ["Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/altisima-central-vault/**)","Read(/c/work/projects/**)","Read(/c/work/projects/altisima-central-vault/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Read(/c/work/projects/**)","Bash(git-compose:*)","Read(/c/work/projects/**)","Read(/c/work/projects/altisima-central-vault/ent__/**)","Read(/c/work/projects/**)","Read(/c/work/projects/git-composer/**)","Read(/c/work/projects/git-composer/**)","Read(/home/jarda/.config/**)","Read(/home/jarda/.config/lazygit/**)","Read(/home/jarda/.config/kitty/**)","Read(/home/jarda/.config/lazygit/**)","Bash(ssh:*)","Read(/c/work/projects/altisima-central-vault/weby/jenkins.devel.altisima.cz/**)","Read(/c/work/projects/altisima-central-vault/redmine/projects/Infrastruktura/wikis/pages/**)","WebSearch","Bash(gh api:*)","Bash(./claude-chat-browser.sh search:*)","mcp__entai__get_basic_instructions","Read(//c/work/projects/altisima-central-vault/_tools/vault-server/**)","Read(//home/jarda/administrator/**)","mcp__entai__fetch","mcp__brave-search__brave_web_search","mcp__context7__resolve-library-id","mcp__context7__get-library-docs","Read(//home/jarda/.config/freeplane/**)","Read(//c/work/projects/altisima-central-vault/**)","Read(//c/work/projects/ent-ai-mcp-servers/src/**)","Read(//home/jarda/.config/**)","mcp__entai__execute","Read(//home/jarda/.claude/**)","Skill(superpowers:brainstorming)","SlashCommand(/update)","mcp__entai__ent_eval_in_server","mcp__plugin_episodic-memory_episodic-memory__search","Skill(superpowers:using-superpowers)"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1814880.1762053025870
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84580 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1814880.1762053025870 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1814880.1762053025879
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84580 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1814880.1762053025879 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Loading plugin episodic-memory from source: {"source":"url","url":"https://github.com/obra/episodic-memory.git"}
+[DEBUG] Using cached plugin episodic-memory from /home/jarda/.claude/plugins/cache/episodic-memory
+[DEBUG] Loading plugin ent-skills from source: "./"
+[DEBUG] Plugin ent-skills has no entry.skills defined
+[DEBUG] Found 4 plugins (4 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/c/work/projects/altisima-central-vault/__home/projects/ai/brain/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1762053025979-ujam5e.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json.tmp.1814880.1762053025986
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json.tmp.1814880.1762053025986 to /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json
+[DEBUG] File /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1814880.1762053025993
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1814880.1762053025993 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 4 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Loading hooks from plugin: episodic-memory
+[DEBUG] Registered 3 hooks from 4 plugins
+[DEBUG] Loaded 2 unique skills (managed: 0, user: 2, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Checking plugin episodic-memory: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin episodic-memory default skillsPath: /home/jarda/.claude/plugins/cache/episodic-memory/skills
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 1 skills from plugin episodic-memory default directory
+[DEBUG] Checking plugin ent-skills: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin ent-skills default skillsPath: /c/work/projects/claude-plugins/ent-skills/skills
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Loaded 1 skills from plugin ent-skills default directory
+[DEBUG] Total plugin skills loaded: 22
+[DEBUG] Loaded 1 commands from plugin episodic-memory default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] getSkillsIfEnabled returning: 2 skill dir commands, 22 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (5024 bytes)
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1814880.1762053026100
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1814880.1762053026100 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Summarizing last 7 of 88 messages (~130272 tokens)
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Loaded 1 agents from plugin episodic-memory default directory
+[DEBUG] Loaded agent from plugin episodic-memory custom file: /home/jarda/.claude/plugins/cache/episodic-memory/agents/search-conversations.md
+[DEBUG] Total plugin agents loaded: 3
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.1814880.1762053026170
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.1814880.1762053026170 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 68ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 330ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at uR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:25:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:30:9845)
+    at Unzip.emit (node:events:532:35)
+    at Unzip.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at m7A.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:32:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async rp2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3623:15232)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 413ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json.tmp.1814880.1762053026640
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 173 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json.tmp.1814880.1762053026640 to /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json
+[DEBUG] File /home/jarda/.claude/todos/f3d5aeba-93da-4b89-9489-9872acc59939-agent-f3d5aeba-93da-4b89-9489-9872acc59939.json written atomically
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v1 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v2 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v3 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v4 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v5 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v6 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v7 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v8 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v9 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] FileHistory: Copied backup c21651e429864b03@v10 from session d21ca4ec-f5bd-48cb-8f59-beb3eed55eac to f3d5aeba-93da-4b89-9489-9872acc59939
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 3 unique hooks for query "resume" (3 before deduplication)

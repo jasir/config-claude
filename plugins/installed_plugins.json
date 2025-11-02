@@ -10,11 +10,11 @@
       "isLocal": true
     },
     "superpowers@superpowers-marketplace": {
-      "version": "3.2.3",
-      "installedAt": "2025-10-31T15:34:42.315Z",
-      "lastUpdated": "2025-10-31T15:34:42.315Z",
+      "version": "3.4.1",
+      "installedAt": "2025-11-02T04:08:41.309Z",
+      "lastUpdated": "2025-11-02T04:08:41.309Z",
       "installPath": "/home/jarda/.claude/plugins/cache/superpowers",
-      "gitCommitSha": "d46dddd32c86069e68c1d2b6fe6fa06ad957f232",
+      "gitCommitSha": "b187e75a1ee46f54247b6720ed49a47bdcc7eb2f",
       "isLocal": false
     },
     "episodic-memory@superpowers-marketplace": {
