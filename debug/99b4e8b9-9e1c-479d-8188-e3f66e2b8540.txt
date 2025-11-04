@@ -1,0 +1,75 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json...
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3451721.1762268762825
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85170 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3451721.1762268762825 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Loading plugin episodic-memory from source: {"source":"url","url":"https://github.com/obra/episodic-memory.git"}
+[DEBUG] Using cached plugin episodic-memory from /home/jarda/.claude/plugins/cache/episodic-memory
+[DEBUG] Loading plugin ent-skills from source: "./"
+[DEBUG] Plugin ent-skills has no entry.skills defined
+[DEBUG] Found 4 plugins (4 enabled, 0 disabled)
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Loaded 1 commands from plugin episodic-memory default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Loaded 1 agents from plugin episodic-memory default directory
+[DEBUG] Loaded agent from plugin episodic-memory custom file: /home/jarda/.claude/plugins/cache/episodic-memory/agents/search-conversations.md
+[DEBUG] Total plugin agents loaded: 3
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Loading hooks from plugin: episodic-memory
+[DEBUG] Registered 3 hooks from 4 plugins
+[DEBUG] Loaded plugins - Enabled: 4, Disabled: 0, Commands: 7, Agents: 3, Errors: 0
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 65ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.3451721.1762268762982
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85170 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.3451721.1762268762982 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 174ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at dR (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:25:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:30:9845)
+    at Unzip.emit (node:events:531:35)
+    at Unzip.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at o7A.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:32:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Ml2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3630:15280)
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 364ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[ERROR] MCP server "redmine" Server stderr: Installed 54 packages in 25ms
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 556ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.26"}}
+[ERROR] MCP server "redmine" Server stderr: [11/04/25 16:06:04] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1241ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.20.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListResourcesRequest
