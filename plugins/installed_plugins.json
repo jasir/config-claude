@@ -18,11 +18,11 @@
       "isLocal": false
     },
     "episodic-memory@superpowers-marketplace": {
-      "version": "1.0.5",
-      "installedAt": "2025-10-31T15:34:31.530Z",
-      "lastUpdated": "2025-10-31T15:34:31.530Z",
+      "version": "1.0.9",
+      "installedAt": "2025-11-05T11:00:48.452Z",
+      "lastUpdated": "2025-11-05T11:00:48.452Z",
       "installPath": "/home/jarda/.claude/plugins/cache/episodic-memory",
-      "gitCommitSha": "f8b5833898fe960796b9b0fa33fa3e66dea884ce",
+      "gitCommitSha": "0ede59bb569b370250e1990ae13866722127f754",
       "isLocal": false
     },
     "ent-skills@ent-skills": {

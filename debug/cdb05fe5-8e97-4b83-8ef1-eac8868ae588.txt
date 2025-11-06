@@ -1,0 +1,45 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/administrator/.claude/settings.json, /home/jarda/administrator/.claude/settings.local.json...
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.357317.1762340396971
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 73137 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.357317.1762340396971 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[WARN] Cache corrupted or missing for marketplace ent-skills, re-fetching from source: Marketplace file not found at /c/work/projects/claude-plugins/ent-skills
+[DEBUG] Could not find plugin ent-skills@ent-skills: Marketplace file not found at /c/work/projects/claude-plugins/ent-skills/.claude-plugin/marketplace.json
+[DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Plugin not available for MCP: episodic-memory@superpowers-marketplace - error type: plugin-not-found
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Plugin not available for MCP: episodic-memory@superpowers-marketplace - error type: plugin-not-found
+[DEBUG] Plugin not available for MCP: ent-skills@ent-skills - error type: plugin-not-found
+[DEBUG] Plugin loading errors: Plugin episodic-memory not found in marketplace superpowers-marketplace, Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Total plugin commands loaded: 6
+[DEBUG] Plugin loading errors: Plugin episodic-memory not found in marketplace superpowers-marketplace, Plugin ent-skills not found in marketplace ent-skills
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Total plugin agents loaded: 1
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Registered 1 hooks from 2 plugins
+[DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 6, Agents: 1, Errors: 2
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to undefined server in 193ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.357317.1762340397312
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 73137 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.357317.1762340397312 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to undefined server in 650ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
