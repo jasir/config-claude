@@ -247,3 +247,125 @@ Ukončuji ENT AI MCP Server...
 [DEBUG] Applied original permissions to temp file
 [DEBUG] Renaming /home/jarda/.claude.json.tmp.3454650.1762268896250 to /home/jarda/.claude.json
 [DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/release-notes</command-name>
+            <command-message>release-notes</command-mess...
+[DEBUG] UserCommandMessage rendering: "release-notes" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/output-style</command-name>
+            <command-message>output-style</command-messag...
+[DEBUG] UserCommandMessage rendering: "output-style" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.35562.1762355880745
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84887 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.35562.1762355880745 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.35562.1762355880748
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84887 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.35562.1762355880748 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-local
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.35562.1762355880759
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 84995 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.35562.1762355880759 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Found 4 enabled plugins
+[DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+[DEBUG] Loaded 4 installed plugins from /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Plugin commit-commands@claude-code-plugins already in installed_plugins.json, skipping
+[DEBUG] Plugin superpowers@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Plugin episodic-memory@superpowers-marketplace already in installed_plugins.json, skipping
+[DEBUG] Plugin ent-skills@ent-skills already in installed_plugins.json, skipping
+[DEBUG] Saved 4 installed plugins to /home/jarda/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 4 skipped)
+[DEBUG] Found 4 installed plugins
+[DEBUG] Loaded plugins - Enabled: 4, Disabled: 0, Commands: 7, Agents: 3, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 656ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 634ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at BT (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:25:1136)
+    at Unzip.<anonymous> (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:30:9845)
+    at Unzip.emit (node:events:532:35)
+    at Unzip.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at MGA.request (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:32:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async er2 (file:///home/jarda/.claude/local/node_modules/@anthropic-ai/claude-code/cli.js:3629:15281)
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "puppeteer": Starting connection with timeout of 30000ms
+[ERROR] MCP server "puppeteer" Server stderr: Resolving dependencies
+[ERROR] MCP server "puppeteer" Server stderr: Resolved, downloaded and extracted [232]
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 872ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.26"}}
+[ERROR] MCP server "puppeteer" Server stderr: Saved lockfile
+[ERROR] MCP server "redmine" Server stderr: Installed 54 packages in 21ms
+[DEBUG] MCP server "puppeteer": Successfully connected to stdio server in 1038ms
+[DEBUG] MCP server "puppeteer": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":true,"serverVersion":{"name":"example-servers/puppeteer","version":"0.1.0"}}
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "redmine" Server stderr: [11/05/25 16:18:02] INFO     Starting MCP Redmine version           server.py:69
+                             2025.09.03.141435
+[DEBUG] MCP server "redmine": Successfully connected to undefined server in 1981ms
+[DEBUG] MCP server "redmine": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Redmine MCP server","version":"1.20.0"}}
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListToolsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListPromptsRequest
+[ERROR] MCP server "redmine" Server stderr: INFO     Processing request of type            server.py:674
+                             ListResourcesRequest
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1762355879985-zn0t8h.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] MCP server "puppeteer": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] Metrics opt-out check failed: No API key available
+[DEBUG] Metrics check failed, defaulting to disabled
+[DEBUG] Metrics export disabled by organization setting
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter shutdown complete
+[ERROR] MCP server "entai" Server stderr: Ukončuji ENT AI MCP Server...
+Ukončuji ENT AI MCP Server...
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "redmine": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "puppeteer": MCP server process exited cleanly
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.35562.1762355887025
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 85393 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.35562.1762355887025 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
