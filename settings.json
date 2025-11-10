@@ -17,5 +17,5 @@
     "episodic-memory@superpowers-marketplace": true,
     "ent-skills@ent-skills": true
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": false
 }
