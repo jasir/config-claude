@@ -1,0 +1,124 @@
+[DEBUG] Watching for changes in setting files /home/jarda/.claude/settings.json, /home/jarda/k3w-docker/src/web-frontend/apps/web/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'userSettings': ["Bash"]
+[DEBUG] Applying permission update: Adding 13 allow rule(s) to destination 'localSettings': ["mcp__mcp-atlassian__jira_get_issue","Bash(yarn check:tsc:*)","Bash(yarn check:prettier:*)","Bash(gh pr view:*)","mcp__mcp-atlassian__confluence_search","mcp__mcp-atlassian__confluence_get_page","Bash(yarn check:eslint:*)","Bash(yarn prettier:*)","mcp__mcp-atlassian__jira_search","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//c/work/projects/altisima-central-vault/__home/projects/ai/brain/**)","Read(//home/jarda/scripts-ai/**)","mcp__entai__get_basic_instructions"]
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.2991147.1762771139609
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 74160 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.2991147.1762771139609 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.2991147.1762771139613
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 74160 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.2991147.1762771139613 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loading plugin commit-commands from source: "./plugins/commit-commands"
+[DEBUG] Plugin commit-commands has no entry.skills defined
+[DEBUG] Loading plugin superpowers from source: {"source":"url","url":"https://github.com/obra/superpowers.git"}
+[DEBUG] Using cached plugin superpowers from /home/jarda/.claude/plugins/cache/superpowers
+[DEBUG] Loading plugin episodic-memory from source: {"source":"url","url":"https://github.com/obra/episodic-memory.git"}
+[DEBUG] Using cached plugin episodic-memory from /home/jarda/.claude/plugins/cache/episodic-memory
+[DEBUG] Loading plugin ent-skills from source: "./"
+[DEBUG] Plugin ent-skills has no entry.skills defined
+[DEBUG] Found 4 plugins (4 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/jarda/.claude/skills, project=/home/jarda/k3w-docker/src/web-frontend/apps/web/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/jarda/.bashrc
+[DEBUG] Snapshots directory: /home/jarda/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/jarda/.claude/shell-snapshots/snapshot-bash-1762771139682-328943.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/jarda/.claude/todos/646bc2d1-321c-4b18-a452-d1d357eb9b9f-agent-646bc2d1-321c-4b18-a452-d1d357eb9b9f.json.tmp.2991147.1762771139687
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/jarda/.claude/todos/646bc2d1-321c-4b18-a452-d1d357eb9b9f-agent-646bc2d1-321c-4b18-a452-d1d357eb9b9f.json.tmp.2991147.1762771139687 to /home/jarda/.claude/todos/646bc2d1-321c-4b18-a452-d1d357eb9b9f-agent-646bc2d1-321c-4b18-a452-d1d357eb9b9f.json
+[DEBUG] File /home/jarda/.claude/todos/646bc2d1-321c-4b18-a452-d1d357eb9b9f-agent-646bc2d1-321c-4b18-a452-d1d357eb9b9f.json written atomically
+[DEBUG] getPluginSkills: Processing 4 enabled plugins
+[DEBUG] Checking plugin commit-commands: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin superpowers: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin superpowers default skillsPath: /home/jarda/.claude/plugins/cache/superpowers/skills
+[DEBUG] Loading hooks from plugin: superpowers
+[DEBUG] Loading hooks from plugin: episodic-memory
+[DEBUG] Registered 3 hooks from 4 plugins
+[DEBUG] Loaded 8 unique skills (managed: 0, user: 8, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 20 skills from plugin superpowers default directory
+[DEBUG] Checking plugin episodic-memory: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin episodic-memory default skillsPath: /home/jarda/.claude/plugins/cache/episodic-memory/skills
+[DEBUG] Loaded 3 commands from plugin commit-commands default directory
+[DEBUG] Loaded 1 skills from plugin episodic-memory default directory
+[DEBUG] Checking plugin ent-skills: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin ent-skills default skillsPath: /c/work/projects/claude-plugins/ent-skills/skills
+[DEBUG] Loaded 3 commands from plugin superpowers default directory
+[DEBUG] Writing to temp file: /home/jarda/.claude.json.tmp.2991147.1762771139720
+[DEBUG] Preserving file permissions: 100664
+[DEBUG] Temp file written successfully, size: 74160 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/jarda/.claude.json.tmp.2991147.1762771139720 to /home/jarda/.claude.json
+[DEBUG] File /home/jarda/.claude.json written atomically
+[DEBUG] Loaded 1 skills from plugin ent-skills default directory
+[DEBUG] Total plugin skills loaded: 22
+[DEBUG] Loaded 1 commands from plugin episodic-memory default directory
+[DEBUG] Total plugin commands loaded: 7
+[DEBUG] getSkillsIfEnabled returning: 8 skill dir commands, 22 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/jarda/.local/share/zed/external_agents/claude-code-acp/0.10.0/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (3621 bytes)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Loaded 1 agents from plugin superpowers default directory
+[DEBUG] Loaded 1 agents from plugin episodic-memory default directory
+[DEBUG] Loaded agent from plugin episodic-memory custom file: /home/jarda/.claude/plugins/cache/episodic-memory/agents/search-conversations.md
+[DEBUG] Total plugin agents loaded: 3
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "brave-search": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "entai": Starting connection with timeout of 30000ms
+[ERROR] MCP server "brave-search" Server stderr: Brave Search MCP Server running on stdio
+[DEBUG] MCP server "brave-search": Successfully connected to stdio server in 53ms
+[DEBUG] MCP server "brave-search": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"example-servers/brave-search","version":"0.1.0"}}
+[ERROR] MCP server "plugin:episodic-memory:episodic-memory" Server stderr: Episodic Memory MCP server running via stdio
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Successfully connected to undefined server in 188ms
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"episodic-memory","version":"1.0.0"}}
+[ERROR] MCP server "entai" Server stderr: ENT AI MCP Server running on stdio - new version
+[DEBUG] MCP server "entai": Successfully connected to stdio server in 360ms
+[DEBUG] MCP server "entai": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"ent-ai-mcp","version":"1.0.0"}}
+[DEBUG] MCP server "mcp-atlassian": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 30000ms
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "mcp-atlassian" Server stderr: [11/10/25 11:39:00] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+[DEBUG] MCP server "mcp-atlassian": Successfully connected to stdio server in 607ms
+[DEBUG] MCP server "mcp-atlassian": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"Atlassian MCP","version":"1.10.1"}}
+[ERROR] MCP server "chrome-devtools" Server stderr: npm warn exec The following package was not found and will be installed: chrome-devtools-mcp@0.10.1
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "chrome-devtools" Server stderr: chrome-devtools-mcp exposes content of the browser instance to the MCP clients allowing them to inspect,
+debug, and modify any data in the browser or DevTools.
+Avoid sharing sensitive or personal information that you do not want to share with MCP clients.
+[DEBUG] MCP server "chrome-devtools": Successfully connected to stdio server in 2579ms
+[DEBUG] MCP server "chrome-devtools": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"chrome_devtools","title":"Chrome DevTools MCP server","version":"0.10.1"}}
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 3 unique hooks for query "startup" (3 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/jarda/.claude/shell-snapshots/snapshot-bash-1762771139682-328943.sh
+[DEBUG] MCP server "brave-search": Sending SIGINT to MCP server process
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": UNKNOWN connection closed after 3s (cleanly)
+[DEBUG] MCP server "entai": Sending SIGINT to MCP server process
+[DEBUG] MCP server "mcp-atlassian": Sending SIGINT to MCP server process
+[DEBUG] MCP server "chrome-devtools": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[ERROR] "MCP server \"entai\" Server stderr: Ukončuji ENT AI MCP Server...\nUkončuji ENT AI MCP Server..."
+[DEBUG] MCP server "plugin:episodic-memory:episodic-memory": UNKNOWN connection closed after 3s (cleanly)
+[DEBUG] MCP server "brave-search": STDIO connection closed after 3s (cleanly)
+[DEBUG] MCP server "entai": STDIO connection closed after 3s (cleanly)
+[DEBUG] MCP server "brave-search": MCP server process exited cleanly
+[DEBUG] MCP server "entai": MCP server process exited cleanly
+[DEBUG] MCP server "mcp-atlassian": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "chrome-devtools": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "chrome-devtools": STDIO connection closed after 1s (cleanly)
