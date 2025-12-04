@@ -111,7 +111,8 @@
     "superpowers@superpowers-marketplace": true,
     "episodic-memory@superpowers-marketplace": false,
     "ent-skills@ent-skills": true,
-    "superpowers-developing-for-claude-code@superpowers-marketplace": true
+    "superpowers-developing-for-claude-code@superpowers-marketplace": true,
+    "double-shot-latte@superpowers-marketplace": true
   },
   "alwaysThinkingEnabled": false
 }
