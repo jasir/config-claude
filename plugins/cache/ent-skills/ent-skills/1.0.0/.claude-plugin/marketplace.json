@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ent-skills",
+  "version": "1.0.0",
+  "description": "Personal plugin containing ENT Framework programming skills for Vue 2 + Quasar development",
+  "owner": {
+    "name": "Jarda",
+    "email": "jarda@local.dev"
+  },
+  "plugins": [
+    {
+      "name": "ent-skills",
+      "description": "ENT Framework programmer skill with Vue 2 Options API and Quasar patterns",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jarda",
+        "email": "jarda@local.dev"
+      },
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}

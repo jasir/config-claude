@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-code"
     },
     "installLocation": "/home/jarda/.claude/plugins/marketplaces/claude-code-plugins",
-    "lastUpdated": "2025-10-14T20:48:53.810Z"
+    "lastUpdated": "2025-12-30T16:02:10.943Z"
   },
   "superpowers-marketplace": {
     "source": {
@@ -13,7 +13,7 @@
       "repo": "obra/superpowers-marketplace"
     },
     "installLocation": "/home/jarda/.claude/plugins/marketplaces/superpowers-marketplace",
-    "lastUpdated": "2025-12-03T14:05:37.214Z"
+    "lastUpdated": "2025-12-30T11:36:11.209Z"
   },
   "ent-skills": {
     "source": {
@@ -22,5 +22,13 @@
     },
     "installLocation": "/c/work/projects/claude-plugins/ent-skills",
     "lastUpdated": "2025-11-01T02:34:17.682Z"
+  },
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/home/jarda/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2025-12-30T16:19:40.849Z"
   }
 }

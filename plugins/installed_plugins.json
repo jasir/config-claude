@@ -1,53 +1,71 @@
 {
-  "version": 1,
+  "version": 2,
   "plugins": {
-    "commit-commands@claude-code-plugins": {
-      "version": "unknown",
-      "installedAt": "2025-10-25T18:06:27.896Z",
-      "lastUpdated": "2025-10-25T18:06:27.896Z",
-      "installPath": "/home/jarda/.claude/plugins/marketplaces/claude-code-plugins/plugins/commit-commands",
-      "gitCommitSha": "24aa2626cc9eb26208a38853d30dcd5d25a2ac81",
-      "isLocal": true
-    },
-    "superpowers@superpowers-marketplace": {
-      "version": "3.4.1",
-      "installedAt": "2025-11-12T02:45:15.299Z",
-      "lastUpdated": "2025-11-12T02:45:15.299Z",
-      "installPath": "/home/jarda/.claude/plugins/cache/superpowers",
-      "gitCommitSha": "02c87670de64b236ffd3239305dd71190983679d",
-      "isLocal": false
-    },
-    "episodic-memory@superpowers-marketplace": {
-      "version": "1.0.13",
-      "installedAt": "2025-12-08T10:34:35.705Z",
-      "lastUpdated": "2025-12-08T10:34:35.705Z",
-      "installPath": "/home/jarda/.claude/plugins/cache/episodic-memory",
-      "gitCommitSha": "911b1c7a0bc31931a2883f7be807a5faf29e39e3",
-      "isLocal": false
-    },
-    "ent-skills@ent-skills": {
-      "version": "unknown",
-      "installedAt": "2025-11-01T02:34:27.289Z",
-      "lastUpdated": "2025-11-01T02:34:27.289Z",
-      "installPath": "/c/work/projects/claude-plugins/ent-skills/",
-      "gitCommitSha": "74ff087c51f366d34e2ec23b59c9b089e1fc9c38",
-      "isLocal": true
-    },
-    "superpowers-developing-for-claude-code@superpowers-marketplace": {
-      "version": "0.3.1",
-      "installedAt": "2025-12-04T02:18:11.921Z",
-      "lastUpdated": "2025-12-04T02:18:11.921Z",
-      "installPath": "/home/jarda/.claude/plugins/cache/superpowers-developing-for-claude-code",
-      "gitCommitSha": "74afe935da49efe782907e837a27ce618498099a",
-      "isLocal": false
-    },
-    "double-shot-latte@superpowers-marketplace": {
-      "version": "1.1.4",
-      "installedAt": "2025-12-04T10:24:39.226Z",
-      "lastUpdated": "2025-12-04T10:24:39.226Z",
-      "installPath": "/home/jarda/.claude/plugins/cache/double-shot-latte",
-      "gitCommitSha": "b8cdbaa9a3dae4f9c5d15480e4541517274ac375",
-      "isLocal": false
-    }
+    "commit-commands@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/home/jarda/.claude/plugins/cache/claude-code-plugins/commit-commands/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-10-25T18:06:27.896Z",
+        "lastUpdated": "2025-12-17T23:56:06.629Z",
+        "gitCommitSha": "24aa2626cc9eb26208a38853d30dcd5d25a2ac81",
+        "isLocal": true
+      }
+    ],
+    "superpowers@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/home/jarda/.claude/plugins/cache/superpowers-marketplace/superpowers/3.4.1",
+        "version": "3.4.1",
+        "installedAt": "2025-11-12T02:45:15.299Z",
+        "lastUpdated": "2025-11-12T02:45:15.299Z",
+        "gitCommitSha": "02c87670de64b236ffd3239305dd71190983679d",
+        "isLocal": false
+      }
+    ],
+    "ent-skills@ent-skills": [
+      {
+        "scope": "user",
+        "installPath": "/home/jarda/.claude/plugins/cache/ent-skills/ent-skills/unknown",
+        "version": "unknown",
+        "installedAt": "2025-11-01T02:34:27.289Z",
+        "lastUpdated": "2025-11-01T02:34:27.289Z",
+        "gitCommitSha": "74ff087c51f366d34e2ec23b59c9b089e1fc9c38",
+        "isLocal": true
+      }
+    ],
+    "superpowers-developing-for-claude-code@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/home/jarda/.claude/plugins/cache/superpowers-marketplace/superpowers-developing-for-claude-code/0.3.1",
+        "version": "0.3.1",
+        "installedAt": "2025-12-04T02:18:11.921Z",
+        "lastUpdated": "2025-12-04T02:18:11.921Z",
+        "gitCommitSha": "74afe935da49efe782907e837a27ce618498099a",
+        "isLocal": false
+      }
+    ],
+    "double-shot-latte@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/home/jarda/.claude/plugins/cache/superpowers-marketplace/double-shot-latte/1.1.4",
+        "version": "1.1.4",
+        "installedAt": "2025-12-04T10:24:39.226Z",
+        "lastUpdated": "2025-12-04T10:24:39.226Z",
+        "gitCommitSha": "b8cdbaa9a3dae4f9c5d15480e4541517274ac375",
+        "isLocal": false
+      }
+    ],
+    "episodic-memory@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/home/jarda/.claude/plugins/cache/superpowers-marketplace/episodic-memory/1.0.13",
+        "version": "1.0.13",
+        "installedAt": "2025-12-09T11:17:48.045Z",
+        "lastUpdated": "2025-12-09T11:17:48.045Z",
+        "gitCommitSha": "911b1c7a0bc31931a2883f7be807a5faf29e39e3",
+        "isLocal": false
+      }
+    ]
   }
 }
